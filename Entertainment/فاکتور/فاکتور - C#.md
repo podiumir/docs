@@ -249,8 +249,6 @@ billingService.PayInvoice(payInvoiceVo, response => Listener.GetResult(response,
 
 ```
 
-
-
 <div class="box-end">
 </div>
 
@@ -272,8 +270,6 @@ billingService.SendInvoicePaymentSms(sendInvoicePaymentSmsVo,response => Listene
 
 ```
 
-
-
 <div class="box-end">
 </div>
 
@@ -294,8 +290,6 @@ var payInvoiceInFutureVo = PayInvoiceInFutureVo.ConcreteBuilder
 billingService.PayInvoiceInFuture(payInvoiceInFutureVo,response => Listener.GetResult(response, out output));
 ```
 
-
-
 <div class="box-end">
 </div>
 
@@ -312,8 +306,6 @@ var payInvoiceByInvoiceVo = PayInvoiceByInvoiceVo.ConcreteBuilder
 billingService.PayInvoiceByInvoice(payInvoiceByInvoiceVo,response => Listener.GetResult(response, out output));
 
 ```
-
-
 
 <div class="box-end">
 </div>
@@ -352,8 +344,6 @@ var linkSrv = createPreInvoiceVo.GetLink(output.Result);
 
 ```
 
-
-
 <div class="box-end">
 </div>
 
@@ -370,8 +360,6 @@ var linkSrv = createPreInvoiceVo.GetLink(output.Result);
 var output = payInvoiceByWalletVo.GetLink();
 
 ```
-
-
 
 <div class="box-end">
 </div>
@@ -390,8 +378,6 @@ billingService.GetInvoicePaymentLink(getInvoicePaymentLinkVo,response => Listene
 var advanceLink = getInvoicePaymentLinkVo.GetAdvanceLink(output.Result, "PEP");
 
 ```
-
-
 
 <div class="box-end">
 </div>
@@ -427,8 +413,6 @@ var output = payInvoiceByUniqueNumberVo.GetLink();
 
 ```
 
-
-
 <div class="box-end">
 </div>
 
@@ -455,8 +439,6 @@ billingService.RequestSettlement(requestWalletSettlementVo, response => Listener
 
 ```
 
-
-
 <div class="box-end">
 </div>
 
@@ -481,8 +463,6 @@ var requestGuildSettlementVo= RequestGuildSettlementVo.ConcreteBuilder
 billingService.RequestSettlement(requestGuildSettlementVo,response => Listener.GetResult(response, out output));
 
 ```
-
-
 
 <div class="box-end">
 </div>
@@ -513,8 +493,6 @@ billingService.RequestSettlement(requestSettlementByToolVo,response => Listener.
 
 ```
 
-
-
 <div class="box-end">
 </div>
 
@@ -536,8 +514,6 @@ var listSettlementsVo = ListSettlementsVo.ConcreteBuilder
 billingService.ListSettlements(listSettlementsVo, response => Listener.GetResult(response, out output));
 
 ```
-
-
 
 <div class="box-end">
 </div>
@@ -561,8 +537,6 @@ billingService.AddAutoSettlement(addAutoSettlementVo,response => Listener.GetRes
 
 ```
 
-
-
 <div class="box-end">
 </div>
 
@@ -579,8 +553,6 @@ billingService.RemoveAutoSettlement(registerUserVo,response => Listener.GetResul
 
 ```
 
-
-
 <div class="box-end">
 </div>
 
@@ -596,8 +568,6 @@ var addDealerVo = AddDealerVo.ConcreteBuilder
 billingService.AddDealer(addDealerVo, response => Listener.GetResult(response, out output));
 
 ```
-
-
 
 <div class="box-end">
 </div>
@@ -617,8 +587,6 @@ var dealerListVo = DealerListVo.ConcreteBuilder
 billingService.DealerList(dealerListVo, response => Listener.GetResult(response, out output));
 ```
 
-
-
 <div class="box-end">
 </div>
 
@@ -634,8 +602,6 @@ billingService.EnableDealer(enableDealerVo, response => Listener.GetResult(respo
 
 ```
 
-
-
 <div class="box-end">
 </div>
 
@@ -649,8 +615,6 @@ var output = new ResultSrv<BusinessDealerSrv>();
                     .Build();
 billingService.EnableDealer(enableDealerVo, response => Listener.GetResult(response, out output));
 ```
-
-
 
 <div class="box-end">
 </div>
@@ -669,8 +633,6 @@ var businessDealingListVo = BusinessDealingListVo.ConcreteBuilder
 billingService.BusinessDealingList(businessDealingListVo,response => Listener.GetResult(response, out output));
 
 ```
-
-
 
 <div class="box-end">
 </div>
@@ -742,8 +704,6 @@ var issueMultiInvoiceVo = IssueMultiInvoiceVo.ConcreteBuilder
 billingService.IssueMultiInvoice(issueMultiInvoiceVo, response => Listener.GetResult(response, out output));
 
 ```
-
-
 
 <div class="box-end">
 </div>
@@ -905,10 +865,9 @@ billingService.DealingProductPermissionList(registerUserVo,response => Listener.
 
 ```
 
-
-
 <div class="box-end">
 </div>
+
 ## فعال کردن دسترسی محصول
 با استفاده از سرویس ذیل می توانید دسترسی محصولی به کسب و کار واسط اعطا نموده اید را فعال نمایید.
 
@@ -919,8 +878,11 @@ var enableDealerProductPermissionVo= EnableDealerProductPermissionVo.ConcreteBui
                     .SetDealerBizId({Put your DealerBizId})
                     .Build();
 billingService.EnableDealerProductPermission(enableDealerProductPermissionVo,response => Listener.GetResult(response, out output));
-```<div class="box-end">
+```
+
+<div class="box-end">
 </div>
+
 ## غیرفعال کردن دسترسی محصول
  با استفاده از سرویس ذیل می توانید دسترسی محصولی که به کسب و کار واسط اعطا نموده اید را غیرفعال نمایید.
 
