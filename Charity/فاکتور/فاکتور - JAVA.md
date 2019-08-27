@@ -661,7 +661,7 @@ BaseInfoVo baseInfoVo = new BaseInfoVo.Builder()
 1. [ثبت نام کسب و کار](https://docs.pod.land/document/Business-Requirements-BusinessRegister) در [https://services.pod.land](https://panel.pod.land/Home/AddBusiness)
 2. [دریافت توکن جهت فراخوانی سرویس ها](http://docs.pod.land/document/Business-Keys-Add)
 3. [ثبت فاکتور](https://docs.pod.land/document/Developer-Invoice-IssueInvoiceByBiz): دقت نمایید در صورت تمایل به نمایش شماره کارت های مربوط به مشتری، در صفحه درگاه ضروری است شناسه کاربر (userId) در فاکتور ثبت شود. این شناسه پس از ورود کاربر از طریق SSO بدست آمده یا می تواند شناسه ی کاربر آفلاین (غیر SSO) باشد. در صورتی که شماره موبایل مربوط به هیچکدام از این دودسته نیست، می توان با ثبت شماره موبایل (cellphoneNumber) در فاکتور، همین نتیجه را دریافت نمود.
-4. 			هدایت کاربر به درگاه (توسط لینک زیر)
+4. 	هدایت کاربر به درگاه (توسط لینک زیر)
 5. [تایید پرداخت](https://docs.pod.land/document/Developer-Invoice-VerifyInvoice)
 6. [بستن فاکتور](https://docs.pod.land/document/Developer-Invoice-CloseInvoice)
 7. [تسویه](https://docs.pod.land/document/Developer-WalletOperation-SettlementRequest)
