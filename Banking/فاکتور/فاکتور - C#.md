@@ -41,8 +41,6 @@ var output = new ResultSrv<InvoiceSrv>();
 
 ```
 
-
-
 <div class="box-end">
 </div>
 
