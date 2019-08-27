@@ -13,8 +13,6 @@ billingService.AddDealer(addDealerVo, response => Listener.GetResult(response, o
 
 ```
 
-
-
 <div class="box-end">
 </div>
 
