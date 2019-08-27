@@ -282,6 +282,7 @@ billingService.AddDealerProductPermission(registerUserVo, response => Listener.G
 
 <div class="box-end">
 </div>
+
 ## دریافت لیست مجوزها
 با این سرویس می توانید لیست مجوزهای خود به کسب و کارهای واسط دیگر را به انضمام شناسه محصول، مشاهده نمایید.
 
@@ -334,8 +335,10 @@ var enableDealerProductPermissionVo= EnableDealerProductPermissionVo.ConcreteBui
                     .SetDealerBizId({Put your DealerBizId})
                     .Build();
 billingService.EnableDealerProductPermission(enableDealerProductPermissionVo,response => Listener.GetResult(response, out output));
-```<div class="box-end">
+```
+<div class="box-end">
 </div>
+
 ## غیرفعال کردن دسترسی محصول
  با استفاده از سرویس ذیل می توانید دسترسی محصولی که به کسب و کار واسط اعطا نموده اید را غیرفعال نمایید.
 
