@@ -94,7 +94,6 @@ podDealingService.addUserAndBusiness(addUserAndBusinessData)
   });
 ```
 
-
 نمونه خروجی:
 
 ```
