@@ -185,31 +185,28 @@ $dealingService = new DealingService();
 
 
 لیست پارامترهای ورودی متد listUserCreatedBusiness
+| نام فیلد     | نوع              | عنوان                           | توضیحات                                            | اجباری؟ |
+| ------------ | ---------------- | ------------------------------- | -------------------------------------------------- | ------- |
+| bizId        | array of integer | شناسه کسب و کار                 |                                                    |         |
+| city         | string           | نام شهر                         |                                                    |         |
+| email        | string           | آدرس ایمیل کاربر                | نکته + فرمت باید به صورت email باشد               |         |
+| economicCode | string           | کد اقتصادی کسب و کار            |                                                    |         |
+| nationalCode | string           | شناسه ملی کسب و کار             |                                                    |         |
+| sheba        | string           | کد شبا حساب بانکی               | نکته + شبا که به صورت عددی وارد می شود. (بدون IR) |         |
+| businessName | string           | نام کسب و کار                   |                                                    |         |
+| username     | string           | نام کاربری                      |                                                    |         |
+| ssoId        | string           | شناسه sso کاربر                 |                                                    |         |
+| state        | string           | نام استان                       |                                                    |         |
+| guildCode    | array of string  | لیست کد اصناف                   |                                                    |         |
+| country      | string           | نام کشور                        |                                                    |         |
+| active       | string           | وضعیت                           |                                                    |         |
+| tagTrees     | array of string  | لیست درخت تگ                    |                                                    |         |
+| tags         | array of string  | لیست تگ                         |                                                    |         |
+| query        | string           | مورد جستجو روی بیزینس های موجود |                                                    |         |
+| size         | integer          | تعداد رکورد در هر صفحه          |                                                    |         |
+| offset       | integer          | اندیس شروع                      |                                                    |         |
+| cellphone    | string           | شماره موبایل نماینده کسب و کار  | نکته + به صورت 09123456789 وارد شود               |         |
 
-|  نام فیلد |  نوع |  عنوان |  توضیحات |  اجباری؟ |
-| --- | --- | --- | --- | --- |
-| bizId | array of integer |  شناسه کسب و کار |  |  |
-| city | string |  نام شهر |  |  |
-| email | string |  آدرس ایمیل کاربر | نکته
-* فرمت باید به صورت email باشد |  |
-| economicCode | string |  کد اقتصادی کسب و کار |  |  |
-| nationalCode | string |  شناسه ملی کسب و کار |  |  |
-| sheba | string |  کد شبا حساب بانکی | نکته
-* شبا که به صورت عددی وارد می شود. (بدون IR) |  |
-| businessName | string |  نام کسب و کار |  |  |
-| username | string |  نام کاربری |  |  |
-| ssoId | string |  شناسه sso کاربر |  |  |
-| state | string |  نام استان |  |  |
-| guildCode | array of string |  لیست کد اصناف |  |  |
-| country | string |  نام کشور |  |  |
-| active | string |  وضعیت |  |  |
-| tagTrees | array of string |  لیست درخت تگ |  |  |
-| tags | array of string |  لیست تگ |  |  |
-| query | string |  مورد جستجو روی بیزینس های موجود |  |  |
-| size | integer |  تعداد رکورد در هر صفحه |  |  |
-| offset | integer |  اندیس شروع |  |  |
-| cellphone | string |  شماره موبایل نماینده کسب و کار | نکته
-* به صورت 09123456789 وارد شود |  |
 
 <div class="box-end">
 </div>
@@ -280,63 +277,48 @@ $param =
 
 لیست پارامترهای ورودی متد updateBusiness
 
-|  نام فیلد |  نوع |  عنوان |  توضیحات |  اجباری؟ |
-| --- | --- | --- | --- | --- |
-| bizId | integer |  شناسه کسب و کار |  |  اجباری |
-| guildCode | array of string |  لیست کد اصناف |  |  اجباری |
-| description | string |  توضیحات |  |  اجباری |
-| address | string |  آدرس محل کسب و کار |  |  اجباری |
-| city | string |  شهر محل کسب و کار |  |  اجباری |
-| state | string |  استان محل کسب و کار |  |  اجباری |
-| businessName | string |  نام کسب و کار |  |  اجباری |
-| country | string |  کشور محل کسب و کار |  |  اجباری |
-| lastName | string |  نام خانوادگی نماینده کسب و کار |  |  |
-| changeLogo | string | Change Logo | نکته
-* در صورتی که بخواهید تصویر لوگو را تغییر دهید true وارد کنید |  |
-| agentNationalCode | string |  کد ملی نماینده | نکته
-* کد ملی 10 رقمی و بدون خط تیره و فاصله |  |
-| agentCellphoneNumber | string |  شماره موبایل نماینده | نکته
-* به صورت 09123456789 وارد شود |  |
-| agentLastName | string |  نام خانوادگی نماینده |  |  |
-| agentFirstName | string |  نام نماینده |  |  |
-| lng | number |  طول جغرافیایی |  |  |
-| lat | number |  عرض جغرافیایی |  |  |
-| link | string | Link | نکته
-* لینک دسترسی به کسب و کار از طریق sso |  |
-| tagTreeCategoryName | string |  دسته درخت تگ |  |  |
-| tagTrees | string |  تگ های درختی | نکته
-* با ، (ویرگول) موارد را از هم جدا کنید |  |
-| tags | string |  تگ های آیتم | نکته
-* با ، (ویرگول) موارد را از هم جدا کنید |  |
-| coverImage | string |  کاور کسب و کار | نکته
-* آدرس اینترنتی تصویر کاور کسب و کار که به صورت مستقیم در دسترس است |  |
-| logoImage | string |  لوگو کسب و کار | نکته
-* آدرس اینترنتی تصویر لوگو کسب و کار که به صورت مستقیم در دسترس است |  |
-| changeCover | string | Change Cover | نکته
-* در صورتی که بخواهید تصویر کاور را تغییر دهید true وارد کنید |  |
-| companyName | string |  نام شرکت |  |  |
-| sheba | string |  کد شبا حساب بانکی | نکته
-* شبا که به صورت عددی وارد می شود. (بدون IR) |  |
-| shopName | string |  نام فروشگاه |  |  |
-| shopNameEn | string |  نام انگلیسی فروشگاه |  |  |
-| website | string |  آدرس وب سایت |  |  |
-| dateEstablishing | string |  تاریخ تاسیس به صورت شمسی | نکته
-* تاریخ به صورت yyyy/mm/dd وارد شود |  |
-| postalCode | string |  کد پستی | نکته
-* شماره تلفن با پیش شماره وارد شود |  |
-| fax | string |  شماره فکس | نکته
-* در صورت ورد همراه با پیش شماره وارد شود |  |
-| phone | string |  شماره تلفن | نکته
-* شماره تلفن با پیش شماره وارد شود |  |
-| cellphone | string |  شماره موبایل نماینده کسب و کار | نکته
-* به صورت 09123456789 وارد شود |  |
-| firstName | string |  نام نماینده کسب و کار |  |  |
-| registrationNumber | integer |  شماره ثبت کسب و کار |  |  |
-| email | string |  ایمیل |  |  |
-| economicCode | string |  کد اقتصادی کسب و کار |  |  |
-| nationalCode | string |  شناسه ملی کسب و کار |  |  |
-| changeAgent | string | Change Agent | نکته
-* در صورتی که بخواهید اطلاعات نماینده را تغییر دهید true وارد نمایید |  |
+| نام فیلد             | نوع             | عنوان                          | توضیحات                                                                    | اجباری؟ |
+| -------------------- | --------------- | ------------------------------ | -------------------------------------------------------------------------- | ------- |
+| bizId                | integer         | شناسه کسب و کار                |                                                                            | اجباری  |
+| guildCode            | array of string | لیست کد اصناف                  |                                                                            | اجباری  |
+| description          | string          | توضیحات                        |                                                                            | اجباری  |
+| address              | string          | آدرس محل کسب و کار             |                                                                            | اجباری  |
+| city                 | string          | شهر محل کسب و کار              |                                                                            | اجباری  |
+| state                | string          | استان محل کسب و کار            |                                                                            | اجباری  |
+| businessName         | string          | نام کسب و کار                  |                                                                            | اجباری  |
+| country              | string          | کشور محل کسب و کار             |                                                                            | اجباری  |
+| lastName             | string          | نام خانوادگی نماینده کسب و کار |                                                                            |         |
+| changeLogo           | string          | Change Logo                    | نکته + در صورتی که بخواهید تصویر لوگو را تغییر دهید true وارد کنید        |         |
+| agentNationalCode    | string          | کد ملی نماینده                 | نکته + کد ملی 10 رقمی و بدون خط تیره و فاصله                              |         |
+| agentCellphoneNumber | string          | شماره موبایل نماینده           | نکته + به صورت 09123456789 وارد شود                                       |         |
+| agentLastName        | string          | نام خانوادگی نماینده           |                                                                            |         |
+| agentFirstName       | string          | نام نماینده                    |                                                                            |         |
+| lng                  | number          | طول جغرافیایی                  |                                                                            |         |
+| lat                  | number          | عرض جغرافیایی                  |                                                                            |         |
+| link                 | string          | Link                           | نکته + لینک دسترسی به کسب و کار از طریق sso                               |         |
+| tagTreeCategoryName  | string          | دسته درخت تگ                   |                                                                            |         |
+| tagTrees             | string          | تگ های درختی                   | نکته + با ، (ویرگول) موارد را از هم جدا کنید                              |         |
+| tags                 | string          | تگ های آیتم                    | نکته + با ، (ویرگول) موارد را از هم جدا کنید                              |         |
+| coverImage           | string          | کاور کسب و کار                 | نکته + آدرس اینترنتی تصویر کاور کسب و کار که به صورت مستقیم در دسترس است  |         |
+| logoImage            | string          | لوگو کسب و کار                 | نکته + آدرس اینترنتی تصویر لوگو کسب و کار که به صورت مستقیم در دسترس است  |         |
+| changeCover          | string          | Change Cover                   | نکته + در صورتی که بخواهید تصویر کاور را تغییر دهید true وارد کنید        |         |
+| companyName          | string          | نام شرکت                       |                                                                            |         |
+| sheba                | string          | کد شبا حساب بانکی              | نکته + شبا که به صورت عددی وارد می شود. (بدون IR)                         |         |
+| shopName             | string          | نام فروشگاه                    |                                                                            |         |
+| shopNameEn           | string          | نام انگلیسی فروشگاه            |                                                                            |         |
+| website              | string          | آدرس وب سایت                   |                                                                            |         |
+| dateEstablishing     | string          | تاریخ تاسیس به صورت شمسی       | نکته + تاریخ به صورت yyyy/mm/dd وارد شود                                  |         |
+| postalCode           | string          | کد پستی                        | نکته + شماره تلفن با پیش شماره وارد شود                                   |         |
+| fax                  | string          | شماره فکس                      | نکته + در صورت ورد همراه با پیش شماره وارد شود                            |         |
+| phone                | string          | شماره تلفن                     | نکته + شماره تلفن با پیش شماره وارد شود                                   |         |
+| cellphone            | string          | شماره موبایل نماینده کسب و کار | نکته + به صورت 09123456789 وارد شود                                       |         |
+| firstName            | string          | نام نماینده کسب و کار          |                                                                            |         |
+| registrationNumber   | integer         | شماره ثبت کسب و کار            |                                                                            |         |
+| email                | string          | ایمیل                          |                                                                            |         |
+| economicCode         | string          | کد اقتصادی کسب و کار           |                                                                            |         |
+| nationalCode         | string          | شناسه ملی کسب و کار            |                                                                            |         |
+| changeAgent          | string          | Change Agent                   | نکته + در صورتی که بخواهید اطلاعات نماینده را تغییر دهید true وارد نمایید |         |
+
 
 <div class="box-end">
 </div>
