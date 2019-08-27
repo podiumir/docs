@@ -22,8 +22,7 @@ Install-Package POD_Dealing -Version 1.0.1
 var dealingService=new DealingService();
 ```
 
-
- <div class="box-end">
+<div class="box-end">
 </div>
 
 ## ثبت کسب و کار و کاربر
