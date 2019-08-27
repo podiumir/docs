@@ -577,7 +577,7 @@ BaseInfoVo baseInfoVo = new BaseInfoVo.Builder()
 ```
 
 
- <div class="box-end">
+<div class="box-end">
 </div>
 
 ## پرداخت از کیف پول کسب و کار با توکن کسب و کاری
