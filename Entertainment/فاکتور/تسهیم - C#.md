@@ -1,4 +1,5 @@
 # تسهیم
+
 ## اجازه ثبت فاکتور
 در صورتی که بخشی از فروش شما به کسب و کار دیگری تعلق دارد و میخواهید فاکتور به نام همان کسب و کار ثبت شود، لازم است آن کسب و کار به کسب و کار شما اجازه صدور فاکتور به عنوان معامله گر را داده باشد. برای این منظور خود کسب و کار ذینفع یا کارگزار او، با استفاده از توکن که در اختیار دارد، با استفاده از سرویس زیر به کسب کار دیگر اجازه صدور فاکتور می دهد.
 
@@ -259,8 +260,6 @@ billingService.ReduceMultiInvoiceAndCashout(reduceMultiInvoiceAndCashoutVo, resp
 
 ```
 
-
-
 <div class="box-end">
 </div>
 
@@ -277,11 +276,9 @@ var registerUserVo = AddDealerProductPermissionVo.ConcreteBuilder
 billingService.AddDealerProductPermission(registerUserVo, response => Listener.GetResult(response, out output));
 
 ```
-
-
-
 <div class="box-end">
 </div>
+
 ## دریافت لیست مجوزها
 با این سرویس می توانید لیست مجوزهای خود به کسب و کارهای واسط دیگر را به انضمام شناسه محصول، مشاهده نمایید.
 
@@ -297,8 +294,6 @@ var registerUserVo = DealerProductPermissionListVo.ConcreteBuilder
 billingService.DealerProductPermissionList(registerUserVo,response => Listener.GetResult(response, out output));
 
 ```
-
-
 
 <div class="box-end">
 </div>
@@ -320,10 +315,9 @@ billingService.DealingProductPermissionList(registerUserVo,response => Listener.
 
 ```
 
-
-
 <div class="box-end">
 </div>
+
 ## فعال کردن دسترسی محصول
 با استفاده از سرویس ذیل می توانید دسترسی محصولی به کسب و کار واسط اعطا نموده اید را فعال نمایید.
 
@@ -334,8 +328,11 @@ var enableDealerProductPermissionVo= EnableDealerProductPermissionVo.ConcreteBui
                     .SetDealerBizId({Put your DealerBizId})
                     .Build();
 billingService.EnableDealerProductPermission(enableDealerProductPermissionVo,response => Listener.GetResult(response, out output));
-```<div class="box-end">
+```
+
+<div class="box-end">
 </div>
+
 ## غیرفعال کردن دسترسی محصول
  با استفاده از سرویس ذیل می توانید دسترسی محصولی که به کسب و کار واسط اعطا نموده اید را غیرفعال نمایید.
 
@@ -347,8 +344,6 @@ var registerUserVo = DisableDealerProductPermissionVo.ConcreteBuilder
                     .Build();
 billingService.DisableDealerProductPermission(registerUserVo,response => Listener.GetResult(response, out output));
 ```
-
-
 
 <div class="box-end">
 </div>
