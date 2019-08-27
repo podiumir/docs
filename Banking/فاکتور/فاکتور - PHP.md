@@ -215,7 +215,10 @@
             print_r($e->getErrorsAsArray());
         } catch (PodException $e) {
             print_r($e->getResult());
-        }	
+        }
+	
+<div class="box-end">
+</div>
 
 2.  ‌پرداخت فاکتور خارج از پلتفرم پاد
 با تابع issuInvoice می توانید پرداخت های غیر متعارف (خارج از پلتفرم) راکنترل کنید. به عنوان مثال اگر مبلغ فاکتور را به صورت حضوری از مشتری دریافت کردید می توانید با صدا زدن این تابع وضعیت فاکتور مورد نظر خود را به صورت پرداخت شده ببرید.
@@ -263,6 +266,7 @@
     } catch (PodException $e) {
         print_r($e->getResult());
     }
+
 
 <div class="box-end">
 </div>
