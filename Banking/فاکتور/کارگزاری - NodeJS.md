@@ -23,8 +23,7 @@ let podDealingService= new PodDealingService ({});
 // let podDealingService = new PodDealingService ({tokenIssuer: 0 | 1});
 ```
 
-<div class="box-end">
-</div>
+
 
 ## توابع
 1.  addUserAndBusiness
@@ -37,8 +36,7 @@ let podDealingService= new PodDealingService ({});
 8.  userBusinessInfos
 9.  commentBusinessList
 10.  confirmComment
-<div class="box-end">
-</div>
+
 
 ##  addUserAndBusiness
  با استفاده از این تابع می توانید یک کسب و کار ثبت کنید. با این اقدام، همزمان با ثبت کسب و کار، پنل کاربری نیز ساخته می‌شود. ایمیل کسب و کار و شماره موبایلی که برای او ثبت می شود، برای مواقعی که لازم باشد خود آن کسب و کار در پنل مدیریتی خود وارد شود و برخی اقدامات را بر عهده بگیرد، ضروری است و صاحب کسب و کار می تواند با استفاده از آن رمز عبور خود را تعیین نماید. بنابراین صحت این موارد را کنترل نمایید.
@@ -138,8 +136,7 @@ podDealingService.addUserAndBusiness(addUserAndBusinessData)
 ```
 
 
-<div class="box-end">
-</div>
+
 
 ## listUserCreatedBusiness
  با استفاده از این تابع می توانید لیست کسب و کارهایی را که ثبت کرده اید دریافت کنید یا در میان آن ها جستجو انجام دهید.
@@ -243,8 +240,7 @@ podDealingService.listUserCreatedBusiness(listUserCreatedBusinessData)
 ```
 
 
-<div class="box-end">
-</div>
+
 
 ## updateBusiness
  با استفاده از این تابع می توانید اطلاعات کسب و کاری را که قبلا ثبت نموده اید ویرایش کنید
@@ -349,8 +345,7 @@ podDealingService.updateBusiness(updateBusinessData)
 ```
 
 
-<div class="box-end">
-</div>
+
 
 ## getApiTokenForCreatedBusiness
 
@@ -392,8 +387,7 @@ podDealingService.getApiTokenForCreatedBusiness(getApiTokenForCreatedBusinessDat
 ```
 
 
-<div class="box-end">
-</div>
+
 
 ## rateBusiness
 
@@ -420,8 +414,7 @@ podDealingService.rateBusiness(rateBusinessData)
 ```
 
 
-<div class="box-end">
-</div>
+
 
 ## commentBusiness
 
@@ -462,8 +455,7 @@ podDealingService.commentBusiness(commentBusinessData)
 ```
 
 
-<div class="box-end">
-</div>
+
 
 ## businessFavorite
  با استفاده از سرویس زیر، کاربر می تواند کسب و کار را به لیست علاقمندی های خود اضافه کند
@@ -501,8 +493,7 @@ podDealingService.businessFavorite(businessFavoriteData)
 ```
 
 
-<div class="box-end">
-</div>
+
 
 ## userBusinessInfos
 
@@ -553,8 +544,7 @@ podDealingService.userBusinessInfos(userBusinessInfosData)
 ```
 
 
-<div class="box-end">
-</div>
+
 
 ##  commentBusinessList
 
@@ -597,8 +587,7 @@ let commentBusinessListData = {
 ```
 
 
-<div class="box-end">
-</div>
+
 
 ## confirmComment
 
@@ -635,5 +624,4 @@ podDealingService.confirmComment(confirmCommentData)
   result: true }
 ```
 
-<div class="box-end">
-</div>
+
