@@ -45,6 +45,7 @@ yyyy/MM/dd HH:mm:ss:fff :**Timestamp**   تاریخ ثبت درخواست میل
 
 فراخوانی سرویس " **استعلام چک های واگذار شده** "  توسط سرویس فراخوانی سرویس پاد
 
+```curl
     HEADER:
             _token_=[ api_token ]
             _token_issuer_= 1
@@ -81,6 +82,7 @@ yyyy/MM/dd HH:mm:ss:fff :**Timestamp**   تاریخ ثبت درخواست میل
            paramValues= [ your RowCount ] *
            paramNames= Signature *
            paramValues= [your Signature] *
+```
 
 <div class="box-end">
 </div>
