@@ -1,9 +1,15 @@
-# تسهیم
+
+## تسهیم فروش
+
+<div class="tab-start">
+</div>
+
+#  [C#](#tab/csharp)
 
 ## اجازه ثبت فاکتور
 در صورتی که بخشی از فروش شما به کسب و کار دیگری تعلق دارد و میخواهید فاکتور به نام همان کسب و کار ثبت شود، لازم است آن کسب و کار به کسب و کار شما اجازه صدور فاکتور به عنوان معامله گر را داده باشد. برای این منظور خود کسب و کار ذینفع یا کارگزار او، با استفاده از توکن که در اختیار دارد، با استفاده از سرویس زیر به کسب کار دیگر اجازه صدور فاکتور می دهد.
 
-```
+```csharp
 var output = new ResultSrv<BusinessDealerSrv>();
 var addDealerVo = AddDealerVo.ConcreteBuilder
                     .SetDealerBizId({Put your DealerBizId})
@@ -13,14 +19,13 @@ billingService.AddDealer(addDealerVo, response => Listener.GetResult(response, o
 
 ```
 
-<div class="box-end">
-</div>
 
 ## دریافت لیست کسب و کارها
 برای دریافت یا جستجوی لیست تمام کسب و کارهایی که به آنها مجوز معامله و صدور فاکتور داده اید، از سرویس زیر استفاده نمایید.
 توجه داشته باشید در صورتی که شناسه کسب و کار را اشتباه وارد کنید، با اررور "شناسه کسب و کار یافت نشد" مواجه نخواهید شد بلکه در فایل خروجی هیچ مقداری دریافت نخواهید کرد.
 (با hasError": false")
-```
+
+```csharp
 var output = new ResultSrv<List<BusinessDealerSrv>>();
 var dealerListVo = DealerListVo.ConcreteBuilder
                     //.SetDealerBizId(0)
@@ -33,13 +38,10 @@ billingService.DealerList(dealerListVo, response => Listener.GetResult(response,
 
 
 
-<div class="box-end">
-</div>
-
 ## فعالسازی مجوز معامله گران
 برای فعالسازی مجوز معامله گران، به ترتیب از سرویس  زیر استفاده نمایید.
 
-```
+```csharp
 var output = new ResultSrv<BusinessDealerSrv>();
  var enableDealerVo = EnableDealerVo.ConcreteBuilder
                     .SetDealerBizId({Put your DealerBizId})
@@ -47,16 +49,11 @@ var output = new ResultSrv<BusinessDealerSrv>();
 billingService.EnableDealer(enableDealerVo, response => Listener.GetResult(response, out output));
 
 ```
-
-
-
-<div class="box-end">
-</div>
 
 ## فعالسازی مجوز معامله گران
 برای غیر فعالسازی مجوز معامله گران، از سرویس  زیر استفاده نمایید.
 
-```
+```csharp
 var output = new ResultSrv<BusinessDealerSrv>();
  var enableDealerVo = EnableDealerVo.ConcreteBuilder
                     .SetDealerBizId({Put your DealerBizId})
@@ -66,13 +63,10 @@ billingService.EnableDealer(enableDealerVo, response => Listener.GetResult(respo
 
 
 
-<div class="box-end">
-</div>
-
 ## لیست کسب و کارهایی که واسط آن هستید
 با فراخوانی سرویس زیر می توانید لیست کسب و کارهایی که واسط آن ها شده اید را دریافت نمایید.
 
-```
+```csharp
 var output = new ResultSrv<List<BusinessDealerSrv>>();
 var businessDealingListVo = BusinessDealingListVo.ConcreteBuilder
                     .SetDealerBizId({Put your DealerBizId})
@@ -85,17 +79,13 @@ billingService.BusinessDealingList(businessDealingListVo,response => Listener.Ge
 ```
 
 
-
-<div class="box-end">
-</div>
-
 ## صدور فاکتور تسهیمی
 
 این نوع فاکتور برای زمانی مناسب است که شما بخواهید محصولات یا خدمات سایر کسب و کارها را به فروش برسانید و یا در بازی‌ها بخواهید برای طراح، برنامه‌نویس، تولید‌کننده‌ی محتوا و ... سهم‌های جداگانه در نظر بگیرید. در این شرایط می‌توانید نوعی فاکتور با قوانین تسهیم فروش صادر نمایید. ظاهراً خریدار تغییری را احساس نخواهد کرد و یک فاکتور تجمیعی را پرداخت می‌­کند. ولی در عمل، به تعداد ذینفعان با مبلغ تسهیمی، فاکتور صادر شده و مبا‌لغ مستقیماً پس از پرداخت به حساب آن‌­ها منتقل می‌شود.
 
 کسب و کار معامله گر که لازم است فاکتور تسهیمی صادر نماید باید از جانب کسب و کارهای سهیم دارای مجوز صدور فاکتور باشد. سپس می‌تواند با استفاده از سرویس زیر تسهیم فروش انجام دهد.
 
-```
+```csharp
 var output = new ResultSrv<InvoiceSrv>();
 var ottOutput = GetOtt();
 var mainInvoiceVos = MainInvoiceVo.ConcreteBuilder
@@ -158,15 +148,12 @@ billingService.IssueMultiInvoice(issueMultiInvoiceVo, response => Listener.GetRe
 ```
 
 
-
-<div class="box-end">
-</div>
-
 ## کاهش فاکتور تسهیمی
 در فاکتور تسهیمی نیز مانند فاکتور عادی با لغو شدن، کل مبلغ فاکتور و با کاهش، قسمتی از مبلغ به مشتری بازگردانده می شود. ولی در فاکتور تسهیمی برای کاهش لازم است کل سهم ها مجدداً اعلام شوند تا مبلغی که کسر می شود از حساب درست برداشته شود. برای کاهش فاکتور تسهیمی از سرویس ReduceMultiInvoice استفاده نمایید.
 مقدار id در تمام بخش های اطلاعات ارسالی باید مطابق با شناسه های فاکتور اصلی باشد، در غیر این صورت خطا رخ می دهد. در فاکتور اصلاح شده نیز شرایط زیر لازم است برقرار باشد:      
 the share of dealer + the share of shareholder =  the price to be payed by customer
-```
+
+```csharp
  var output = new ResultSrv<InvoiceSrv>();
 var mainInvoiceVos = ReduceInvoiceItemVo.ConcreteBuilder
                     .SetId({Put your Id})
@@ -208,14 +195,10 @@ billingService.ReduceMultiInvoice(reduceMultiInvoiceVo, response => Listener.Get
 ```
 
 
-
-<div class="box-end">
-</div>
-
 ## کاهش فاکتور تسهیمی و انتقال به شبا
 در صورتی که می خواهید بلافاصله بعد از کاهش فاکتور، مبلغ برگشتی به شماره شبا کاربر منتقل گردد، از سرویس زیر با همان فرمت data سرویس ReduceMultiInvoice، استفاده نمایید.
 
-```
+```csharp
 var output = new ResultSrv<InvoiceSrv>();
 var mainInvoiceVos = ReduceInvoiceItemVo.ConcreteBuilder
                     .SetId({Put your Id})
@@ -258,14 +241,12 @@ billingService.ReduceMultiInvoiceAndCashout(reduceMultiInvoiceAndCashoutVo, resp
 
 ```
 
-<div class="box-end">
-</div>
 
 ### مجوز فروش محصول
 همانطور که توضیح داده شد، به منظور صدور فاکتور تسهیمی (در صورت شراکت با یک کسب و کار دیگر)، فراخوانی سرویس nzh/biz/addDealer قبل از فراخوانی سرویس صدور فاکتور تسهیمی، الزامی ست. اما در صورتی که برای یک محصول خاص، بخواهید به کسب و کار دیگری مجوز صدور فاکتور عادی اعطا کنید، علاوه بر فراخوانی سرویس ذیل، باید سرویس nzh/biz/addDealer را نیز فراخوانی نمایید و سپس سرویس صدور فاکتور(nzh/issueInvoice) را  فراخوانی نمایید؛ در غیر این صورت با خطای  "کسب و کار دلال وارد شده دلال  کسب و کار مالک محصول نمی باشد" مواجه خواهید شد.
 شناسه محصول(EntityId) و شناسه کسب و کار(DealerBizId) را کافی ست در در  کلاس AddDealerProductPermissionVo مقداردهی نمایید و سپس سرویس AddDealerProductPermission فراخوانی کنید.
 
-```
+```csharp
 var output = new ResultSrv<DealerProductPermissionSrv>();
 var registerUserVo = AddDealerProductPermissionVo.ConcreteBuilder
                     .SetEntityId({Put your EntityId})
@@ -274,13 +255,13 @@ var registerUserVo = AddDealerProductPermissionVo.ConcreteBuilder
 billingService.AddDealerProductPermission(registerUserVo, response => Listener.GetResult(response, out output));
 
 ```
-<div class="box-end">
-</div>
+
+
 
 ## دریافت لیست مجوزها
 با این سرویس می توانید لیست مجوزهای خود به کسب و کارهای واسط دیگر را به انضمام شناسه محصول، مشاهده نمایید.
 
-```
+```csharp
 var output = new ResultSrv<List<DealerProductPermissionSrv>>();
 var registerUserVo = DealerProductPermissionListVo.ConcreteBuilder
                     //.SetSize({Put your Size})
@@ -293,14 +274,14 @@ billingService.DealerProductPermissionList(registerUserVo,response => Listener.G
 
 ```
 
-<div class="box-end">
-</div>
+
+
 
 ## لیست مجوزهای صادر شده برای کسب و کار شما
 لیست دسترسی هایی که شما واسط آن کسب و کار شده اید و برای آن محصول خاص مجوز صدور فاکتور گرفته اید را می توانید با سرویس
 زیر مشاهده نمایید.
 
-```
+```csharp
 var output = new ResultSrv<List<DealerProductPermissionSrv>>();
 var registerUserVo = DealingProductPermissionListVo.ConcreteBuilder
                     //.SetSize({Put your Size})
@@ -313,13 +294,10 @@ billingService.DealingProductPermissionList(registerUserVo,response => Listener.
 
 ```
 
-<div class="box-end">
-</div>
-
 ## فعال کردن دسترسی محصول
 با استفاده از سرویس ذیل می توانید دسترسی محصولی به کسب و کار واسط اعطا نموده اید را فعال نمایید.
 
-```
+```csharp
 var output = new ResultSrv<DealerProductPermissionSrv>();
 var enableDealerProductPermissionVo= EnableDealerProductPermissionVo.ConcreteBuilder
                     .SetEntityId({Put your EntityId})
@@ -328,13 +306,13 @@ var enableDealerProductPermissionVo= EnableDealerProductPermissionVo.ConcreteBui
 billingService.EnableDealerProductPermission(enableDealerProductPermissionVo,response => Listener.GetResult(response, out output));
 ```
 
-<div class="box-end">
-</div>
+
+
 
 ## غیرفعال کردن دسترسی محصول
  با استفاده از سرویس ذیل می توانید دسترسی محصولی که به کسب و کار واسط اعطا نموده اید را غیرفعال نمایید.
 
-```
+```csharp
 var output = new ResultSrv<DealerProductPermissionSrv>();
 var registerUserVo = DisableDealerProductPermissionVo.ConcreteBuilder
                     .SetEntityId({Put your EntityId})
@@ -343,5 +321,993 @@ var registerUserVo = DisableDealerProductPermissionVo.ConcreteBuilder
 billingService.DisableDealerProductPermission(registerUserVo,response => Listener.GetResult(response, out output));
 ```
 
-<div class="box-end">
+
+
+# [NodeJS](#tab/nodejs)
+
+## افزودن کسب‌وکار واسط
+addDealer: در صورتی که بخشی از فروش شما به کسب و کار دیگری تعلق دارد و می خواهید فاکتور به نام همان کسب و کار ثبت شود، لازم است آن کسب و کار، به کسب و کار شما اجازه صدور فاکتور به عنوان معامله گر را داده باشد. با در اختیار داشتن شناسه کسب و کار دیگر با استفاده از این تابع می توانید این اجازه را صادر کنید.
+
+```node.js
+let addDealerData = {
+  // ------ REQUIRED ------
+  dealerBizId: 0 // ID
+
+  // ------ OPTIONAL ------
+  // allProductAllow: true | false
+};
+podBillingService.addDealer(addDealerData)
+  .then(function (result) {
+    console.log('function: addDealer ============>', result, '\n');
+  })
+  .catch(function (error) {
+    console.log('error addDealer ============>', error);
+  });
+```
+
+
+نمونه خروجی
+<br>
+
+```
+   { business:
+      { id: 3605,
+        name: '&#x641;&#x646;&#x627;&#x67E; &#x62A;&#x633;&#x62A; &#x645;&#x634;&#x647;&#x62F;',
+        numOfProducts: 3,
+        rate: [Object],
+        sheba: '080570100611513898506001' },
+     dealer:
+      { id: 3612,
+        name: '&#x6A9;&#x634;&#x62A; &#x6AF;&#x631;',
+        image: 'https://core.pod.land/nzh/image?imageId=69973&hashCode=16a67f0bab0-0.2094907373026107',
+        numOfProducts: 0,
+        rate: [Object],
+        sheba: '980570100680013557234101' },
+     enable: true,
+     allProductAllow: false } }
+```
+
+
+## لیست کسب‌وکارهای واسط
+dealerList: برای دریافت یا جستجوی لیست تمام کسب و کارهایی که به آنها مجوز معامله و صدور فاکتور داده اید  می توانید از این تابع استفاده کنید
+
+```node.js
+let dealerListData = {
+  // ------ REQUIRED ------
+
+  // ------ OPTIONAL ------
+  // dealerBizId: ID
+  // enable: true | false
+  // offset: OFFSET
+  // size: SIZE
+};
+
+podBillingService.dealerList(dealerListData)
+  .then(function (result) {
+    console.log('function: dealerList ============>', JSON.stringify(result, null, 2), '\n');
+  })
+  .catch(function (error) {
+    console.log('error dealerList ============>', error);
+  });
+```
+
+نمونه خروجی
+<br>
+
+```
+{
+  "hasError": false,
+  "messageId": 0,
+  "referenceNumber": "235031199",
+  "errorCode": 0,
+  "count": 1,
+  "ott": "403e86f6ae633517",
+  "result": [
+    {
+      "business": {
+        "id": 3605,
+        "name": "&#x641;&#x646;&#x627;&#x67E; &#x62A;&#x633;&#x62A; &#x645;&#x634;&#x647;&#x62F;",
+        "numOfProducts": 3,
+        "rate": {
+          "rate": 0,
+          "rateCount": 0
+        },
+        "sheba": "080570100611513898506001"
+      },
+      "dealer": {
+        "id": 3612,
+        "name": "&#x6A9;&#x634;&#x62A; &#x6AF;&#x631;",
+        "image": "https://core.pod.land/nzh/image?imageId=69973&hashCode=16a67f0bab0-0.2094907373026107",
+        "numOfProducts": 0,
+        "rate": {
+          "rate": 0,
+          "rateCount": 0
+        },
+        "sheba": "980570100680013557234101"
+      },
+      "enable": true,
+      "allProductAllow": false
+    }
+  ]
+}
+```
+
+
+
+## فعالسازی کارگزار
+enableDealer: با استفاده از این تابع می توانید کسب کارهای واسط را فعال کنید
+
+```node.js
+let enableDealerData = {
+  // ------ REQUIRED ------
+  dealerBizId: 0 // ID
+
+  // ------ OPTIONAL ------
+};
+podBillingService.enableDealer(enableDealerData)
+  .then(function (result) {
+    console.log('function: enableDealer ============>', JSON.stringify(result, null, 2), '\n');
+  })
+  .catch(function (error) {
+    console.log('error enableDealer ============>', error);
+  });
+```
+
+
+
+نمونه خروجی
+<br>
+
+```
+{
+  "hasError": false,
+  "messageId": 0,
+  "referenceNumber": "235035141",
+  "errorCode": 0,
+  "count": 0,
+  "ott": "753c508ef245852a",
+  "result": {
+    "business": {
+      "id": 3605,
+      "name": "&#x641;&#x646;&#x627;&#x67E; &#x62A;&#x633;&#x62A; &#x645;&#x634;&#x647;&#x62F;",
+      "numOfProducts": 3,
+      "rate": {
+        "rate": 0,
+        "rateCount": 0
+      },
+      "sheba": "080570100611513898506001"
+    },
+    "dealer": {
+      "id": 3612,
+      "name": "&#x6A9;&#x634;&#x62A; &#x6AF;&#x631;",
+      "image": "https://core.pod.land/nzh/image?imageId=69973&hashCode=16a67f0bab0-0.2094907373026107",
+      "numOfProducts": 0,
+      "rate": {
+        "rate": 0,
+        "rateCount": 0
+      },
+      "sheba": "980570100680013557234101"
+    },
+    "enable": true,
+    "allProductAllow": false
+  }
+}
+```
+
+
+
+## غیرفعالسازی کسب‌وکار واسط
+disableDealer: با استفاده از این تابع می توانید کسب کارهای واسط را غیر فعال کنید
+
+```node.js
+let disableDealerData = {
+  // ------ REQUIRED ------
+  dealerBizId: 0 // ID
+
+  // ------ OPTIONAL ------
+};
+podBillingService.disableDealer(disableDealerData)
+  .then(function (result) {
+    console.log('function: disableDealer ============>', JSON.stringify(result, null, 2), '\n');
+  })
+  .catch(function (error) {
+    console.log('error disableDealer ============>', error);
+  });
+```
+
+نمونه خروجی
+<br>
+
+```
+{
+  "hasError": false,
+  "messageId": 0,
+  "referenceNumber": "235036062",
+  "errorCode": 0,
+  "count": 0,
+  "ott": "135f86428674bb26",
+  "result": {
+    "business": {
+      "id": 3605,
+      "name": "&#x641;&#x646;&#x627;&#x67E; &#x62A;&#x633;&#x62A; &#x645;&#x634;&#x647;&#x62F;",
+      "numOfProducts": 3,
+      "rate": {
+        "rate": 0,
+        "rateCount": 0
+      },
+      "sheba": "080570100611513898506001"
+    },
+    "dealer": {
+      "id": 3612,
+      "name": "&#x6A9;&#x634;&#x62A; &#x6AF;&#x631;",
+      "image": "https://core.pod.land/nzh/image?imageId=69973&hashCode=16a67f0bab0-0.2094907373026107",
+      "numOfProducts": 0,
+      "rate": {
+        "rate": 0,
+        "rateCount": 0
+      },
+      "sheba": "980570100680013557234101"
+    },
+    "enable": false,
+    "allProductAllow": false
+  }
+}
+```
+
+
+## لیست کسب‌وکارهایی که واسط آن‌ها شده‌اید
+businessDealingList: با فراخوانی سرویس ذیل می توانید لیست کسب و کارهایی که واسط آن ها شده اید را دریافت نمایید.
+
+```node.js
+let businessDealingListData = {
+  // ------ REQUIRED ------
+
+  // ------ OPTIONAL ------
+  // dealingBusinessId: ID
+  // enable: true | false
+  // offset: OFFSET
+  // size: SIZE
+};
+
+podBillingService.businessDealingList(businessDealingListData)
+  .then(function (result) {
+    console.log('function: businessDealingList ============>', JSON.stringify(result, null, 2), '\n');
+  })
+  .catch(function (error) {
+    console.log('error businessDealingList ============>', error);
+  });
+```
+
+
+
+نمونه خروجی
+<br>
+
+```
+{
+  "hasError": false,
+  "messageId": 0,
+  "referenceNumber": "235040226",
+  "errorCode": 0,
+  "count": 2,
+  "ott": "2617cb9af8c4b908",
+  "result": [
+    {
+      "business": {
+        "id": 3612,
+        "name": "&#x6A9;&#x634;&#x62A; &#x6AF;&#x631;",
+        "image": "https://core.pod.land/nzh/image?imageId=69973&hashCode=16a67f0bab0-0.2094907373026107",
+        "numOfProducts": 0,
+        "rate": {
+          "rate": 0,
+          "rateCount": 0
+        },
+        "sheba": "980570100680013557234101"
+      },
+      "dealer": {
+        "id": 3605,
+        "name": "&#x641;&#x646;&#x627;&#x67E; &#x62A;&#x633;&#x62A; &#x645;&#x634;&#x647;&#x62F;",
+        "numOfProducts": 3,
+        "rate": {
+          "rate": 0,
+          "rateCount": 0
+        },
+        "sheba": "080570100611513898506001"
+      },
+      "enable": false,
+      "allProductAllow": false
+    },
+    {
+      "business": {
+        "id": 3615,
+        "name": "&#x62A;&#x633;&#x62A; &#x627;&#x646;&#x648;&#x631;&#x6CC;",
+        "numOfProducts": 0,
+        "rate": {
+          "rate": 0,
+          "rateCount": 0
+        },
+        "sheba": "290570100680013555510101"
+      },
+      "dealer": {
+        "id": 3605,
+        "name": "&#x641;&#x646;&#x627;&#x67E; &#x62A;&#x633;&#x62A; &#x645;&#x634;&#x647;&#x62F;",
+        "numOfProducts": 3,
+        "rate": {
+          "rate": 0,
+          "rateCount": 0
+        },
+        "sheba": "080570100611513898506001"
+      },
+      "enable": false,
+      "allProductAllow": false
+    }
+  ]
+}
+```
+
+
+## صدور فاکتور تسهیمی
+issueMultiInvoice: کسب و کار معامله گر می تواند با استفاده از این تابع یک فاکتور تسهیمی ثبت نماید
+
+```node.js
+let issueMultiInvoiceData = {
+  // ------ REQUIRED ------
+  data: {
+    // redirectURL: 'REDIRECT URL',
+    // userId: 0, // USER ID
+    // currencyCode: 'CURRENCY', // OPTIONAL
+    // voucherHashs: ARRAY OF STRINGS,
+    // preferredTaxRate: 0, // OPTIONAL
+    // verificationNeeded: true | false, // OPTIONAL
+    // preview: true | false, // OPTIONAL
+    mainInvoice: {
+      // billNumber: 'BILL NUMBER', // OPTIONAL
+      guildCode: 'GUILD CODE',
+      // metadata: OBJECT, // OPTIONAL
+      // description: 'DESCRIPTION', // OPTIONAL
+      invoiceItemVOs: [{
+        productId: 0,
+        price: 0,
+        quantity: 0,
+        description: 'DESCRIPTION'
+      }]
+    },
+    subInvoices: [{
+      businessId: 0, // ID
+      guildCode: 'GUILD CODE',
+      // billNumber: 'BILL NUMBER', // OPTIONAL
+      // metadata: OBJECT, // OPTIONAL
+      // description: 'DESCRIPTION', // OPTIONAL
+      invoiceItemVOs: [{
+        productId: 0,
+        price: 0,
+        quantity: 0,
+        description: 'DESCRIPTION'
+      }]
+    }],
+    // customerDescription: 'DESCRIPTION', // OPTIONAL
+    // customerMetadata: OBJECT, // OPTIONAL
+    customerInvoiceItemVOs: [{
+      productId: 0,
+      price: 0,
+      quantity: 0,
+      description: 'DESCRIPTION'
+    }]
+  }
+
+  // ------ OPTIONAL ------
+  // delegatorId: ARRAY OF INTEGERS
+  // delegationHash: ARRAY OF STRING
+  // forceDelegation: 'FORCE DELIGATION'
+};
+
+podBillingService.issueMultiInvoice(issueMultiInvoiceData)
+  .then(function (result) {
+    console.log('function: issueMultiInvoice ============>', JSON.stringify(result, null, 2), '\n');
+  })
+  .catch(function (error) {
+    console.log('error issueMultiInvoice ============>', error);
+  });
+```
+
+نمونه خروجی
+<br>
+
+```
+{
+  "hasError": false,
+  "messageId": 0,
+  "referenceNumber": "235044247",
+  "errorCode": 0,
+  "count": 0,
+  "ott": "2889093d560c9894",
+  "result": {
+    "id": 3526913,
+    "totalAmountWithoutDiscount": 0,
+    "delegationAmount": 0,
+    "totalAmount": 0,
+    "payableAmount": 0,
+    "vat": 0,
+    "issuanceDate": 1563115794187,
+    "deliveryDate": 0,
+    "paymentBillNumber": "6047257",
+    "uniqueNumber": "c176e2f840842d3a",
+    "paymentDate": 0,
+    "payed": false,
+    "serial": 0,
+    "canceled": false,
+    "cancelDate": 0,
+    "business": {
+      "id": 3605,
+      "name": "&#x641;&#x646;&#x627;&#x67E; &#x62A;&#x633;&#x62A; &#x645;&#x634;&#x647;&#x62F;",
+      "numOfProducts": 3,
+      "rate": {
+        "rate": 0,
+        "rateCount": 0
+      },
+      "sheba": "080570100611513898506001"
+    },
+    "invoiceItemSrvs": [
+      {
+        "id": 3564753,
+        "amount": 0,
+        "description": "ss",
+        "quantity": 0,
+        "voucherUsageSrvs": []
+      }
+    ],
+    "guildSrv": {
+      "id": 47,
+      "name": "&#x641;&#x646;&#x627;&#x648;&#x631;&#x6CC; &#x627;&#x637;&#x644;&#x627;&#x639;&#x627;&#x62A;",
+      "code": "INFORMATION_TECHNOLOGY_GUILD"
+    },
+    "closed": false,
+    "verificationNeeded": false,
+    "customerInvoice": {
+      "id": 3526912,
+      "totalAmountWithoutDiscount": 1100,
+      "delegationAmount": 0,
+      "totalAmount": 1100,
+      "payableAmount": 1199,
+      "vat": 99,
+      "issuanceDate": 1563115794186,
+      "deliveryDate": 0,
+      "paymentBillNumber": "6047257",
+      "uniqueNumber": "1963cf87a2de34d3",
+      "paymentDate": 0,
+      "payed": false,
+      "serial": 0,
+      "canceled": false,
+      "cancelDate": 0,
+      "business": {
+        "id": 3605,
+        "name": "&#x641;&#x646;&#x627;&#x67E; &#x62A;&#x633;&#x62A; &#x645;&#x634;&#x647;&#x62F;",
+        "numOfProducts": 3,
+        "rate": {
+          "rate": 0,
+          "rateCount": 0
+        },
+        "sheba": "080570100611513898506001"
+      },
+      "invoiceItemSrvs": [
+        {
+          "id": 3564752,
+          "amount": 110,
+          "description": "Hello",
+          "quantity": 10,
+          "voucherUsageSrvs": []
+        }
+      ],
+      "guildSrv": {
+        "id": 47,
+        "name": "&#x641;&#x646;&#x627;&#x648;&#x631;&#x6CC; &#x627;&#x637;&#x644;&#x627;&#x639;&#x627;&#x62A;",
+        "code": "INFORMATION_TECHNOLOGY_GUILD"
+      },
+      "closed": false,
+      "verificationNeeded": false,
+      "safe": false,
+      "postVoucherEnabled": false,
+      "referenceNumber": "235044247",
+      "issuerSrv": {
+        "id": 1454449,
+        "name": "&#x627;&#x62D;&#x633;&#x627;&#x646; &#x634;&#x6A9;&#x627;&#x631;&#x6CC;",
+        "ssoId": "6254762",
+        "ssoIssuerCode": 1,
+        "profileImage": "https://core.pod.land:443/nzh/image/?imageId=69962&width=498&height=498&hashCode=16a679c6ad9-0.3413974672033351"
+      },
+      "willBeBlocked": false,
+      "willBePaid": false,
+      "edited": false,
+      "waiting": false,
+      "subInvoice": false
+    },
+    "subInvoices": [
+      {
+        "id": 3526914,
+        "totalAmountWithoutDiscount": 1100,
+        "delegationAmount": 0,
+        "totalAmount": 1100,
+        "payableAmount": 1199,
+        "vat": 99,
+        "issuanceDate": 1563115794188,
+        "deliveryDate": 0,
+        "paymentBillNumber": "6047257",
+        "uniqueNumber": "34a30224cfc63c2d",
+        "paymentDate": 0,
+        "payed": false,
+        "serial": 0,
+        "canceled": false,
+        "cancelDate": 0,
+        "business": {
+          "id": 3605,
+          "name": "&#x641;&#x646;&#x627;&#x67E; &#x62A;&#x633;&#x62A; &#x645;&#x634;&#x647;&#x62F;",
+          "numOfProducts": 3,
+          "rate": {
+            "rate": 0,
+            "rateCount": 0
+          },
+          "sheba": "080570100611513898506001"
+        },
+        "invoiceItemSrvs": [
+          {
+            "id": 3564754,
+            "amount": 110,
+            "description": "Hello",
+            "quantity": 10,
+            "voucherUsageSrvs": []
+          }
+        ],
+        "guildSrv": {
+          "id": 47,
+          "name": "&#x641;&#x646;&#x627;&#x648;&#x631;&#x6CC; &#x627;&#x637;&#x644;&#x627;&#x639;&#x627;&#x62A;",
+          "code": "INFORMATION_TECHNOLOGY_GUILD"
+        },
+        "closed": false,
+        "verificationNeeded": false,
+        "safe": false,
+        "postVoucherEnabled": false,
+        "referenceNumber": "235044247",
+        "issuerSrv": {
+          "id": 1454449,
+          "name": "&#x627;&#x62D;&#x633;&#x627;&#x646; &#x634;&#x6A9;&#x627;&#x631;&#x6CC;",
+          "ssoId": "6254762",
+          "ssoI
+```
+
+
+#  [PHP](#tab/php)
+
+## افزودن کسب و کار واسط
+در صورتی که بخشی از فروش شما به کسب و کار دیگری تعلق دارد و می خواهید فاکتور به نام همان کسب و کار ثبت شود، لازم است آن کسب و کار، به کسب و کار شما اجازه صدور فاکتور به عنوان معامله گر را داده باشد. با در اختیار داشتن شناسه کسب و کار دیگر با استفاده از تابع  addDealer می توانید این اجازه را صادر کنید.
+
+```PHP
+      $param =
+            [
+                ## ============================ *Required Parameters  =========================
+                "dealerBizId"     => "{put dealer business id}",              # شناسه کسب و کار واسط
+                ## =========================== Optional Parameters  ===========================
+                "allProductAllow"  => true,             # دسترسی به همه محصولات
+            ];
+        try {
+            $result = $BillingService->addDealer($param);
+            print_r($result);
+        } catch (ValidationException $e) {
+            print_r($e->getResult());
+            print_r($e->getErrorsAsArray());
+        } catch (PodException $e) {
+            print_r($e->getResult());
+        }
+```
+
+## لیست کسب و کارهایی که به آنها مجوز معامله داده شده 
+برای دریافت یا جستجوی لیست تمام کسب و کارهایی که به آنها مجوز معامله و صدور فاکتور داده اید  می توانید از تابع dealerList استفاده کنید.
+   
+
+```PHP
+     $param =
+            [
+                ## =========================== Optional Parameters  ===========================
+                'dealerBizId'   => "{put dealer business id}",            # The id of business to be a dealer
+                'enable'        => true,            # [true/false]
+                'size'          => "{put size}",              # pagination size, default: 50
+                'offset'        => "{put offset}",               # pagination offset, default: 0
+            ];
+        try {
+            $result = $BillingService->dealerList($param);
+            print_r($result);
+        } catch (ValidationException $e) {
+            print_r($e->getResult());
+            print_r($e->getErrorsAsArray());
+        } catch (PodException $e) {
+            print_r($e->getResult());
+        }
+```
+
+## فعالسازی و غیر فعالسازی مجوز معامله گران
+با استفاده از تابع enableDealer می توانید کسب کارهای واسط را فعال کنید.
+  
+
+```PHP
+      $param =
+            [
+                ## ============================ *Required Parameters  =========================
+                "dealerBizId"     => "{put dealer business id}",  # The id of dealer business *that is a number*
+            ];
+        try {
+            $result = $BillingService->enableDealer($param);
+            print_r($result);
+        } catch (ValidationException $e) {
+            print_r($e->getResult());
+            print_r($e->getErrorsAsArray());
+        } catch (PodException $e) {
+            print_r($e->getResult());
+        }
+```
+
+با استفاده از تابع disableDealer می توانید کسب کارهای واسط را غیر فعال کنید.
+   
+
+```PHP
+     $param =
+            [
+                ## ============================ *Required Parameters  =========================
+                "dealerBizId"     => "{put business id}",  # The id of dealer business that is a number
+            ];
+        try {
+            $result = $BillingService->disableDealer($param);
+            print_r($result);
+        } catch (ValidationException $e) {
+            print_r($e->getResult());
+            print_r($e->getErrorsAsArray());
+        } catch (PodException $e) {
+            print_r($e->getResult());
+        }
+```
+
+## لیست کسب و کارهایی که واسط آن هستید
+با فراخوانی سرویس businessDealingList می توانید لیست کسب و کارهایی که واسط آن ها شده اید را دریافت نمایید.
+
+```PHP
+    $param =     [
+            ## =========================== Optional Parameters  ===============================
+            'dealingBusinessId' => "{put dealer business id}",            # The id of dealing business
+            'enable'            => true,            # [true/false]
+            'size'              => "{put size}",              # pagination size, default: 50
+            'offset'            => "{put offset}",               # pagination offset, default: 0
+        ];
+    try {
+        $result = $BillingService->businessDealingList($param);
+        print_r($result);
+    } catch (ValidationException $e) {
+        print_r($e->getResult());
+        print_r($e->getErrorsAsArray());
+    } catch (PodException $e) {
+        print_r($e->getResult());
+    }
+```
+
+## صدور فاکتور تسهیمی
+کسب و کار معامله گر که لازم است فاکتور تسهیمی صادر نماید باید از جانب کسب و کارهای سهیم دارای مجوز صدور فاکتور باشد. برای صدور فاکتور تسهیمی می توانید از متد issueMultiInvoice مشابه تابع زیر استفاده کنید:  
+
+```PHP
+     $param =
+            [
+                ## ============================ *Required Parameters  =========================
+                "_ott_" => "put ott" ,                      # one time token - این توکن را در سرویس قبلی دریافت کرده اید.
+                # آرایه حاوی اطلاعات فاکتورها
+                "data" =>                       ## commented rows are optional parameters ##
+                    [
+                        // 'redirectURL' => 'put redirect url',
+                        // 'userId' => 11111,               # userId of customer
+                        // 'currencyCode' => 'like EUR or IRR',
+                        // 'voucherHashs' => [],            # array of vouchers  اگر وجود ندارد این پارامتر ارسال نشود
+                        // 'preferredTaxRate' => "{put tax, default 0.09}" ,     # tax to be added between 0 and 1 default is 0.09
+                        // 'verificationNeeded' => 'true/false',
+                        // 'preview' => '',
+                        'mainInvoice'=>
+                            [
+                                // 'billNumber' => 'put bill number',       # business unique bill number
+                                'guildCode' => 'put guild code',
+                                // 'metadata' => 'extra data in form of json',
+                                // 'description' => 'put description',
+                                'invoiceItemVOs' =>
+                                    [
+                                        [
+                                            'productId' => "{put product id or 0}",   # the id of product or 0 if no product
+                                            'price' => "{put price}",     # the share of dealer
+                                            'quantity' => "{put quantity}",    # count
+                                            'description' => 'put description'
+                                        ],
+                                    ],
+                            ],
+                        'subInvoices' =>
+                            [
+                                [
+                                    'businessId' => "{put business id}",       # the id of shareholder business
+                                    'guildCode' => 'put guild code',
+                                    // 'billNumber' => 'put bill number',       # business unique bill number
+                                    // 'metadata' => 'extra data in form of json',
+                                    'description' => 'put description',
+                                    'invoiceItemVOs' =>
+                                        [
+                                            [
+                                                'productId' => "{put product id or 0}",
+                                                'price' => "{put price}",         # the share of shareholder
+                                                'quantity' => "{put quantity}",
+                                                'description' => 'put description'
+                                            ],
+                                        ],
+                                ]
+                            ],
+                        // customerDescription => 'put customer description',
+                        // customerMetadata => 'extra data for customer in form of json',
+                        'customerInvoiceItemVOs' =>
+                            [
+                                [
+                                    'productId' => "{put product id or 0}",       # the id of product or 0 if no product,
+                                    'price' => "{put price}",         # the price to be payed by customer
+                                    'quantity' => "{put quantity}",       # count
+                                    'description' => 'put description'
+                                ]
+                            ]
+                    ],
+    
+                ## =========================== Optional Parameters  ===============================
+                'delegatorId'       => [],            # شناسه تفویض کنندگان، ترتیب اولویت را مشخص می کند
+                'delegationHash'    => [],            # کد تفویض برای اشاره به یک تفویض مشخص
+                'forceDelegation'   => false,              # پرداخت فقط از طریق تفویض
+            ];
+        try {
+            $result = $BillingService->issueMultiInvoice($param);
+            print_r($result);
+        } catch (ValidationException $e) {
+            print_r($e->getResult());
+            print_r($e->getErrorsAsArray());
+        } catch (PodException $e) {
+            print_r($e->getResult());
+        }
+```
+
+## کاهش فاکتور تسهیمی
+همانند فاکتورهای عادی اگر نیاز به کاهش فاکتور و بر گردادن وجهی به مشتری باشد می توانید از تابع  reduceMultiInvoice استفاده کنید
+ 
+
+```PHP
+    $param =
+            [
+                ## ============================ *Required Parameters  =========================
+                # ***** NOTE : the share of dealer + the share of shareholder = the price to be payed by customer  **** #
+                'data' =>
+                    [
+                        'preferredTaxRate' => "{put tax, default 0.09}",            # tax to be added between 0 and 1 default is 0.09
+                        'mainInvoice' =>                             # فاکتور به نام خود معامله گر
+                            [
+                                'id' => "{put invoice id}",                # id of main invoice to be edited
+                                'reduceInvoiceItemVOs' =>       # بندهای فاکتور مربوط به سهم معامله گر
+                                    [
+                                        [
+                                            'id' => "{put invoice item id}",                 # the id of item in invoice
+                                            'price' => "{put price}",                 # the share of dealer
+                                            'quantity' => "{put quantity}",                # count
+                                            'description' => 'put description of item'
+                                        ]
+                                    ]
+                            ],
+                        'subInvoices' =>            # فاکتورهای مربوط به سهم سایر کسب و کارهای ذینفع
+                            [
+                                [
+                                    'id' => 222222,
+                                    'reduceInvoiceItemVOs' =>       # بندهای فاکتور مربوط به سهم ذینفعان
+                                        [
+                                            [
+                                                'id' => "{put invoice item id}",         # the id of item in invoice
+                                                'price' => "{put price}",         # the share of shareholder
+                                                'quantity' => "{put quantity}",        # count
+                                                'description' => 'put description of item'
+                                            ]
+                                        ]
+                                ]
+                            ],
+                        'customerInvoiceItemVOs' =>         # بندهایی که به مشتری نمایش داده می شوند
+                            [
+                                [
+                                    'id' => "{put invoice item id}",         # the id of item in invoice
+                                    'price' => "{put price}",         # he price to be payed by customer
+                                    'quantity' => "{put quantity}",       # count
+                                    'description' => 'put description of item'
+                                ]
+    
+                            ],
+                    ]
+            ];
+    
+        try {
+            $result = $BillingService->reduceMultiInvoice($param);
+            print_r($result);
+        } catch (ValidationException $e) {
+            print_r($e->getResult());
+            print_r($e->getErrorsAsArray());
+        } catch (PodException $e) {
+            print_r($e->getResult());
+        }
+```
+
+ با استفاده از تابع reduceMultiInvoiceAndCacheOut علاوه بر کاهش فاکتور تسهیمی بلافاصله مبلغ برگشتی به شماره شبا کاربر منتقل گردد. ورودی و خروجی این تابع مشابه با تابع reduceInvoice است
+ 
+```PHP
+        $param =
+                        [
+                            ## ============================ *Required Parameters  =========================
+                            # ***** NOTE : the share of dealer + the share of shareholder = the price to be payed by customer  **** #
+                            'data' =>
+                                [
+                                    'preferredTaxRate' => "{put tax, default 0.09}",            # tax to be added between 0 and 1 default is 0.09
+                                    'mainInvoice' =>                             # فاکتور به نام خود معامله گر
+                                        [
+                                            'id' => "{put id of main invoice}",                # id of main invoice to be edited
+                                            'reduceInvoiceItemVOs' =>       # بندهای فاکتور مربوط به سهم معامله گر
+                                                [
+                                                    [
+                                                        'id' => "{put invoice item id}",                 # the id of item in invoice
+                                                        'price' => "{put price}",                 # the share of dealer
+                                                        'quantity' => "{put quantity}",                # count
+                                                        'description' => 'put description of item'
+                                                    ]
+                                                ]
+                                        ],
+                                    'subInvoices' =>            # فاکتورهای مربوط به سهم سایر کسب و کارهای ذینفع
+                                        [
+                                            [
+                                                'id' => 222222,
+                                                'reduceInvoiceItemVOs' =>       # بندهای فاکتور مربوط به سهم ذینفعان
+                                                    [
+                                                        [
+                                                            'id' => "{put invoice item id}",         # the id of item in invoice
+                                                            'price' => "{put price}",         # the share of shareholder
+                                                            'quantity' => "{put quantity}",        # count
+                                                            'description' => 'put description of item'
+                                                        ]
+                                                    ]
+                                            ]
+                                        ],
+                                    'customerInvoiceItemVOs' =>         # بندهایی که به مشتری نمایش داده می شوند
+                                        [
+                                            [
+                                                'id' => "{put invoice item id}",         # the id of item in invoice
+                                                'price' => "{put price}",         # he price to be payed by customer
+                                                'quantity' => "{put quantity}",       # count
+                                                'description' => 'put description of item'
+                                            ]
+                
+                                        ],
+                                ]
+                        ];
+                    try {
+                        $result = $BillingService->reduceMultiInvoiceAndCashOut($param);
+                        print_r($result);
+                    } catch (ValidationException $e) {
+                        print_r($e->getResult());
+                        print_r($e->getErrorsAsArray());
+                    } catch (PodException $e) {
+                        print_r($e->getResult());
+            
+```
+
+## مجوز فروش محصول
+            با استفاده از تابع addDealerProductPermission به یک کسب و کار دیگر اجازه صدور فاکتور عادی را می توان داد
+            
+```PHP
+        $param =
+                    [
+                        ## =========================== Optional Parameters  ===============================
+                        'productId'         => "{put product id}",            # شناسه محصول
+                        'dealerBizId'       => "{put dealer business id}",            # شناسه کسب و کار واسط
+                    ];
+                try {
+                    $result = $BillingService->addDealerProductPermission($param);
+                    print_r($result);
+                } catch (ValidationException $e) {
+                    print_r($e->getResult());
+                    print_r($e->getErrorsAsArray());
+                } catch (PodException $e) {
+                    print_r($e->getResult());
+                }
+ ```
+ 
+  با استفاده از تابع dealerProductPermissionList می توانید لیست مجوزهای خود به کسب و کارهای واسط دیگر را به انضمام شناسه محصول مشاهد نمایید.
+
+```PHP
+      $param =
+                    [
+                        ## =========================== Optional Parameters  ===============================
+                        'productId'     => "{put product id}",                     # شناسه محصول
+                        'dealerBizId'   => "{put dealer business id}",                     # شناسه کسب و کار واسط
+                        'enable'        => "true/false",              # فعال بودن واسط
+                        'offset'        => "{put offset}",                         # شناسه کسب و کار واسط
+                        'size'          => "{put size}",                        # اندازه خروجی
+            
+            
+                    ];
+                try {
+                    $result = $BillingService->dealerProductPermissionList($param);
+                    print_r($result);
+                } catch (ValidationException $e) {
+                    print_r($e->getResult());
+                    print_r($e->getErrorsAsArray());
+                } catch (PodException $e) {
+                    print_r($e->getResult());
+                }
+  ```      
+
+ هم چنین لیست دسترسی هایی که شما واسط آن کسب و کار شده اید و برای آن محصول خاص مجوز صدور فاکتور گرفته اید را می توانید با 
+    سرویس dealingProductPermissionList  مشاهده نمایید.
+    
+```PHP
+        $param =
+            [
+                ## =========================== Optional Parameters  ==========================
+                'productId'     => "{put product id}",                     # شناسه محصول
+                'dealingBusinessId'   => "{put dealer business id}",                # شناسه کسب و کار واسط
+                'enable'        => "true/false",              # فعال بودن واسط
+                'offset'        => "{put offset}",                         # شناسه کسب و کار واسط
+                'size'          => "{put size}",                        # اندازه خروجی
+            ];
+        try {
+            $result = $BillingService->dealingProductPermissionList($param);
+            print_r($result);
+        } catch (ValidationException $e) {
+            print_r($e->getResult());
+            print_r($e->getErrorsAsArray());
+        } catch (PodException $e) {
+            print_r($e->getResult());
+        }
+```
+
+## غیر فعال سازی دسترسی محصول برای کسب و کار
+ با استفاده از تابع زیر می توانید دسترسی محصولی که به کسب و کار واسط اعطا نموده اید را غیرفعال نمایید
+
+```PHP
+      $param =
+            [
+                ## ============================ *Required Parameters  =========================
+                'productId'     => "{put product id}",               # شناسه محصول
+                'dealerBizId'   => "{put dealer business id}",                # شناسه کسب و کار واسط
+            ];
+        try {
+            $result = $BillingService->disableDealerProductPermission($param);
+            print_r($result);
+        } catch (ValidationException $e) {
+            print_r($e->getResult());
+            print_r($e->getErrorsAsArray());
+        } catch (PodException $e) {
+            print_r($e->getResult());
+        }
+```
+
+## فعال سازی مجدد دسترسی محصول برای کسب و کار
+با استفاده از تابع زیر می توانید دسترسی محصولی که به کسب و کار واسط اعطا نموده اید را در صورت غیر فعال بودن، مجدد فعال نمایید
+
+
+```PHP
+    $param =
+        [
+            ## ============================ *Required Parameters  =========================
+            'productId'     => "{put product id}",            # شناسه محصول
+            'dealerBizId'   => "{put dealer business id}",                # شناسه کسب و کار واسط
+    
+    
+        ];
+    try {
+        $result = $BillingService->enableDealerProductPermission($param);
+        print_r($result);
+    } catch (ValidationException $e) {
+        print_r($e->getResult());
+        print_r($e->getErrorsAsArray());
+    } catch (PodException $e) {
+        print_r($e->getResult());
+    }
+```
+
+<div class="tab-end">
 </div>
+
