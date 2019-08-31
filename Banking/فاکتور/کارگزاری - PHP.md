@@ -38,8 +38,7 @@ $dealingService = new DealingService();
 ```
 
 
-<div class="box-end">
-</div>
+
 
 ## ثبت کسب و کار و کاربر جدید
 
@@ -136,8 +135,7 @@ $dealingService = new DealingService();
 | fax                  | string          | شماره فکس                          | نکته + در صورت ورد همراه با پیش شماره وارد شود                           |         |
 | agentNationalCode    | string          | کد ملی نماینده                     | نکته + کد ملی 10 رقمی و بدون خط تیره و فاصله                             |         |
 
-<div class="box-end">
-</div>
+
 
 ## listUserCreatedBusiness
 
@@ -209,8 +207,7 @@ $dealingService = new DealingService();
 | cellphone    | string           | شماره موبایل نماینده کسب و کار  | نکته + به صورت 09123456789 وارد شود               |         |
 
 
-<div class="box-end">
-</div>
+
 
 ## updateBusiness
  با استفاده از این تابع می توانید اطلاعات کسب و کاری را که قبلا ثبت نموده اید ویرایش کنید
@@ -321,8 +318,7 @@ $param =
 | changeAgent          | string          | Change Agent                   | نکته + در صورتی که بخواهید اطلاعات نماینده را تغییر دهید true وارد نمایید |         |
 
 
-<div class="box-end">
-</div>
+
 
 ## getApiTokenForCreatedBusiness
 
@@ -356,8 +352,7 @@ $param =
 | --- | --- | --- | --- | --- |
 | businessId | integer |  شناسه کسب و کار |  |  اجباری |
 
-<div class="box-end">
-</div>
+
 
 ##  rateBusiness
 
@@ -393,8 +388,7 @@ $param =
 | businessId | integer | شناسه کسب و کار           |                                     | اجباری  |
 | rate       | integer | امتیاز کاربر به کسب و کار | نکته + حداقل 0 است + حداکثر 10 است | اجباری  |
 
-<div class="box-end">
-</div>
+
 
 ## commentBusiness
 
@@ -429,8 +423,7 @@ $param =
 | businessId | integer | شناسه کسب و کار             |         | اجباری  |
 | text       | string  | نظر کاربر در مورد کسب و کار |         | اجباری  |
 
-<div class="box-end">
-</div>
+
 
 ## businessFavorite
 
@@ -468,8 +461,7 @@ $param =
 | disfavorite | string  | Disfavorite     | نکته + اگر خالی یا false باشد، به علاقه مندی ها اضافه می شود و اگر true باشد، از علاقه مندی ها حذف میشود |         |
 
 
-<div class="box-end">
-</div>
+
 
 ##  userBusinessInfos
 
@@ -509,8 +501,7 @@ $param =
 | --- | --- | --- | --- | --- |
 | id | array of integer |  لیست شناسه های کسب و کار |  |  اجباری |
 
-<div class="box-end">
-</div>
+
 
 ## commentBusinessList
 
@@ -552,8 +543,7 @@ $param =
 | offset     | integer | Offset          | نکته + در صورتی که این فیلد وارد شود فیلدهای lastId و firstId نباید وارد شوند و نتیجه نزولی مرتب می شود |         |
 | size       | integer | Size            | نکته + تعداد رکورد در هر صفحه                                                                           |         |
 
-<div class="box-end">
-</div>
+
 
 ## confirmComment
 
@@ -588,5 +578,4 @@ $param =
 | --- | --- | --- | --- | --- |
 | commentId | integer |  شناسه نظر |  |  اجباری |
 
-<div class="box-end">
-</div>
+
