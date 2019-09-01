@@ -1,3 +1,15 @@
+- [کارگزاری](#%DA%A9%D8%A7%D8%B1%DA%AF%D8%B2%D8%A7%D8%B1%DB%8C)
+- [ثبت کسب و کار و کاربر جدید](#%D8%AB%D8%A8%D8%AA-%DA%A9%D8%B3%D8%A8-%D9%88-%DA%A9%D8%A7%D8%B1-%D9%88-%DA%A9%D8%A7%D8%B1%D8%A8%D8%B1-%D8%AC%D8%AF%DB%8C%D8%AF)
+- [listUserCreatedBusiness](#listUserCreatedBusiness)
+- [updateBusiness](#updateBusiness)
+- [getApiTokenForCreatedBusiness](#getApiTokenForCreatedBusiness)
+- [rateBusiness](#rateBusiness)
+- [commentBusiness](#commentBusiness)
+- [businessFavorite](#businessFavorite)
+- [userBusinessInfos](#userBusinessInfos)
+- [commentBusinessList](#commentBusinessList)
+- [confirmComment](#confirmComment)
+
 ## کارگزاری
 کسب و کار ها می‌توانند کسب و کارهای دیگری را که با آن ها همکاری دارند ثبت نام کنند. این امکان برای کارگزاران و کسب و کارهایی که به تسهیم درآمد نیاز دارند بسیار مفید است. همچنین کاربران می‌توانند کسب‌و‌کارها را دنبال کنند، به آن‌ها امتیاز دهند و در مورد آن‌ها نظر دهند تمامی این کارها با استفاده از توابع این پکیج انجام می‌شود.
 
