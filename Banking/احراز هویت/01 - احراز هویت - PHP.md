@@ -1,14 +1,15 @@
 
-# احراز هویت - زبان   PHP
 
+## SSO
 
-# “SSO”
-
-## نصب پکیج pod-sso-service
+### نصب پکیج pod-sso-service
 
 پکیج ارائه شده برای  سامانه ورود یکپارچه، pod-sso-service، از طریق دستور زیر قابل نصب می باشد.
 
     composer require pod-sdk/pod-sso-service
+
+<div class="box-end">
+</div>
 
 این پکیج شامل تمام api های لازم برای احرازهویت از طریق وب و از طریق دستگاه (با استفاده از رمز یکبار مصرف) می باشد 
 
@@ -38,47 +39,44 @@
 
 توجه : این کد در مدت کوتاهی منقضی میشود. بنابرین بلافاصله باید نسبت به دریافت access_token و refresh_token اقدام شود.
 
-راهنمای دریافت کد
-
+**راهنمای دریافت کد**
 ار آنجایی که در تمام متدهای احراز هویت نیاز به ارسال اطلاعات client_id و client_secret می باشد از کلاس ClientInfo برای تنظیم این مقادیر استفاده شده است که به عنوان پارامتر ورودی به کلاس SSOService ارسال می شود. 
 
 در زیر نمونه کد برای این تنظیمات آورده شده است:
 
-    # required classes
-    use Pod\Base\Service\Exception\PodException;
-    use Pod\Base\Service\Exception\ValidationException;
-    use Pod\Sso\Service\SSOService;
-    use Pod\Base\Service\ClientInfo;
+```php
+      # required classes
+        use Pod\Base\Service\Exception\PodException;
+        use Pod\Base\Service\Exception\ValidationException;
+        use Pod\Sso\Service\SSOService;
+        use Pod\Base\Service\ClientInfo;
+        
+        const CLIENT_ID = 'YOUR_CLIENT_ID';
+        const CLIENT_SECRET = 'YOUR_CLIENT_SECRET';
+        const REDIRECT_URI = 'YOUR_REDIRECT_URI';
+        const API_TOKEN = 'YOUR_API_TOKEN';
+        
+        $clientInfo = new ClientInfo();
+        $clientInfo->setClientId(CLIENT_ID);
+        $clientInfo->setClientSecret(CLIENT_SECRET);
+        
+        // for get Access Token and Refresh Access Token you need set redirect uri
+        $clientInfo->setRedirectUri(REDIRECT_URI);
+        
+        #  instantiates a SSOService
+        $SSOService = new SSOService($clientInfo);
 
-    const CLIENT_ID = 'YOUR_CLIENT_ID';
-    const CLIENT_SECRET = 'YOUR_CLIENT_SECRET';
-    const REDIRECT_URI = 'YOUR_REDIRECT_URI';
-    const API_TOKEN = 'YOUR_API_TOKEN';
-
-    $clientInfo = new ClientInfo();
-    $clientInfo->setClientId(CLIENT_ID);
-    $clientInfo->setClientSecret(CLIENT_SECRET);
-
-    // for get Access Token and Refresh Access Token you need set redirect uri
-    $clientInfo->setRedirectUri(REDIRECT_URI);
-
-    #  instantiates a SSOService
-    $SSOService = new SSOService($clientInfo);
-
-راهنمای ورودی ها و هدر برای دریافت توکن دسترسی کاربر
-
-<div class="box-end">
+```<div class="box-end">
 </div>
 
-
-## دریافت توکن دسترسی کاربر
-
+### دریافت توکن دسترسی کاربر
 پس از دریافت کد برای دریافت توکن دسترسی کاربربا استفاده از نمونه کد زیر و با پر کردن پارامترهای ورودی می توانید توکن دسترسی کاربر را دریافت نمایید.
 
+```php
        $params = [
           "code" => "put code here" # use code that you receive in url
        ];
-
+    
        try {
             $result = $SSOService->getAccessToken($params);
             print_r($result);
@@ -89,18 +87,17 @@
             print_r($e->getResult());
         }
 
-<div class="box-end">
+```<div class="box-end">
 </div>
 
-
-## بروزرسانی توکن دسترسی کاربر
-
+### بروزرسانی توکن دسترسی کاربر
 پس از گذشت زمان expires_in ، توکن دسترسی کاربر منقضی می شود. با استفاده از refresh_token و تابع زیر، توکن معتبر جدید درخواست دهید.
 
+```php
      $params = [
             "refresh_token" => "put refresh token"
         ];
-
+    
         try {
             $result = $SSOService->refreshAccessToken($params);
             print_r($result);
@@ -110,21 +107,21 @@
         } catch (PodException $e) {
             print_r($e->getResult());
         }
+```
 
 <div class="box-end">
 </div>
 
-
-## ابطال توکن
-
+### ابطال توکن
 ممکن است به هر دلیلی بخواهید دسترسی برنامه به اطلاعات حساب کاربر را از بین ببرید. برای این کار می توانید از ابطال توکن استفاده کنید.
 
+```php
     # set token and token_type_hint
         $params = [
             "token" => API_TOKEN,
             "token_type_hint" => "put token type to `refresh_token` or `access_token`",
         ];
-
+    
         try {
             $result = $SSOService->revokeToken($params);
             print_r($result);
@@ -134,54 +131,49 @@
         } catch (PodException $e) {
             print_r($e->getResult());
         }
+```
 
 <div class="box-end">
 </div>
 
-## دریافت اطلاعات توکن 
-
+### دریافت اطلاعات توکن 
 برای این که از صحت و اعتبار توکن کاربر خود مطلع شوید می توانید اطلاعات توکن مورد نظر را دریافت کنید.
 
-    # set token and token_type_hint
-        $params = [
-            "token" => API_TOKEN,
-            "token_type_hint" => "put token type to `refresh_token` or `access_token`",
-        ];
-
-        try {
-            $result = $SSOService->getTokenInfo($params);
-            print_r($result);
-        } catch (ValidationException $e) {
-            print_r($e->getResult());
-            print_r($e->getErrorsAsArray());
-        } catch (PodException $e) {
-            print_r($e->getResult());
-        }
-
+```php
+       # set token and token_type_hint
+            $params = [
+                "token" => API_TOKEN,
+                "token_type_hint" => "put token type to `refresh_token` or `access_token`",
+            ];
+    
+            try {
+                $result = $SSOService->getTokenInfo($params);
+                print_r($result);
+            } catch (ValidationException $e) {
+                print_r($e->getResult());
+                print_r($e->getErrorsAsArray());
+            } catch (PodException $e) {
+                print_r($e->getResult());
+            }
+```
 
 <div class="box-end">
 </div>
 
+## OTP
 
-# "OTP"
-
-
-## ورود با OTP با سرور
-
+### ورود با OTP با سرور
 جهت ایجاد امکان ورود با رمز یکبار مصرف (OTP) برای کاربران، در حالتی که کسب و کار دارای سرور امن و قابلیت ایجاد ارتباط با SSO پاد از طریق سرور خود باشد، این روش پیشنهاد می گردد.
 
 لازم است از طریق سرور، به ازای هر شماره موبایل یا دستگاهی که میخواهد لاگین شود، اطلاعات دستگاه را با متد handshake به SSO معرفی نمایید و keyId دریافت کنید.
 
 http://docs.pod.land/v1.0.8.0/Developer/User/1861/otpwithserver
 
-<div class="box-end">
-</div>
-
-## فراخوانی سرویس Handshake سمت SSO
-
+### فراخوانی سرویس Handshake سمت SSO
 سرویس handshake به منظور معرفی دستگاه و هم‌چنین تفاهم بر روی پارامترهای امضای دیجیتال(شامل algorithm،keyId) فراخوانی می‌شود.برای فراخوانی این سرویس علاوه بر api_token و client_id که از پنل مدیریت کسب و کار قابل دریافت است، لازم است کلید عمومی کسب و کار به سیستم معرفی شده باشد.
 
-     $params = [
+```php
+    $params = [
         ## =========================================== *Required Parameters ============================================
         "api_token"             => API_TOKEN,
         "device_uid"            => 'put device unique id here',         # Device unique id ,maximum 255 character
@@ -192,7 +184,7 @@ http://docs.pod.land/v1.0.8.0/Developer/User/1861/otpwithserver
         "device_lon"            => 'put device longitude here',
         "device_os"             => 'put device os here',
         "device_os_version"     => 'put device os version here',
-
+    
     ];
     try {
         $result = $SSOService->handshake($params);
@@ -203,14 +195,15 @@ http://docs.pod.land/v1.0.8.0/Developer/User/1861/otpwithserver
     } catch (PodException $e) {
         print_r($e->getResult());
     }
+```
 
- <div class="box-end">
+<div class="box-end">
 </div>
 
-## درخواست دریافت کد OTP**:
+### درخواست دریافت کد OTP
+ پس از دریافت  key_id  از مرحله قبل و با استفاده از کلید خصوصی (private_key)  از متد زیر برای ساخت امضای دیجیتال و ارسال آن و همچنین دریافت کد OTP اقدام کنید. کد مورد نظر بر اساس مقدار فیلد identity  که می فرستید به کاربر مورد نظر از طریق پیامک یا ایمیل فرستاده می شود.
 
- پس از دریافت  key_id از مرحله قبل و با استفاده از کلید خصوصی (private_key)  از متد زیر برای ساخت امضای دیجیتال و ارسال آن و همچنین دریافت کد OTP اقدام کنید. کد مورد نظر بر اساس مقدار فیلد identity  که می فرستید به کاربر مورد نظر از طریق پیامک یا ایمیل فرستاده می شود.
-
+```php
       $privateKey = file_get_contents('put your private key file name');
         $params = [
             ## =========================================== *Required Parameters ============================================
@@ -242,13 +235,15 @@ http://docs.pod.land/v1.0.8.0/Developer/User/1861/otpwithserver
         } catch (PodException $e) {
             print_r($e->getResult());
         }
+```
 
 <div class="box-end">
 </div>
 
-## تایید کد OTP
+### تایید کد OTP
 پس از دریافت otp  کاربر باید آن را ارسال کند. از طریق کد زیر و با استفاده امضای دیجیتالی که در متد signatureAuthorize دریافت می کنید  برای تایید کد otp ارسالی از کاربر استفاده کنید :
 
+```php
       $params = [
             ## =========================================== *Required Parameters ============================================
             "keyId"                     => 'put key id that you received from handshake here',
@@ -266,14 +261,16 @@ http://docs.pod.land/v1.0.8.0/Developer/User/1861/otpwithserver
         } catch (PodException $e) {
             print_r($e->getResult());
         }
+```
 
 <div class="box-end">
 </div>
 
-## دریافت توکن از سرور SSO
-
+### دریافت توکن از سرور SSO
 با استفاده از کد دریافتی از متد verifyOTP و ارسال آن از طریق متد getAccessTokenByOTP توکن دسترسی را از سرور SSO دریافت کنید: 
 
+
+       ```PHP
        $params = [
             "code" => "put code", # use code that you received after verify otp
         ];
@@ -287,7 +284,7 @@ http://docs.pod.land/v1.0.8.0/Developer/User/1861/otpwithserver
         } catch (PodException $e) {
             print_r($e->getResult());
         }
-        
+        ‍‍‍```
 
-<div class="box-end">
+```        <div class="box-end">
 </div>
