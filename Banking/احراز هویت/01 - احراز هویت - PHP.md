@@ -1,4 +1,5 @@
 
+## احراز هویت
 
 ## SSO
 
@@ -270,7 +271,7 @@ http://docs.pod.land/v1.0.8.0/Developer/User/1861/otpwithserver
 با استفاده از کد دریافتی از متد verifyOTP و ارسال آن از طریق متد getAccessTokenByOTP توکن دسترسی را از سرور SSO دریافت کنید: 
 
 
-       ```PHP
+```PHP
        $params = [
             "code" => "put code", # use code that you received after verify otp
         ];
@@ -284,7 +285,8 @@ http://docs.pod.land/v1.0.8.0/Developer/User/1861/otpwithserver
         } catch (PodException $e) {
             print_r($e->getResult());
         }
-        ‍‍‍```
 
-```        <div class="box-end">
+```        
+
+<div class="box-end">
 </div>
