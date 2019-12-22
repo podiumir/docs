@@ -2,7 +2,7 @@
 - [دریافت اطلاعات کارت بانکی](#menu)
 - [دریافت اطلاعات شبا](#menu)
 - [لینک‌های مرتبط](#menu)
-
+ 
 ## مقدمه
 ** تمام امکانات سرویس‌های بانکی در پکیج Banking قرار دارد.برای اطلاعات بیشتر به [پکیج سرویس‌ها](/documents/packages/) مراجعه کنید**
 
@@ -14,32 +14,6 @@
 
 <div class="tab-start">
 </div>
-
-# [C#](#tab/csharp)
-
-``` csharp
-try
-    {
-        var internalServiceCallVo = InternalServiceCallVo.ConcreteBuilder
-            .SetToken("{Put your ApiToken}")
-            //.SetScVoucherHash({Put your VoucherHash})
-            //.SetScApiKey("{Put your ApiKey}")
-            .Build();
-            
-    }
-catch (PodException podException)
-    {
-        Console.WriteLine($"-- {podException.Code}-an error has occured : 
-                              {Environment.NewLine{podException.Message}");
-        throw;
-    }
-catch (Exception exception)
-    {
-        Console.WriteLine(exception.Message);
-        throw;
-    }
-```
-<div class="swaggerLink">http://core.pod.ir/apidocs/swagger-ui.html?srv=/nzh/biz/getDebitCardInfo/</div>
 
 # [Java](#tab/java)
 
@@ -139,32 +113,6 @@ podBanking.getDebitCardInfo(getDebitCardInfoData)
 
 <div class="tab-start">
 </div>
-
-# [C#](#tab/csharp)
-
-``` csharp
-try
-    {
-        var internalServiceCallVo = InternalServiceCallVo.ConcreteBuilder
-            .SetToken("{Put your ApiToken}")
-            //.SetScVoucherHash({Put your VoucherHash})
-            //.SetScApiKey("{Put your ApiKey}")
-            .Build();
-            
-    }
-catch (PodException podException)
-    {
-        Console.WriteLine($"-- {podException.Code}-an error has occured : 
-                              {Environment.NewLine{podException.Message}");
-        throw;
-    }
-catch (Exception exception)
-    {
-        Console.WriteLine(exception.Message);
-        throw;
-    }
-```
-<div class="swaggerLink">http://core.pod.ir/apidocs/swagger-ui.html?srv=/nzh/biz/getShebaInfo/</div>
 
 # [Java](#tab/java)
 
