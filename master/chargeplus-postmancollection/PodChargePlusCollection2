@@ -1,0 +1,805 @@
+{
+	"info": {
+		"_postman_id": "4fe8c54e-aee9-4f07-8c4a-b30734e196ab",
+		"name": "Pod",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "PodRequest",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "_token_",
+						"value": "4f3eb84ab3654d4d941aab9106b0d437",
+						"type": "text"
+					},
+					{
+						"key": "_token_issuer_",
+						"value": "1",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJBcHBsaWNhdGlvbi01ZTAzNDJhZDc3ZDc3YTdmNjMyNGFkODUiLCJpZCI6IjVlMDM0MmFkNzdkNzdhN2Y2MzI0YWQ4NSIsIm5hbWUiOiJ0ZXN0IHdlYiBhcHBsaWNhdGlvbiIsInR5cGUiOiJ3ZWJfYXBwbGljYXRpb24iLCJjb21wYW55X2lkIjoiNWUwMzQyMmY3N2Q3N2E3ZjYzMjRhZDgzIiwiaXNzIjoiaHR0cDovLzkxLjIwOC4xNjUuOTk6NDQzL2FkbWluL3dlYi1hcHBzIiwiaWF0IjoxNTc3MjcxOTgxLCJleHAiOjIyMDc5OTE5ODEsIm5iZiI6MTU3NzI3MTk4MSwianRpIjoiSmN0TUlIUTFycThnbHJMVCJ9.E71TD08H-PlC3mitgrkENsRFOgx7-CwGiP0eEWQaAq8",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "scProductId",
+							"value": "35924",
+							"description": "* Required, شناسه محصول",
+							"type": "text"
+						},
+						{
+							"key": "provider",
+							"value": "mtn",
+							"type": "text"
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "{{pod_host}}nzh/doServiceCall",
+					"host": [
+						"{{pod_host}}nzh"
+					],
+					"path": [
+						"doServiceCall"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PodRequestPackageType",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "_token_",
+						"value": "4f3eb84ab3654d4d941aab9106b0d437",
+						"type": "text"
+					},
+					{
+						"key": "_token_issuer_",
+						"value": "1",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJBcHBsaWNhdGlvbi01ZTAzNDJhZDc3ZDc3YTdmNjMyNGFkODUiLCJpZCI6IjVlMDM0MmFkNzdkNzdhN2Y2MzI0YWQ4NSIsIm5hbWUiOiJ0ZXN0IHdlYiBhcHBsaWNhdGlvbiIsInR5cGUiOiJ3ZWJfYXBwbGljYXRpb24iLCJjb21wYW55X2lkIjoiNWUwMzQyMmY3N2Q3N2E3ZjYzMjRhZDgzIiwiaXNzIjoiaHR0cDovLzkxLjIwOC4xNjUuOTk6NDQzL2FkbWluL3dlYi1hcHBzIiwiaWF0IjoxNTc3MjcxOTgxLCJleHAiOjIyMDc5OTE5ODEsIm5iZiI6MTU3NzI3MTk4MSwianRpIjoiSmN0TUlIUTFycThnbHJMVCJ9.E71TD08H-PlC3mitgrkENsRFOgx7-CwGiP0eEWQaAq8",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "scProductId",
+							"value": "35924",
+							"description": "* Required, شناسه محصول",
+							"type": "text"
+						},
+						{
+							"key": "provider",
+							"value": "mtn",
+							"type": "text"
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "{{pod_host}}nzh/doServiceCall",
+					"host": [
+						"{{pod_host}}nzh"
+					],
+					"path": [
+						"doServiceCall"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PodRequestGettingProviders",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "_token_",
+						"value": "4f3eb84ab3654d4d941aab9106b0d437",
+						"type": "text"
+					},
+					{
+						"key": "_token_issuer_",
+						"value": "1",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJBcHBsaWNhdGlvbi01ZTAzNDJhZDc3ZDc3YTdmNjMyNGFkODUiLCJpZCI6IjVlMDM0MmFkNzdkNzdhN2Y2MzI0YWQ4NSIsIm5hbWUiOiJ0ZXN0IHdlYiBhcHBsaWNhdGlvbiIsInR5cGUiOiJ3ZWJfYXBwbGljYXRpb24iLCJjb21wYW55X2lkIjoiNWUwMzQyMmY3N2Q3N2E3ZjYzMjRhZDgzIiwiaXNzIjoiaHR0cDovLzkxLjIwOC4xNjUuOTk6NDQzL2FkbWluL3dlYi1hcHBzIiwiaWF0IjoxNTc3MjcxOTgxLCJleHAiOjIyMDc5OTE5ODEsIm5iZiI6MTU3NzI3MTk4MSwianRpIjoiSmN0TUlIUTFycThnbHJMVCJ9.E71TD08H-PlC3mitgrkENsRFOgx7-CwGiP0eEWQaAq8",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "scProductId",
+							"value": "35922",
+							"description": "* Required, شناسه محصول",
+							"type": "text"
+						},
+						{
+							"key": "provider",
+							"value": "mtn",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "{{pod_host}}nzh/doServiceCall",
+					"host": [
+						"{{pod_host}}nzh"
+					],
+					"path": [
+						"doServiceCall"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PodRequestGettingServicesBasedonSelectedProvider",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "_token_",
+						"value": "4f3eb84ab3654d4d941aab9106b0d437",
+						"type": "text"
+					},
+					{
+						"key": "_token_issuer_",
+						"value": "1",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJBcHBsaWNhdGlvbi01ZTAzNDJhZDc3ZDc3YTdmNjMyNGFkODUiLCJpZCI6IjVlMDM0MmFkNzdkNzdhN2Y2MzI0YWQ4NSIsIm5hbWUiOiJ0ZXN0IHdlYiBhcHBsaWNhdGlvbiIsInR5cGUiOiJ3ZWJfYXBwbGljYXRpb24iLCJjb21wYW55X2lkIjoiNWUwMzQyMmY3N2Q3N2E3ZjYzMjRhZDgzIiwiaXNzIjoiaHR0cDovLzkxLjIwOC4xNjUuOTk6NDQzL2FkbWluL3dlYi1hcHBzIiwiaWF0IjoxNTc3MjcxOTgxLCJleHAiOjIyMDc5OTE5ODEsIm5iZiI6MTU3NzI3MTk4MSwianRpIjoiSmN0TUlIUTFycThnbHJMVCJ9.E71TD08H-PlC3mitgrkENsRFOgx7-CwGiP0eEWQaAq8",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "scProductId",
+							"value": "35923",
+							"description": "* Required, شناسه محصول",
+							"type": "text"
+						},
+						{
+							"key": "provider",
+							"value": "mtn",
+							"type": "text"
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "{{pod_host}}nzh/doServiceCall",
+					"host": [
+						"{{pod_host}}nzh"
+					],
+					"path": [
+						"doServiceCall"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PodRequestGettingDirectChargePackageBasedonSelectedProviderandPlan",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "_token_",
+						"value": "4f3eb84ab3654d4d941aab9106b0d437",
+						"type": "text"
+					},
+					{
+						"key": "_token_issuer_",
+						"value": "1",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJBcHBsaWNhdGlvbi01ZTAzNDJhZDc3ZDc3YTdmNjMyNGFkODUiLCJpZCI6IjVlMDM0MmFkNzdkNzdhN2Y2MzI0YWQ4NSIsIm5hbWUiOiJ0ZXN0IHdlYiBhcHBsaWNhdGlvbiIsInR5cGUiOiJ3ZWJfYXBwbGljYXRpb24iLCJjb21wYW55X2lkIjoiNWUwMzQyMmY3N2Q3N2E3ZjYzMjRhZDgzIiwiaXNzIjoiaHR0cDovLzkxLjIwOC4xNjUuOTk6NDQzL2FkbWluL3dlYi1hcHBzIiwiaWF0IjoxNTc3MjcxOTgxLCJleHAiOjIyMDc5OTE5ODEsIm5iZiI6MTU3NzI3MTk4MSwianRpIjoiSmN0TUlIUTFycThnbHJMVCJ9.E71TD08H-PlC3mitgrkENsRFOgx7-CwGiP0eEWQaAq8",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "scProductId",
+							"value": "35925",
+							"description": "* Required, شناسه محصول",
+							"type": "text"
+						},
+						{
+							"key": "provider",
+							"value": "mtn",
+							"type": "text"
+						},
+						{
+							"key": "plan",
+							"value": "normal",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{pod_host}}nzh/doServiceCall",
+					"host": [
+						"{{pod_host}}nzh"
+					],
+					"path": [
+						"doServiceCall"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PodRequestValidatingSelectedPackageRequestDirectCharge",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "_token_",
+						"value": "4f3eb84ab3654d4d941aab9106b0d437",
+						"type": "text"
+					},
+					{
+						"key": "_token_issuer_",
+						"value": "1",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJBcHBsaWNhdGlvbi01ZTAzNDJhZDc3ZDc3YTdmNjMyNGFkODUiLCJpZCI6IjVlMDM0MmFkNzdkNzdhN2Y2MzI0YWQ4NSIsIm5hbWUiOiJ0ZXN0IHdlYiBhcHBsaWNhdGlvbiIsInR5cGUiOiJ3ZWJfYXBwbGljYXRpb24iLCJjb21wYW55X2lkIjoiNWUwMzQyMmY3N2Q3N2E3ZjYzMjRhZDgzIiwiaXNzIjoiaHR0cDovLzkxLjIwOC4xNjUuOTk6NDQzL2FkbWluL3dlYi1hcHBzIiwiaWF0IjoxNTc3MjcxOTgxLCJleHAiOjIyMDc5OTE5ODEsIm5iZiI6MTU3NzI3MTk4MSwianRpIjoiSmN0TUlIUTFycThnbHJMVCJ9.E71TD08H-PlC3mitgrkENsRFOgx7-CwGiP0eEWQaAq8",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "scProductId",
+							"value": "35926",
+							"description": "* Required, شناسه محصول",
+							"type": "text"
+						},
+						{
+							"key": "provider",
+							"value": "mtn",
+							"type": "text"
+						},
+						{
+							"key": "plan",
+							"value": "normal",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{pod_host}}nzh/doServiceCall",
+					"host": [
+						"{{pod_host}}nzh"
+					],
+					"path": [
+						"doServiceCall"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PodRequestGeneratingInvoiceSelectedPackageRequestDirectCharge",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "_token_",
+						"value": "4f3eb84ab3654d4d941aab9106b0d437",
+						"type": "text"
+					},
+					{
+						"key": "_token_issuer_",
+						"value": "1",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJBcHBsaWNhdGlvbi01ZTAzNDJhZDc3ZDc3YTdmNjMyNGFkODUiLCJpZCI6IjVlMDM0MmFkNzdkNzdhN2Y2MzI0YWQ4NSIsIm5hbWUiOiJ0ZXN0IHdlYiBhcHBsaWNhdGlvbiIsInR5cGUiOiJ3ZWJfYXBwbGljYXRpb24iLCJjb21wYW55X2lkIjoiNWUwMzQyMmY3N2Q3N2E3ZjYzMjRhZDgzIiwiaXNzIjoiaHR0cDovLzkxLjIwOC4xNjUuOTk6NDQzL2FkbWluL3dlYi1hcHBzIiwiaWF0IjoxNTc3MjcxOTgxLCJleHAiOjIyMDc5OTE5ODEsIm5iZiI6MTU3NzI3MTk4MSwianRpIjoiSmN0TUlIUTFycThnbHJMVCJ9.E71TD08H-PlC3mitgrkENsRFOgx7-CwGiP0eEWQaAq8",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "scProductId",
+							"value": "35927",
+							"description": "* Required, شناسه محصول",
+							"type": "text"
+						},
+						{
+							"key": "provider",
+							"value": "mtn",
+							"type": "text"
+						},
+						{
+							"key": "plan",
+							"value": "normal",
+							"type": "text"
+						},
+						{
+							"key": "phoneNumber",
+							"value": "09364943197",
+							"type": "text"
+						},
+						{
+							"key": "isGift",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "giftPhoneNumber",
+							"value": "09124066687",
+							"type": "text"
+						},
+						{
+							"key": "amount",
+							"value": "10000",
+							"type": "text"
+						},
+						{
+							"key": "paymentType",
+							"value": "post_paid",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{pod_host}}nzh/doServiceCall",
+					"host": [
+						"{{pod_host}}nzh"
+					],
+					"path": [
+						"doServiceCall"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PodRequestGettingInternetPackagesBasedonSelectedProvider,PackageTime,andSimType",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "_token_",
+						"value": "4f3eb84ab3654d4d941aab9106b0d437",
+						"type": "text"
+					},
+					{
+						"key": "_token_issuer_",
+						"value": "1",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJBcHBsaWNhdGlvbi01ZTAzNDJhZDc3ZDc3YTdmNjMyNGFkODUiLCJpZCI6IjVlMDM0MmFkNzdkNzdhN2Y2MzI0YWQ4NSIsIm5hbWUiOiJ0ZXN0IHdlYiBhcHBsaWNhdGlvbiIsInR5cGUiOiJ3ZWJfYXBwbGljYXRpb24iLCJjb21wYW55X2lkIjoiNWUwMzQyMmY3N2Q3N2E3ZjYzMjRhZDgzIiwiaXNzIjoiaHR0cDovLzkxLjIwOC4xNjUuOTk6NDQzL2FkbWluL3dlYi1hcHBzIiwiaWF0IjoxNTc3MjcxOTgxLCJleHAiOjIyMDc5OTE5ODEsIm5iZiI6MTU3NzI3MTk4MSwianRpIjoiSmN0TUlIUTFycThnbHJMVCJ9.E71TD08H-PlC3mitgrkENsRFOgx7-CwGiP0eEWQaAq8",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "scProductId",
+							"value": "35928",
+							"description": "* Required, شناسه محصول",
+							"type": "text"
+						},
+						{
+							"key": "provider",
+							"value": "mci",
+							"type": "text"
+						},
+						{
+							"key": "package_time",
+							"value": "daily",
+							"type": "text"
+						},
+						{
+							"key": "phoneNumber",
+							"value": "09364943197",
+							"type": "text"
+						},
+						{
+							"key": "isGift",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "giftPhoneNumber",
+							"value": "09124066687",
+							"type": "text"
+						},
+						{
+							"key": "amount",
+							"value": "10000",
+							"type": "text"
+						},
+						{
+							"key": "sim_type",
+							"value": "postpaid_prepaid",
+							"type": "text"
+						},
+						{
+							"key": "page_number",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{pod_host}}nzh/doServiceCall",
+					"host": [
+						"{{pod_host}}nzh"
+					],
+					"path": [
+						"doServiceCall"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PodRequestValidatingSelectedPackageRequest",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "_token_",
+						"value": "4f3eb84ab3654d4d941aab9106b0d437",
+						"type": "text"
+					},
+					{
+						"key": "_token_issuer_",
+						"value": "1",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJBcHBsaWNhdGlvbi01ZTAzNDJhZDc3ZDc3YTdmNjMyNGFkODUiLCJpZCI6IjVlMDM0MmFkNzdkNzdhN2Y2MzI0YWQ4NSIsIm5hbWUiOiJ0ZXN0IHdlYiBhcHBsaWNhdGlvbiIsInR5cGUiOiJ3ZWJfYXBwbGljYXRpb24iLCJjb21wYW55X2lkIjoiNWUwMzQyMmY3N2Q3N2E3ZjYzMjRhZDgzIiwiaXNzIjoiaHR0cDovLzkxLjIwOC4xNjUuOTk6NDQzL2FkbWluL3dlYi1hcHBzIiwiaWF0IjoxNTc3MjcxOTgxLCJleHAiOjIyMDc5OTE5ODEsIm5iZiI6MTU3NzI3MTk4MSwianRpIjoiSmN0TUlIUTFycThnbHJMVCJ9.E71TD08H-PlC3mitgrkENsRFOgx7-CwGiP0eEWQaAq8",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "scProductId",
+							"value": "35929",
+							"description": "* Required, شناسه محصول",
+							"type": "text"
+						},
+						{
+							"key": "provider",
+							"value": "mci",
+							"type": "text"
+						},
+						{
+							"key": "package_time",
+							"value": "daily",
+							"type": "text"
+						},
+						{
+							"key": "sim_type",
+							"value": "postpaid_prepaid",
+							"type": "text"
+						},
+						{
+							"key": "phoneNumber",
+							"value": "09124066687",
+							"type": "text"
+						},
+						{
+							"key": "isGift",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "giftPhoneNumber",
+							"value": "09124066687",
+							"type": "text"
+						},
+						{
+							"key": "productCode",
+							"value": "600912",
+							"type": "text"
+						},
+						{
+							"key": "paymentType",
+							"value": "post_piad",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{pod_host}}nzh/doServiceCall",
+					"host": [
+						"{{pod_host}}nzh"
+					],
+					"path": [
+						"doServiceCall"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PodRequestGeneratingInternetPackageInoviceRequest",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "_token_",
+						"value": "4f3eb84ab3654d4d941aab9106b0d437",
+						"type": "text"
+					},
+					{
+						"key": "_token_issuer_",
+						"value": "1",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJBcHBsaWNhdGlvbi01ZTAzNDJhZDc3ZDc3YTdmNjMyNGFkODUiLCJpZCI6IjVlMDM0MmFkNzdkNzdhN2Y2MzI0YWQ4NSIsIm5hbWUiOiJ0ZXN0IHdlYiBhcHBsaWNhdGlvbiIsInR5cGUiOiJ3ZWJfYXBwbGljYXRpb24iLCJjb21wYW55X2lkIjoiNWUwMzQyMmY3N2Q3N2E3ZjYzMjRhZDgzIiwiaXNzIjoiaHR0cDovLzkxLjIwOC4xNjUuOTk6NDQzL2FkbWluL3dlYi1hcHBzIiwiaWF0IjoxNTc3MjcxOTgxLCJleHAiOjIyMDc5OTE5ODEsIm5iZiI6MTU3NzI3MTk4MSwianRpIjoiSmN0TUlIUTFycThnbHJMVCJ9.E71TD08H-PlC3mitgrkENsRFOgx7-CwGiP0eEWQaAq8",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "scProductId",
+							"value": "35930",
+							"description": "* Required, شناسه محصول",
+							"type": "text"
+						},
+						{
+							"key": "provider",
+							"value": "mci",
+							"type": "text"
+						},
+						{
+							"key": "packageTime",
+							"value": "daily",
+							"type": "text"
+						},
+						{
+							"key": "simType",
+							"value": "postpaid_prepaid",
+							"type": "text"
+						},
+						{
+							"key": "phoneNumber",
+							"value": "09124066687",
+							"type": "text"
+						},
+						{
+							"key": "isGift",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "giftPhoneNumber",
+							"value": "09124066687",
+							"type": "text"
+						},
+						{
+							"key": "productCode",
+							"value": "600912",
+							"type": "text"
+						},
+						{
+							"key": "paymentType",
+							"value": "post_paid",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{pod_host}}nzh/doServiceCall",
+					"host": [
+						"{{pod_host}}nzh"
+					],
+					"path": [
+						"doServiceCall"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PodRequestPayment",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "_token_",
+						"value": "4f3eb84ab3654d4d941aab9106b0d437",
+						"type": "text"
+					},
+					{
+						"key": "_token_issuer_",
+						"value": "1",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJBcHBsaWNhdGlvbi01ZTAzNDJhZDc3ZDc3YTdmNjMyNGFkODUiLCJpZCI6IjVlMDM0MmFkNzdkNzdhN2Y2MzI0YWQ4NSIsIm5hbWUiOiJ0ZXN0IHdlYiBhcHBsaWNhdGlvbiIsInR5cGUiOiJ3ZWJfYXBwbGljYXRpb24iLCJjb21wYW55X2lkIjoiNWUwMzQyMmY3N2Q3N2E3ZjYzMjRhZDgzIiwiaXNzIjoiaHR0cDovLzkxLjIwOC4xNjUuOTk6NDQzL2FkbWluL3dlYi1hcHBzIiwiaWF0IjoxNTc3MjcxOTgxLCJleHAiOjIyMDc5OTE5ODEsIm5iZiI6MTU3NzI3MTk4MSwianRpIjoiSmN0TUlIUTFycThnbHJMVCJ9.E71TD08H-PlC3mitgrkENsRFOgx7-CwGiP0eEWQaAq8",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "scProductId",
+							"value": "35931",
+							"description": "* Required, شناسه محصول",
+							"type": "text"
+						},
+						{
+							"key": "invoice_id",
+							"value": "237982864",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{pod_host}}nzh/doServiceCall",
+					"host": [
+						"{{pod_host}}nzh"
+					],
+					"path": [
+						"doServiceCall"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

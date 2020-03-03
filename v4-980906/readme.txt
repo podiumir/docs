@@ -1,1 +1,0 @@
-Just change pod.land to pod.ir
