@@ -77,28 +77,28 @@
 
 ```javascript
 {
-"source_city": "2301",
-"destination_city": "2301",
-"parcels": [
-{
-"weight": 200,
-"value": 2000,
-"dimension": {
-"width": 123,
-"height": 20,
-"depth": 10
-}
-},
-{
-"weight": 200,
-"value": 2000,
-"dimension": {
-"width": 123,
-"height": 20,
-"depth": 10
-}
-}
-]
+  "source_city": "2301",
+  "destination_city": "2301",
+  "parcels": [
+    {
+      "weight": 200,
+      "value": 2000,
+      "dimension": {
+        "width": 123,
+        "height": 20,
+        "depth": 10
+      }
+    },
+    {
+      "weight": 200,
+      "value": 2000,
+      "dimension": {
+        "width": 123,
+        "height": 20,
+        "depth": 10
+      }
+    }
+  ]
 }
 ```
 * پاسخ دریافتی: پاسخ دریافتی با پارامترها و ساختار زیر ارسال میشود:
