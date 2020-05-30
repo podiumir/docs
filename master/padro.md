@@ -30,7 +30,7 @@
 * JSON Object ها در پارامتری به نام body  ارسال می­شوند.
 * ساختار پاسخ دریافتی پس از فراخوانی سرویس به صورت زیر است که پاسخ دریافتی از endpoint  مورد نظر در پارامتر result قرار دارد.
 
-```json
+```javascript
 {
   "hasError": false/true,
   "messageId": 0,
