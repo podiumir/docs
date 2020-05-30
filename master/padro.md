@@ -32,17 +32,17 @@
 
 ```javascript
 {
-  "hasError": false/true,
-  "messageId": 0,
-  "referenceNumber": "",
-  "errorCode": 0,
-  "count": 0,
-  "ott": "",
-  "result": {
-    "result": "response",
-    "header": {},
-    "statusCode": 
-  }
+"hasError": false/true,
+"messageId": 0,
+"referenceNumber": "",
+"errorCode": 0,
+"count": 0,
+"ott": "",
+"result": {
+"result": "response",
+"header": {},
+"statusCode":
+}
 }
 ```
 <div class="box-end">
@@ -75,7 +75,7 @@
 
 * نمونه JSON ارسالی:
 
-```json
+```javascript
 {
 "source_city": "2301",
 "destination_city": "2301",
@@ -118,7 +118,7 @@
 | service_type_label | String | کد معادل سرویس |
 
 * نمونه JSON  برگشتی:
-```json
+```javascript
 {
 "quotes": [
 {
@@ -182,7 +182,7 @@
 | depth | String | بله | ارتفاع بسته (سانتی متر) |
 
 * نمونه JSON  ارسالی:
-```json
+```javascript
 {
 	"sender":
 	{
@@ -262,7 +262,7 @@
 | option_ids | Integer | ساعت های جمع آوری بسته در تاریخ مورد نظر بر اساس   کد گزینه option_id |
 
 * نمونه JSON  برگشتی:
-```json
+```javascript
 {
   "options": [
     {
@@ -309,7 +309,7 @@
 | comment | String | بله | توضیحات |
 
 * نمونه JSON  ارسالی:
-```json
+```javascript
 {
 	"pickup_date":"2020-05-26",
 	"option_id":1,
@@ -331,7 +331,7 @@
 * پارامترهای ورودی:
 	* orderId: شماره سفارش
 * پاسخ برگشتی: یک json object به صورت زیر است:
-```json
+```javascript
 {
   "id": "",
   "price": 110000,
