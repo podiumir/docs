@@ -32,7 +32,7 @@
 
 ```javascript
 {
-  "hasError": false/true,
+  "hasError": false,
   "messageId": 0,
   "referenceNumber": "",
   "errorCode": 0,
