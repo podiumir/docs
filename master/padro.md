@@ -22,7 +22,7 @@
 * Header درخواست:
 پارامترهای زیر در Header تمام درخواست ها ثابت است:
 
-|     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    پارامتر    |    توضیحات        &nbsp;&nbsp;&nbsp;                         |
+|         پارامتر    |    توضیحات    |
 |----------------------|---------------------------------------------|
 |    \_token\_    |    API token دریافتی از پنل کسب و کاری    |
 |    \_token_issuer\_    |    این پارامتر دارای مقدار ثابت "1" است.    |
@@ -41,17 +41,17 @@
 
 ```javascript
 {
-"hasError": false/true,
-"messageId": 0,
-"referenceNumber": "",
-"errorCode": 0,
-"count": 0,
-"ott": "",
-"result": {
-"result": "response",
-"header": {},
-"statusCode":
-}
+	"hasError": false/true,
+	"messageId": 0,
+	"referenceNumber": "",
+	"errorCode": 0,
+	"count": 0,
+	"ott": "",
+		"result": {
+		"result": "response",
+		"header": {},
+		"statusCode":
+	}
 }
 ```
 <div class="box-end">
