@@ -23,7 +23,8 @@
 * Header درخواست:
 پارامترهای زیر در Header تمام درخواست ها ثابت است:
 
-<div style="margin-left: auto; margin-right: auto">
+<div style:""text-align: center>
+<div style="display: inline-block">
 
 |           پارامتر    |    توضیحات                                 |
 |----------------------|---------------------------------------------|
@@ -32,7 +33,7 @@
 |    Content-Type    |    application/x-www-form-urlencoded    |
 
 </div>
-
+<div>
 
 * بدنه درخواست:
 پارامترهای زیر در بدنه تمام درخواست ها ثابت است:
