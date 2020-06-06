@@ -1,3 +1,4 @@
+
 - [مقدمه](#menu)
 - [پیش از شروع](#menu)
 - [سرویس دریافت شهرهای مبدا و مقصد](#menu)
@@ -21,20 +22,18 @@
 * تمامی درخواست ها با متد POST ارسال می­شوند.
 * Header درخواست:
 پارامترهای زیر در Header تمام درخواست ها ثابت است:
-<center>
-	
-|         پارامتر    |    توضیحات    |
+
+|           پارامتر    |    توضیحات                                 |
 |----------------------|---------------------------------------------|
 |    \_token\_    |    API token دریافتی از پنل کسب و کاری    |
 |    \_token_issuer\_    |    این پارامتر دارای مقدار ثابت "1" است.    |
 |    Content-Type    |    application/x-www-form-urlencoded    |
 
-</center>
 * بدنه درخواست:
 پارامترهای زیر در بدنه تمام درخواست ها ثابت است:
 
-|    پارامتر    |  توضیحات    |
-|:-----------:|:---------------:|
+|    پارامتر    |    توضیحات    |
+|-------------------|----------------------------------------------------------------|
 |    scProductId    |    شناسه سرویس در حال استفاده    |
 |    scApiKey    |    API Key دریافتی برای سرویس مورد   نظر از پنل کسب و کاری     |
 
@@ -43,17 +42,17 @@
 
 ```javascript
 {
-	"hasError": false/true,
-	"messageId": 0,
-	"referenceNumber": "",
-	"errorCode": 0,
-	"count": 0,
-	"ott": "",
-		"result": {
-			"result": "response",
-			"header": {},
-			"statusCode":
-	}
+"hasError": false/true,
+"messageId": 0,
+"referenceNumber": "",
+"errorCode": 0,
+"count": 0,
+"ott": "",
+"result": {
+"result": "response",
+"header": {},
+"statusCode":
+}
 }
 ```
 <div class="box-end">
@@ -62,6 +61,7 @@
 ## سرویس دریافت شهرهای مبدا و مقصد
 با استفاده از این وب سرویس می توانید نام و کد شهرهای مبدا و مقصد که پادرو سرویس دهی دارد را دریافت کنید.
 * شناسه سرویس: 43641
+* ارامترهای ورودی: ندارد
 <div class="box-end">
 </div>
 
@@ -491,6 +491,6 @@
 </div>
 
 ## نمونه پست من
-https://www.postman.com/collections/a6d7c9cb16cd0d049d0f
+https://podspace.pod.ir/nzh/drive/downloadFile?hash=HBV2JV7CHSF2M4SI
 <div class="box-end">
 </div>
