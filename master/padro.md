@@ -23,7 +23,7 @@
 * Header درخواست:
 پارامترهای زیر در Header تمام درخواست ها ثابت است:
 
-<div style="display: inline-block">
+<div style="margin-left: auto; margin-right: auto">
 
 |           پارامتر    |    توضیحات                                 |
 |----------------------|---------------------------------------------|
