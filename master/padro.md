@@ -22,12 +22,14 @@
 * Header درخواست:
 پارامترهای زیر در Header تمام درخواست ها ثابت است:
 
-<div style="margin:0 auto; width:80%">
+<div style="margin:0 auto; width:500px">
+	
 |           پارامتر    |    توضیحات                                 |
 |----------------------|---------------------------------------------|
 |    \_token\_    |    API token دریافتی از پنل کسب و کاری    |
 |    \_token_issuer\_    |    این پارامتر دارای مقدار ثابت "1" است.    |
 |    Content-Type    |    application/x-www-form-urlencoded    |
+
 </div>
 
 * بدنه درخواست:
