@@ -9,7 +9,6 @@
 - [سرویس لغو سفارش](#menu)
 - [سرویس دریافت اطلاعات سفارش از پادرو](#menu)
 - [سرویس دریافت اطلاعات سفارش از شرکت پستی مورد نظر](#menu)
-- [خطا ها](#menu)
 - [نمونه پست من](#menu)
 
 ## مقدمه
@@ -501,13 +500,9 @@
 <div class="box-end">
 </div>
 
-## خطا ها
-
-<div class="box-end">
-</div>
 
 ## نمونه پست من
-[دریافت نمونه پست من](https://podspace.pod.ir/nzh/drive/downloadFile?hash=HBV2JV7CHSF2M4SI)
+[دریافت نمونه postman اینجا کلیک کنید](https://podspace.pod.ir/nzh/drive/downloadFile?hash=HBV2JV7CHSF2M4SI)
 
 <div class="box-end">
 </div>
