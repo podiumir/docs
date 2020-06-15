@@ -37,17 +37,17 @@
 
 ```javascript
 {
-"hasError": false/true,
-"messageId": 0,
-"referenceNumber": "",
-"errorCode": 0,
-"count": 0,
-"ott": "",
-"result": {
-"result": "response",
-"header": {},
-"statusCode":
-}
+	"hasError": false/true,
+	"messageId": 0,
+	"referenceNumber": "",
+	"errorCode": 0,
+	"count": 0,
+	"ott": "",
+	"result": {
+		"result": "response",
+		"header": {},
+		"statusCode":
+	}
 }
 ```
 <div class="box-end">
@@ -69,11 +69,11 @@
 * ‌نمونه json ارسالی:
 ```javascript
 {
-"InsuranceData": {
-"NationalCode": "11111111111",
-"BirthYear": "1371",
-"MobileNo": "0912*******"
-}
+	"InsuranceData": {
+		"NationalCode": "11111111111",
+		"BirthYear": "1371",
+		"MobileNo": "0912*******"
+	}
 }
 ```
 
@@ -94,17 +94,17 @@
 * ‌نمونه پاسخ برگشتی :
 ```javascript
 {
-"AccidentINSResponse": {
-"AccidentINSResult": {
-"PolicyNo": 123456789,
-"StartDate": 13990324,
-"EndDate": 13990329,
-"Insured": "نام بیمه شده",
-"NationalCode": 1111111111,
-"ResultValue": 0,
-"ResultDesc": 17000
-  }
- }
+	"AccidentINSResponse": {
+		"AccidentINSResult": {
+			"PolicyNo": 123456789,
+			"StartDate": 13990324,
+			"EndDate": 13990329,
+			"Insured": "نام بیمه شده",
+			"NationalCode": 1111111111,
+			"ResultValue": 0,
+			"ResultDesc": 17000
+		  }
+	 }
 }
 ```
 <div class="box-end">
@@ -126,11 +126,11 @@
 * ‌نمونه json ارسالی:
 ```javascript
 {
-"InsuranceData": {
-"NationalCode": "11111111111",
-"BirthYear": "1371",
-"MobileNo": "0912*******"
-}
+	"InsuranceData": {
+		"NationalCode": "11111111111",
+		"BirthYear": "1371",
+		"MobileNo": "0912*******"
+	}
 }
 ```
 
@@ -151,17 +151,17 @@
 * ‌نمونه پاسخ برگشتی :
 ```javascript
 {
-"AccidentINSResponse": {
-"AccidentINSResult": {
-"PolicyNo": 123456789,
-"StartDate": 13990324,
-"EndDate": 13990329,
-"Insured": "نام بیمه شده",
-"NationalCode": 1111111111,
-"ResultValue": 0,
-"ResultDesc": 17000
-}
-}
+	"AccidentINSResponse": {
+		"AccidentINSResult": {
+			"PolicyNo": 123456789,
+			"StartDate": 13990324,
+			"EndDate": 13990329,
+			"Insured": "نام بیمه شده",
+			"NationalCode": 1111111111,
+			"ResultValue": 0,
+			"ResultDesc": 17000
+		}
+	}
 }
 ```
 
@@ -184,7 +184,7 @@
 * ‌نمونه درخواست ارسالی:
 ```javascript
 {
-"PolicyNo": "123456789"
+	"PolicyNo": "123456789"
 }
 ```
 
@@ -198,8 +198,8 @@
 * ‌نمونه پاسخ برگشتی :
 ```javascript
 {
-"AcceptInsuranceResponse": {
-"AcceptInsuranceResult": false/true
+	"AcceptInsuranceResponse": {
+		"AcceptInsuranceResult": false/true
 }
 ```
 
