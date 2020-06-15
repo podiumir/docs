@@ -1,4 +1,5 @@
 - [مقدمه](#menu)
+- [پیش از شروع](#menu)
 - [سرویس استعلام قبوض](#menu)
 - [سرویس های استعلام گروهی قبوض](#menu)
 - [سرویس افزودن گروه](#menu)
@@ -18,7 +19,6 @@
 - [سرویس دریافت شرکت های تابعه یک شرکت](#menu)
 - [جداول](#menu)
 - [خطاها](#menu)
-- [نمونه پست من](#menu)
 
 ## مقدمه
 <div class="box-end">
@@ -327,7 +327,7 @@
 ## سرویس استعلام دسته ای
 
 با استفاده از این سرویس میتوان یک آرایه (دسته) قبض را استعلام نمود.
-* شناسه سرویس: 43962*
+* شناسه سرویس: 43962* 
 * پارامترهای ورودی: یک json با ساختار و پارامترهای زیر:
 
 | توضیحات | نام پارامتر |
@@ -783,51 +783,3 @@
 <div class="box-end">
 </div>
 
-## نمونه پست من
-
-| شرح                                            	| پیام پاسخ                                     	| کد پاسخ 	|
-|------------------------------------------------	|-----------------------------------------------	|---------	|
-| موفق                                           	| Success                                       	| 0       	|
-| اجازه دسترسی ندارید                            	| No Access                                     	| 101     	|
-| نوع قبض ارسال نشده است                         	| Bill Type is Empty                            	| 102     	|
-| پارامتر استعلام ارسال نشده است                 	| Bill Parameter is Empty                       	| 103     	|
-| مقدار ورودی نامعتبر است                        	| Wrong parameter                               	| 104     	|
-| قبض پرداخت شده است                             	| Bill Paid                                     	| 105     	|
-| قبضی یافت نشد                                  	| No Bill                                       	| 106     	|
-| نوع قبض اشتباه است                             	| Bill Wrong Type                               	| 107     	|
-| ستعلام فعال نمی باشد                           	| Service Disable                               	| 108     	|
-| استعلام مورد نظر برای شما فعال نمی باشد        	| Service Disabled                              	| 109     	|
-| استعلام فعال نمی باشد                          	| Service Disabled                              	| 110     	|
-| استعلام فعال نمی باشد                          	| Service Disabled                              	| 111     	|
-| استعلام فعال نمی باشد                          	| Service Disabled                              	| 112     	|
-| آرایه قبوض ارسال نشده است                      	| Bills is Empty                                	| 113     	|
-| مقدار آرایه قبوض نامعتبر است                   	| Invalid Bills Data                            	| 114     	|
-| نام گروه ارسال نشده  است                       	| Please Enter Group Name                       	| 115     	|
-| نوع گروه ارسال نشده است                        	| Please Enter Group Type                       	| 116     	|
-| نوع گروه اشتباه است                            	| Wrong Group Type                              	| 117     	|
-| شناسه گروه ارسال نشده است                      	| Please Enter Group Id                         	| 118     	|
-| شناسه گروه اشتباه است                          	| Wrong gGroup Id                               	| 119     	|
-| گروه موجود نیست                                	| Group Not Exists                              	| 120     	|
-| نوع پارامتر ارسال نشده است                     	| Empty Parameter Type                          	| 121     	|
-| پارامتر ارسال نشده است                         	| Empty Parameter                               	| 122     	|
-| پارامتر در گروه موجود است                      	| Parameter Exist In This Group                 	| 123     	|
-| شناسه پارامتر ارسال نشده است                   	| Empty Parameter Id                            	| 124     	|
-| شناسه پارامتر موجود نیست                       	| Parameter Id Not Exist                        	| 125     	|
-| پارامتر موجود نیست                             	| Parameter Not Exists                          	| 126     	|
-| خطا در درخواست فعالسازی تلفن                   	| Tel Activation Error                          	| 131     	|
-| شماره تلفن ارسال نشده است                      	| TelNumber is Empty                            	| 132     	|
-| شماره تلفن نامعتبر است                         	| TelNumber is Wrong                            	| 133     	|
-| کد فعالسازی ارسال نشده است                     	| ActivationCode is Empty                       	| 134     	|
-| شماره تلفن نیاز به  فعالسازی ندارد             	| This Tel Does Not Require Verification        	| 135     	|
-| شماره تلفن ابتدا نیاز به درخواست فعالسازی دارد 	| Tel Request ActivationCode    Required        	| 136     	|
-| شماره گواهینامه ارسال نشده است                 	| License Number Is Empty                       	| 301     	|
-| شماره گواهینامه نادرست است                     	| License Number Is Invalid                     	| 302     	|
-| اطلاعات یافت نشد                               	| Information Not Found                         	| 303     	|
-| شماره پلاک ارسال نشده است                      	| Plate Number Is Empty                         	| 304     	|
-| شماره پلاک نادرست است                          	| Plate Number Is Invalid                       	| 305     	|
-| کد ملی ارسال نشده است                          	| National Id Is Empty                          	| 306     	|
-| کد ملی نادرست است                              	| National Id Is Invalid                        	| 307     	|
-| توکن نامعتبر است                               	| No HTTP resource was found (401 Unauthorized) 	| 16      	|
-
-<div class="box-end">
-</div>
