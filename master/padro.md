@@ -90,26 +90,28 @@
 {
 "source_city": "2301",
 "destination_city": "2301",
-"parcels": [
-{
-"weight": 200,
-"value": 2000,
-"dimension": {
-"width": 123,
-"height": 20,
-"depth": 10
-}
-},
-{
-"weight": 200,
-"value": 2000,
-"dimension": {
-"width": 123,
-"height": 20,
-"depth": 10
-}
-}
-]
+	"parcels": [
+		{
+			"weight": 200,
+			"value": 2000,
+			"dimension": 
+			{
+				"width": 123,
+				"height": 20,
+				"depth": 10
+			}
+		},
+		{
+			"weight": 200,
+			"value": 2000,
+			"dimension": 
+			{
+				"width": 123,
+				"height": 20,
+				"depth": 10
+			}
+		}
+	]
 }
 ```
 * پاسخ دریافتی: پاسخ دریافتی با پارامترها و ساختار زیر ارسال میشود:
@@ -133,30 +135,30 @@
 ```javascript
 {
 "quotes": [
-{
-"provider_name": "x",
-"provider_code": "x1",
-"provider_logo": "URL to logo",
-"price": 178760,
-"sale_price": 128760,
-"discount_value": 50000,
-"from_hours": 24,
-"to_hours": 72,
-"service_type": "regular",
-"service_type_label": "عادی"
-},
-{
-"provider_name": "y",
-"provider_code": "y1",
-"provider_logo": "URL to logo",
-"price": 110000,
-"sale_price": 70000,
-"discount_value": 40000,
-"from_hours": 24,
-"to_hours": 72,
-"service_type": "regular",
-"service_type_label": "عادی"
-}
+	{
+		"provider_name": "x",
+		"provider_code": "x1",
+		"provider_logo": "URL to logo",
+		"price": 178760,
+		"sale_price": 128760,
+		"discount_value": 50000,
+		"from_hours": 24,
+		"to_hours": 72,
+		"service_type": "regular",
+		"service_type_label": "عادی"
+	},
+	{
+		"provider_name": "y",
+		"provider_code": "y1",
+		"provider_logo": "URL to logo",
+		"price": 110000,
+		"sale_price": 70000,
+		"discount_value": 40000,
+		"from_hours": 24,
+		"to_hours": 72,
+		"service_type": "regular",
+		"service_type_label": "عادی"
+	}
 ]
 }
 ```
