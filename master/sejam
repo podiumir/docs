@@ -1,21 +1,21 @@
 - [مقدمه](#menu)
 - [پیش از شروع](#menu)
-- سرویس متد  دریافت  کد  تایید
-- سرویس دریافت اطلاعات شخص
-- سرویس تأیید  شخص  در  نهاد  احراز  هویت  کننده
-- سرویس متد تخصیص postId
-- سرویس دریافت اطلاعات کشور
-- سرویس دریافت اطلاعات استان
-- سرویس دریافت اطلاعات شهر
-- سرویس دریافت اطلاعات بخش
-- سرویس دریافت اطلاعات شغل
-- سرویس دریافت اطلاعات بانک
-- سرویس دریافت اطلاعات کارگزاری ها
-- سرویس دریافت لیست مراکز منتخب احراز هویت
-- سرویس ارائه اطلاعات مشتریان
-- سرویس های پروفایلینگ سجام
-- سرویس دریافت کد تایید
-- سرویس پروفایلینگ با otp مدت زمان محدود
+- [سرویس متد  دریافت  کد  تایید](#menu)
+- [سرویس دریافت اطلاعات شخص](#menu)
+- [سرویس تأیید  شخص  در  نهاد  احراز  هویت  کننده](#menu)
+- [سرویس متد تخصیصpostId](#menu)
+- [سرویس دریافت اطلاعات کشور](#menu)
+- [سرویس دریافت اطلاعات استان](#menu)
+- [سرویس دریافت اطلاعات شهر](#menu)
+- [سرویس دریافت اطلاعات بخش](#menu)
+- [سرویس دریافت اطلاعات شغل](#menu)
+- [سرویس دریافت اطلاعات بانک](#menu)
+- [سرویس دریافت اطلاعات کارگزاری ها](#menu)
+- [سرویس دریافت لیست مراکز منتخب احراز هویت](#menu)
+- [سرویس ارائه اطلاعات مشتریان](#menu)
+- [سرویس های پروفایلینگ سجام](#menu)
+- [سرویس دریافت کد تایید](#menu)
+- [سرویس پروفایلینگ با otp مدت زمان محدود](#menu)
 - [سرویس دریافت کد تایید](#menu)
 - [سرویس بررسی وجود شخص در سجام](#menu)
 - [سرویس ورود اطلاعات](#menu)
@@ -30,7 +30,7 @@
 
 ## پیش از شروع
 * URL فراخوانی سرویس ها: https://api.pod.ir/srv/sc/nzh/doServiceCall
-* تمامی درخواست ها با متد POST ارسال می­شوند.
+* تمامی درخواست ها با متد POST ارسال می شوند.
 * Header درخواست:
 پارامترهای زیر در Header تمام درخواست ها ثابت است:
 
@@ -54,18 +54,18 @@
 
 ```javascript
 {
-  "hasError": false/true,
-  "messageId": 0,
-  "referenceNumber": "",
-  "errorCode": 0,
-  "count": 0,
-  "ott": "",
-  "result": 
-    {
-      "result": "response",
-      "header": {},
-      "statusCode":
-    }
+	"hasError": false/true,
+	"messageId": 0,
+	"referenceNumber": "",
+	"errorCode": 0,
+	"count": 0,
+	"ott": "",
+	"result": 
+	{
+		"result": "response",
+		"header": {},
+		"statusCode":
+	}
 }
 ```
 
@@ -73,9 +73,9 @@
 
 ```javascript
 {
-"data":
-"meta":
-"error":
+	"data":
+	"meta":
+	"error":
 }
 ```
 
@@ -271,9 +271,9 @@ error: دارای سه فیلد errorCode و customMessage است. فهرست ت
 
 ```javascript
 {
-“issuerReference”: “”,
-“privatePersonImage”: “Base64”,
-“privatePersonSignature”: “Base64”
+	“issuerReference”: “”,
+	“privatePersonImage”: “Base64”,
+	“privatePersonSignature”: “Base64”
 }
 ```
 
@@ -303,11 +303,11 @@ error: دارای سه فیلد errorCode و customMessage است. فهرست ت
 
 ```javascript
 [
-{
-" referenceNumber ": 5618,
-" uniqueIdentifier": "159***7137",
-" postId": "3481955715"
-}
+	{
+		" referenceNumber ": 5618,
+		" uniqueIdentifier": "159***7137",
+		" postId": "3481955715"
+	}
 ]
 ```
 
@@ -333,18 +333,18 @@ error: دارای سه فیلد errorCode و customMessage است. فهرست ت
 
 ```javascript
 {
-"data": [
-{
-"id": 1,
-"ایران": "name "
-},
-{
-"id": 2,
-"چین": "name "
-}
-],
-"meta": null,
-"error": null
+	"data": [
+		{
+			"id": 1,
+			"ایران": "name "
+		},
+		{
+			"id": 2,
+			"چین": "name "
+		}
+		],
+	"meta": null,
+	"error": null
 }
 ```
 
@@ -372,48 +372,47 @@ error: دارای سه فیلد errorCode و customMessage است. فهرست ت
 نمونه json برگشتی:
 
 ```javascript
-<![endif]-->
 {
-"data": [
-{
-"id": 132,
-"مازندران": "name "
-},
-{
-"id": 133,
-"گلستان": "name "
-},
-{
-"id": 134,
-"فارس": "name "
-},
-{
-"id": 135,
-"خراسان رضوئ": "name "
-},
-{
-"id": 136,
-"قزوین": "name "
-},
-{
-"id": 137,
-"اصفهان": "name "
-},
-{
-"id": 138,
-"چهارمحال وبختیارئ": "name "
-},
-{
-"id": 139,
-"کهگیلویه وبویراحمد": "name "
-},
-{
-"id": 140,
-"گیالن": "name "
-}
-],
-"meta": null,
-"error": null
+	"data": [
+		{
+			"id": 132,
+			"مازندران": "name "
+		},
+		{
+			"id": 133,
+			"گلستان": "name "
+		},
+		{
+			"id": 134,
+			"فارس": "name "
+		},
+		{
+			"id": 135,
+			"خراسان رضوئ": "name "
+		},
+		{
+			"id": 136,
+			"قزوین": "name "
+		},
+		{
+			"id": 137,
+			"اصفهان": "name "
+		},
+		{
+			"id": 138,
+			"چهارمحال وبختیارئ": "name "
+		},
+		{
+			"id": 139,
+			"کهگیلویه وبویراحمد": "name "
+		},
+		{
+			"id": 140,
+			"گیلان": "name "
+		}
+	],
+	"meta": null,
+	"error": null
 }
 ```
 <div class="box-end">
@@ -442,42 +441,42 @@ error: دارای سه فیلد errorCode و customMessage است. فهرست ت
 
 ```javascript
 {
-"data": [
-{
-"id": 2115,
-"آذرشهر": "name "
-},
-{
-"id": 2143,
-"اسکو": "name "
-},
-{
-"id": 2156,
-"اهر": "name "
-},
-{
-"id": 2180,
-"بستان آباد": "name "
-},
-{
-"id": 2186,
-"بناب": "name "
-},
-{
-"id": 2220,
-"تبریز": "name "
-},
-{
-"id": 2236,
-"جلفا": "name "
-},
-{
-"id": 2245,
-"چاراویماق": "name "
-}
-],
-"meta": null,
-"error": null
+	"data": [
+		{
+			"id": 2115,
+			"آذرشهر": "name "
+		},
+		{
+			"id": 2143,
+			"اسکو": "name "
+		},
+		{
+			"id": 2156,
+			"اهر": "name "
+		},
+		{
+			"id": 2180,
+			"بستان آباد": "name "
+		},
+		{
+			"id": 2186,
+			"بناب": "name "
+		},
+		{
+			"id": 2220,
+			"تبریز": "name "
+		},
+		{
+			"id": 2236,
+			"جلفا": "name "
+		},
+		{
+			"id": 2245,
+			"چاراویماق": "name "
+		}
+	],
+	"meta": null,
+	"error": null
 }
 ```
 <div class="box-end">
@@ -509,22 +508,22 @@ error: دارای سه فیلد errorCode و customMessage است. فهرست ت
 
 ```javascript
 {
-"data": [
-{
-"id": 2551,
-"آفتاب": "name "
-},
-{
-"id": 3004,
-"کن": "name "
-},
-{
-"id": 3235,
-"مرکزئ": "name "
-}
-],
-"meta": null,
-"error": null
+	"data": [
+		{
+			"id": 2551,
+			"آفتاب": "name "
+		},
+		{
+			"id": 3004,
+			"کن": "name "
+		},
+		{
+			"id": 3235,
+			"مرکزئ": "name "
+		}
+	],
+	"meta": null,
+	"error": null
 }
 ```
 ## سرویس دریافت اطلاعات شغل
@@ -542,46 +541,46 @@ error: دارای سه فیلد errorCode و customMessage است. فهرست ت
 
 ```javascript
 {
-"data": [
-{
-"id": 109174,
-"بیکار": "title "
-},
-{
-"id": 109176,
-"بازنشسته": "title "
-},
-{
-"id": 109178,
-"کارگر": "title "
-},
-{
-"id": 109179,
-"خانه دار": "title "
-},
-{
-"id": 109180,
-"کارمند": "title "
-},
-{
-"id": 123085,
-"سایر": "title "
-},
-{
-"id": 123134,
-"محصل": "title "
-},
-{
-"id": 123135,
-"دانشجوی دانشگاه": "title "
-},
-{
-"id": 123136,
-"نظامی": "title "
-}
-],
-"meta": null,
-"error": null
+	"data": [
+		{
+			"id": 109174,
+			"بیکار": "title "
+		},
+		{
+			"id": 109176,
+			"بازنشسته": "title "
+		},
+		{
+			"id": 109178,
+			"کارگر": "title "
+		},
+		{
+			"id": 109179,
+			"خانه دار": "title "
+		},
+		{
+			"id": 109180,
+			"کارمند": "title "
+		},
+		{
+			"id": 123085,
+			"سایر": "title "
+		},
+		{
+			"id": 123134,
+			"محصل": "title "
+		},
+		{
+			"id": 123135,
+			"دانشجوی دانشگاه": "title "
+		},
+		{
+			"id": 123136,
+			"نظامی": "title "
+		}
+	],
+	"meta": null,
+	"error": null
 }
 ```
 <div class="box-end">
@@ -603,42 +602,42 @@ error: دارای سه فیلد errorCode و customMessage است. فهرست ت
 
 ```javascript
 {
-"data": [
-{
-"id": 127,
-"ملی ایران ": "title "
-},
-{
-"id": 128,
-"صادرات ایران": "title "
-},
-{
-"id": 129,
-"آینده": "title "
-},
-{
-"id": 130,
-"ملت": "title "
-},
-{
-"id": 131,
-"دی": "title "
-},
-{
-"id": 122718,
-"رفاه کارگران": "title "
-},
-{
-"id": 122795,
-"پارسیان": "title "
-},
-{
-"id": 123101,
-"اقتصاد نوین": "title "
-}
-],
-"meta": null,
-"error": null
+	"data": [
+		{
+			"id": 127,
+			"ملی ایران ": "title "
+		},
+		{
+			"id": 128,
+			"صادرات ایران": "title "
+		},
+		{
+			"id": 129,
+			"آینده": "title "
+		},
+		{
+			"id": 130,
+			"ملت": "title "
+		},
+		{
+			"id": 131,
+			"دی": "title "
+		},
+		{
+			"id": 122718,
+			"رفاه کارگران": "title "
+		},
+		{
+			"id": 122795,
+			"پارسیان": "title "
+		},
+		{
+			"id": 123101,
+			"اقتصاد نوین": "title "
+		}
+	],
+	"meta": null,
+	"error": null
 }
 ```
 
@@ -663,35 +662,35 @@ error: دارای سه فیلد errorCode و customMessage است. فهرست ت
  
 ```javascript
 {
-"data": [
-{
-"id": 1,
-"مفید" :"title "
-"code": "11"
-},
-{
-"id": 2,
-"کارا" :"title "
-"code": "12"
-},
-{
-"id": 109234,
-"آبان" :"title "
-"code": "1400"
-},
-{
-"id": 109235,
-"آبتین استاک" :"title "
-"code": "1401"
-},
-{
-"id": 109236,
-"آپادانا" :"title "
-"code": "1402"
-}
-],
-"meta": null,
-"error": null
+	"data": [
+		{
+			"id": 1,
+			"مفید" :"title "
+			"code": "11"
+		},
+		{
+			"id": 2,
+			"کارا" :"title "
+			"code": "12"
+		},
+		{
+			"id": 109234,
+			"آبان" :"title "
+			"code": "1400"
+		},
+		{
+			"id": 109235,
+			"آبتین استاک" :"title "
+			"code": "1401"
+		},
+		{
+			"id": 109236,
+			"آپادانا" :"title "
+			"code": "1402"
+		}
+	],
+	"meta": null,
+	"error": null
 }
 ```
 
@@ -719,31 +718,31 @@ error: دارای سه فیلد errorCode و customMessage است. فهرست ت
 
 ```javascript
 {
-"data": [
-{
-"provinceId": 158,
-,"اردبیل" :"provinceName "
-"cityId": 2130,
-,"اردبیل" :"cityName "
-"telephone": "33623689",
-بزرگراه شهدا خیابان خیرین مدرسه ساز جنب مسجد قائم دفتر پیشخوان قائم" :"address "
-",
-,"صالحه پیرعالیی" :"responsibleName "
-"type": 1
-},
-{
-"provinceId": 158,
-,"اردبیل" :"provinceName "
-"cityId": 2130,
-,"اردبیل" :"cityName "
-"telephone": "33446010",
-,"اردبیل میدان خاتم النبین جنب نمایشگاه موسوی" :"address "
-,"بهراد قنبری" :"responsibleName "
-"type": 1
-},
-],
-"meta": null,
-"error": null
+	"data": [
+		{
+			"provinceId": 158,
+			,"اردبیل" :"provinceName "
+			"cityId": 2130,
+			,"اردبیل" :"cityName "
+			"telephone": "33623689",
+			بزرگراه شهدا خیابان خیرین مدرسه ساز جنب مسجد قائم دفتر پیشخوان قائم" :"address "
+			",
+			,"صالحه پیرعالیی" :"responsibleName "
+			"type": 1
+		},
+		{
+			"provinceId": 158,
+			,"اردبیل" :"provinceName "
+			"cityId": 2130,
+			,"اردبیل" :"cityName "
+			"telephone": "33446010",
+			,"اردبیل میدان خاتم النبین جنب نمایشگاه موسوی" :"address "
+			,"بهراد قنبری" :"responsibleName "
+			"type": 1
+		},
+	],
+	"meta": null,
+	"error": null
 }
 ```
 <div class="box-end">
@@ -813,48 +812,48 @@ error: دارای سه فیلد errorCode و customMessage است. فهرست ت
 نمونه درخواست ارسالی:
 ```javascript
 {
-"callbackUrl": "http://***",
-"members": [
-{
-"uniqueIdentifier": "159***7137",
-"privatePerson": {
-"discount": 50000,
-"mobile": "98935***9824",
-,"سهیال" :"firstName "
-,"علی پور" :"lastName "
-,"حمید" :"fatherName "
-"gender": "female",
-"seriShChar": "string",
-"seriSh": "string",
-"serial": "string",
-"shNumber": "0",
-"birthDate": "1989-07-20T06:20:20.623Z",
-,"هشترود" :"placeOfIssue "
-,"هشترود" :"placeOfBirth "
-"canEditAccounts": 1
-},
-"bankingAccounts": [
-{
-"accountNumber": "string",
-"type": "longTermAccount",
-"sheba": "IR111111111111111111111111",
-"bankId": 127,
-"branchCode": "string",
-"branchName": "string",
-"branchCityId": null,
-"isDefault": 1
-}
-] ,
-"address": {
-"postalCode": "5571849199",
-"countryId": "1",
-"provinceId": "144",
-"cityId": "2520",
-,"خیابان طالقانی" :"address "
-"tel": "string"
-}
-}
-]
+	"callbackUrl": "http://***",
+	"members": [
+		{
+			"uniqueIdentifier": "159***7137",
+			"privatePerson": {
+				"discount": 50000,
+				"mobile": "98935***9824",
+				,"سهیال" :"firstName "
+				,"علی پور" :"lastName "
+				,"حمید" :"fatherName "
+				"gender": "female",
+				"seriShChar": "string",
+				"seriSh": "string",
+				"serial": "string",
+				"shNumber": "0",
+				"birthDate": "1989-07-20T06:20:20.623Z",
+				,"هشترود" :"placeOfIssue "
+				,"هشترود" :"placeOfBirth "
+				"canEditAccounts": 1
+			},
+			"bankingAccounts": [
+				{
+					"accountNumber": "string",
+					"type": "longTermAccount",
+					"sheba": "IR111111111111111111111111",
+					"bankId": 127,
+					"branchCode": "string",
+					"branchName": "string",
+					"branchCityId": null,
+					"isDefault": 1
+				}
+			] ,
+			"address": {
+				"postalCode": "5571849199",
+				"countryId": "1",
+				"provinceId": "144",
+				"cityId": "2520",
+				,"خیابان طالقانی" :"address "
+				"tel": "string"
+			}
+		}
+	]
 }
 ```
 * پاسخ برگشتی: یک json با ساختار  و پارامترهای زیر:
@@ -868,11 +867,11 @@ error: دارای سه فیلد errorCode و customMessage است. فهرست ت
 
 ```javascript
 {
-"data": {
-"reference": "362"
-},
-"meta": null,
-"error": null
+	"data": {
+		"reference": "362"
+	},
+	"meta": null,
+	"error": null
 }
 ```
 در جواب callbackURL خروجی به فرمت زیر که شامل اطالعات مربوط به کد ملیهای ارسال شده و شماره پیگیری است ارسال میگردد:
@@ -905,7 +904,7 @@ error: دارای سه فیلد errorCode و customMessage است. فهرست ت
 
 ```javascript
 {
-"uniqueIdentifier": "159***7137"
+	"uniqueIdentifier": "159***7137"
 }
 ```
 <div class="box-end">
@@ -1259,78 +1258,78 @@ error: دارای سه فیلد errorCode و customMessage است. فهرست ت
 نمونه درخواست ارسالی:
 ```javascript
 {
-"issuerOtp": "3dd370520a9945f28af322f26ad39e61",
-"privatePerson": {
-"nationalCode": "159***7137",
-"mobile": "935***9824",
-"firstName": "نگار",
-"lastName": "مرادی",
-"fatherName": "علی",
-"gender": "female",
-"seriShChar": "الف",
-"seriSh": "6",
-"serial": "666",
-"shNumber": "555",
-"birthDate": "2018-12-05T12:46:26.751Z",
-"placeOfIssue": "تهران",
-"placeOfBirth": "تهران"
-},
-"address": {
-"postalCode": "895***4356",
-"countryId": 1,
-"provinceId": 151,
-"cityId": 2229,
-"cityPrefix": "021",
-"remnantAddress": "داراباد تهران",
-"tel": "65987456",
-"countryPrefix": "98"
-},
-"payment": {
-"amount": 100000,
-"referenceNumber": "26598",
-"saleReferenceId": "26",
-"discount": 100000,
-"dateTime": "2018-12-05T12:46:26.752Z"
-},
-"jobInfo": {
-"jobId": 123159,
-"employmentDate": "2018-12-05T12:46:26.752Z",
-"companyAddress": "ولیعصر",
-"companyPostalCode": "2569638741",
-"companyEmail": "test@csdiran.com",
-"companyCityPrefix": "021",
-"companyPhone": "85962548",
-"jobDescription": "string"
-},
-"bankingAccounts": [
-{
-"accountNumber": "45898676326",
-"type": "longTermAccount",
-"sheba": "IR00000************8796320",
-"bankId": 127,
-"branchCode": "6",
-"branchName": "وفا",
-"branchCityId": 2119,
-"isDefault": true
-}
-],
-"financialInfo": {
-"assetsValue": 0,
-"inComingAverage": 0,
-"sExchangeTransaction": 0,
-"cExchangeTransaction": 0,
-"outExchangeTransaction": 0,
-"transactionLevel": "three",
-"tradingKnowledgeLevel": "excellent"
-},
-"tradingCodes": [
-{
-"type": "product",
-"firstPart": "م",
-"secondPart": "746666",
-"thirdPart": "توز"
-}
-]
+	"issuerOtp": "3dd370520a9945f28af322f26ad39e61",
+	"privatePerson": {
+		"nationalCode": "159***7137",
+		"mobile": "935***9824",
+		"firstName": "نگار",
+		"lastName": "مرادی",
+		"fatherName": "علی",
+		"gender": "female",
+		"seriShChar": "الف",
+		"seriSh": "6",
+		"serial": "666",
+		"shNumber": "555",
+		"birthDate": "2018-12-05T12:46:26.751Z",
+		"placeOfIssue": "تهران",
+		"placeOfBirth": "تهران"
+	},
+	"address": {
+		"postalCode": "895***4356",
+		"countryId": 1,
+		"provinceId": 151,
+		"cityId": 2229,
+		"cityPrefix": "021",
+		"remnantAddress": "داراباد تهران",
+		"tel": "65987456",
+		"countryPrefix": "98"
+	},
+	"payment": {
+		"amount": 100000,
+		"referenceNumber": "26598",
+		"saleReferenceId": "26",
+		"discount": 100000,
+		"dateTime": "2018-12-05T12:46:26.752Z"
+	},
+		"jobInfo": {
+		"jobId": 123159,
+		"employmentDate": "2018-12-05T12:46:26.752Z",
+		"companyAddress": "ولیعصر",
+		"companyPostalCode": "2569638741",
+		"companyEmail": "test@csdiran.com",
+		"companyCityPrefix": "021",
+		"companyPhone": "85962548",
+		"jobDescription": "string"
+	},
+	"bankingAccounts": [
+		{
+			"accountNumber": "45898676326",
+			"type": "longTermAccount",
+			"sheba": "IR00000************8796320",
+			"bankId": 127,
+			"branchCode": "6",
+			"branchName": "وفا",
+			"branchCityId": 2119,
+			"isDefault": true
+		}
+	],
+	"financialInfo": {
+		"assetsValue": 0,
+		"inComingAverage": 0,
+		"sExchangeTransaction": 0,
+		"cExchangeTransaction": 0,
+		"outExchangeTransaction": 0,
+		"transactionLevel": "three",
+		"tradingKnowledgeLevel": "excellent"
+	},
+	"tradingCodes": [
+		{
+			"type": "product",
+			"firstPart": "م",
+			"secondPart": "746666",
+			"thirdPart": "توز"
+		}
+	]
 }
 ```
 پاسخ برگشتی: یک json با ساختار و پارامترهای زیر:
@@ -1442,12 +1441,12 @@ error: دارای سه فیلد errorCode و customMessage است. فهرست ت
 
 ```javascript
 {
-"data": {
-"status": traceCode
-},
-"meta": null,
-"error": null
-}
+	"data": {
+		"status": traceCode
+	},
+	"meta": null,
+	"error": null
+	}
 }
 ```
 
@@ -1469,11 +1468,11 @@ error: دارای سه فیلد errorCode و customMessage است. فهرست ت
 
 ```javascript
 {
-"data": {
-"isSejami": True
-},
-"meta": null,
-"error": null
+	"data": {
+		"isSejami": True
+	},
+	"meta": null,
+	"error": null
 }
 ```
 <div class="box-end">
