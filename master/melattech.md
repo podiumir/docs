@@ -71,7 +71,7 @@
 {
 	"InsuranceData": {
 		"NationalCode": "11111111111",
-		"BirthYear": "1371",
+		"BirthYear": "13710101",
 		"MobileNo": "0912*******"
 	}
 }
@@ -128,7 +128,7 @@
 {
 	"InsuranceData": {
 		"NationalCode": "11111111111",
-		"BirthYear": "1371",
+		"BirthYear": "13710101",
 		"MobileNo": "0912*******"
 	}
 }
