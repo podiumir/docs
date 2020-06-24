@@ -63,7 +63,7 @@
 |--------------	|--------	|---------------	|
 | اطلاعات شخص  	| object 	| InsuranceDate 	|
 | کد ملی       	| string 	| NationalCode  	|
-| سال تولد     	| string 	| BirthYear     	|
+| تاریخ تولد     	| string 	| BirthYear     	|
 | شماره موبایل 	| string 	| MobileNo      	|
 
 * ‌نمونه json ارسالی:
@@ -120,7 +120,7 @@
 |----------------------	|---------------	|---------------------	|
 |     InsuranceData    	|     object    	|     اطلاعات شخص     	|
 |     NationalCode     	|     string    	|     کد ملی          	|
-|     BirthYear        	|     string    	|     سال تولد        	|
+|     BirthYear        	|     string    	|     تاریخ تولد        	|
 |     MobileNo         	|     string    	|     شماره موبایل    	|
 
 * ‌نمونه json ارسالی:
