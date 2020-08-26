@@ -199,7 +199,6 @@
 
 
  ```javascript 
-
 {
   "timestamp": "2019-08-29T12:57:10Z"
   "status": 200,
