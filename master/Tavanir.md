@@ -216,11 +216,11 @@
 ```javascript 
 {
 
-"MobileNo":"0912*******",
+	"MobileNo":"0912*******",
 
-"NationalCode":"9876543219",
+	"NationalCode":"9876543219",
 
-"BILL_IDENTIFIER":1234567891
+	"BILL_IDENTIFIER":1234567891
 
 }
 ```
@@ -231,13 +231,13 @@
 
 {
 
-“status”:200,
+	“status”:200,
 
-“message”:”عملیات با موفقیت انجام شد”,
+	“message”:”عملیات با موفقیت انجام شد”,
 
-“data”: null,
+	“data”: null,
 
-“errors”:[]
+	“errors”:[]
 
 }
 ```
@@ -258,10 +258,9 @@
 **نمونه json ارسالی :**
   
    ```javascript 
- 
 {
 
-“MobileNo”:”0912*******”
+	“MobileNo”:”0912*******”
 
 }
 
@@ -330,13 +329,13 @@
 
 {
 
-“status”:200,
+	“status”:200,
 
-“message”:”عملیات با موفقیت انجام شد”,
+	“message”:”عملیات با موفقیت انجام شد”,
 
-“data”: null,
+	“data”: null,
 
-“errors”:[]
+	“errors”:[]
 
 }
 
@@ -419,8 +418,6 @@
   },
   "error": [],
   "traceno": "-1"
-  
-        
   }
     
  
@@ -495,7 +492,7 @@
           "last_gross_amt": 0,
           "last_sale_year": 0,
           "last_sale_prd": 0
-    }
+    },
     "error": [],
     "traceno": "-1"
 }
@@ -559,8 +556,8 @@
     "status": 200,
     "message": "عملیات با موفقیت انجام شد",
     "data": [
-          {some data}
-          {some data}
+          {some data},
+          {some data},
           {       
                     "ispaid": false,
                     "bill_identifier": "2183329014120",
@@ -588,7 +585,6 @@
                     "service_post_code": null
           }
         ],
-        
     "error": [],
     "traceno": "-1"
 }
@@ -639,17 +635,17 @@
   ```javascript 
 {
 
-"MobileNo":"0912*******",
+	"MobileNo":"0912*******",
 
-"billList":[
+	"billList":[
 
-1234567891,
+		1234567891,
 
-9876543219,
+		9876543219,
 
-3698521473
+		3698521473
 
-]
+	]
 
 }
 ```
@@ -680,7 +676,7 @@
 |LICENSE_EXPIRE_DATE|DATE|تاریخ انقضا پروانه (برای مشترکین دارای پروانه)|
   
   
-**نمونه پاسخ برگشتی در صورت موفقیت آمیز بودن :**
+**نمونه پاسخ برگشتی در صورت موفقیت آمیز بودن:**
   
   
   ```javascript 
@@ -689,7 +685,6 @@
     "status": 200,
     "message": "عملیات با موفقیت انجام شد",
     "data": [
-         
           {       
                     "ispaid": false,
                     "bill_identifier": "1239665706121",
@@ -722,8 +717,7 @@
            {some data},
            {some data},
            {some data},
-           {some data},
-        
+           {some data}
   }
 ```    
 
@@ -813,7 +807,6 @@
     "message": "عملیات با موفقیت انجام شد",
     "data": [
       {
-      
           "bill_serial": 1,
           "sale_year": 98,
           "sale_prd": 1,
@@ -883,36 +876,28 @@
 
   ```javascript 
 {
-    "status": 200,
-    "message": "عملیات با موفقیت انجام شد",
-    "data": [
-      {
-          "payment_DATE": "2019-05-05T06:12:37Z",
-          "payment_AMT": 100000,
-          "payment_identifier": "90880329",
-          "bank_CODE": 12,
-          "ref_CODE": 123456,
-          "chanel_TYPE": 1,
-          "bill_identifier": 1345256314123,
-      },
-      {
-        
-      }
-          "payment_DATE": "2019-05-05T06:12:37Z",
-          "payment_AMT": 200000,
-          "bank_CODE": 17,
-          "ref_CODE": 123456,
-          "chanel_TYPE": 1,
-          "bill_identifier": 1345256314123,
-      }
-      ],
-      "error": []
-      
-}
-          
-      }
-      ],
-      "error": []
+  "status": 200,
+  "message": "عملیات با موفقیت انجام شد",
+  "data": [
+    {
+      "payment_DATE": "2019-05-05T06:12:37Z",
+      "payment_AMT": 100000,
+      "payment_identifier": "90880329",
+      "bank_CODE": 12,
+      "ref_CODE": 123456,
+      "chanel_TYPE": 1,
+      "bill_identifier": 1345256314123
+    },
+    {
+      "payment_DATE": "2019-05-05T06:12:37Z",
+      "payment_AMT": 200000,
+      "bank_CODE": 17,
+      "ref_CODE": 123456,
+      "chanel_TYPE": 1,
+      "bill_identifier": 1345256314123
+    }
+  ],
+  "error": []
 }
 ```
 
@@ -961,9 +946,7 @@
           "bill_identifier": 6003276104323
           
       },
-     
-      "error": []
-      
+   "error": [] 
 }
 ```
           
@@ -1005,20 +988,19 @@
     "sessionkey": "56cef054-e0b9-4412848b-d8febe0496f3",
     "message": "عملیات با موفقیت انجام شد",
     "data": [
-      {''' 
-        
-      },
-      {'''
-        
-      },
-      {
-        "bill_indetifier": 6860154604325,
-        "sale_year" 98,
-        "sale_prd" 3,
-        "payment_dead_line": "2029-08-19T08:25:08.747"
-      }
+	      {''' 
+
+	      },
+	      {'''
+
+	      },
+	      {
+		"bill_indetifier": 6860154604325,
+		"sale_year" 98,
+		"sale_prd" 3,
+		"payment_dead_line": "2029-08-19T08:25:08.747"
+	      }
       ],
-      
     "error": [],
     "traceno": "-1"
 }
