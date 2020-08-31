@@ -215,13 +215,9 @@
 
 ```javascript 
 {
-
 	"MobileNo":"0912*******",
-
 	"NationalCode":"9876543219",
-
 	"BILL_IDENTIFIER":1234567891
-
 }
 ```
 
@@ -230,15 +226,10 @@
 ```javascript 
 
 {
-
 	“status”:200,
-
 	“message”:”عملیات با موفقیت انجام شد”,
-
 	“data”: null,
-
 	“errors”:[]
-
 }
 ```
 
@@ -259,9 +250,7 @@
   
    ```javascript 
 {
-
 	“MobileNo”:”0912*******”
-
 }
 
 ```
@@ -328,15 +317,10 @@
 ```javascript 
 
 {
-
 	“status”:200,
-
 	“message”:”عملیات با موفقیت انجام شد”,
-
 	“data”: null,
-
 	“errors”:[]
-
 }
 
 ```
@@ -634,19 +618,12 @@
   
   ```javascript 
 {
-
 	"MobileNo":"0912*******",
-
 	"billList":[
-
 		1234567891,
-
 		9876543219,
-
 		3698521473
-
 	]
-
 }
 ```
   
