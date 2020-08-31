@@ -71,10 +71,10 @@
 
 ```javascript
 {
-	“status”:200,
-	“message”:””,
-	“errors”:[],
-	“data”: null
+	"status":200,
+	"message":"",
+	"errors":[],
+	"data": null
 }
 ```
 
@@ -82,15 +82,15 @@
 
 ```javascript
 {
-	“status”:500,
-	“message”:”عملیات ناموفق”,
-	“error”:[
+	"status":500,
+	"message":"عملیات ناموفق",
+	"error":[
 	{
-		“ErrorCode”:522,
-		“ErrorMsg”:”شناسه قبض برای این کاربر تکراری است”
+		"ErrorCode":522,
+		"ErrorMsg":"شناسه قبض برای این کاربر تکراری است"
 	}
 	]
-	“data”: null
+	"data": null
 }
 ```
 - قالب فیلدهایی که با نوع تاریخ مشخص شده اند بر اساس استاندارد ISO8601 و بصورت جدول زیر میباشد :
@@ -226,10 +226,10 @@
 ```javascript 
 
 {
-	“status”:200,
-	“message”:”عملیات با موفقیت انجام شد”,
-	“data”: null,
-	“errors”:[]
+	"status":200,
+	"message":"عملیات با موفقیت انجام شد",
+	"data": null,
+	"errors":[]
 }
 ```
 
@@ -250,7 +250,7 @@
   
    ```javascript 
 {
-	“MobileNo”:”0912*******”
+	"MobileNo":"0912*******"
 }
 
 ```
@@ -287,8 +287,7 @@
   },
   "error": [],
   "traceno": "-1"
-  
-   }
+}
 
   ```
   
@@ -317,10 +316,10 @@
 ```javascript 
 
 {
-	“status”:200,
-	“message”:”عملیات با موفقیت انجام شد”,
-	“data”: null,
-	“errors”:[]
+	"status":200,
+	"message":"عملیات با موفقیت انجام شد",
+	"data": null,
+	"errors":[]
 }
 
 ```
@@ -592,7 +591,6 @@
       {
           "errorCode": 501,
           "errorMsg": "serial_number >> ورودی نامعتبر می باشد"
-
       }
       ],
       "traceno": "-1"
