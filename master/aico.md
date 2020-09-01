@@ -479,7 +479,7 @@
 |توضیحات|پارامتر |
 |----|----|
 |قیمت پایانی |ClosingPrice|
-| آخرین قیمت معامله LastTradedPrice|
+| آخرین قیمت معامله| LastTradedPrice|
 |ارزش بازار |MarketValue|
 |اولین قیمت معامله |PriceFirst|
 |بیشترین قیمت معامله| PriceMax|
@@ -511,7 +511,7 @@
 |توضیحات|پارامتر |
 |----|----|  
 |قیمت پایانی |ClosingPrice|
-| آخرین قیمت معامله LastTradedPrice|
+| آخرین قیمت معامله |LastTradedPrice|
 |ارزش بازار |MarketValue|
 |اولین قیمت معامله |PriceFirst|
 |بیشترین قیمت معامله| PriceMax|
@@ -543,7 +543,7 @@
 |توضیحات|پارامتر |
 |----|----|  
 |قیمت پایانی |ClosingPrice|
-| آخرین قیمت معامله LastTradedPrice|
+| آخرین قیمت معامله |LastTradedPrice|
 |ارزش بازار |MarketValue|
 |اولین قیمت معامله |PriceFirst|
 |بیشترین قیمت معامله| PriceMax|
@@ -575,7 +575,7 @@
 |توضیحات|پارامتر |
 |----|----|  
 |قیمت پایانی |ClosingPrice|
-| آخرین قیمت معامله LastTradedPrice|
+| آخرین قیمت معامله |LastTradedPrice|
 |ارزش بازار |MarketValue|
 |اولین قیمت معامله |PriceFirst|
 |بیشترین قیمت معامله| PriceMax|
