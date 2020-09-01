@@ -132,8 +132,8 @@ http://tilin.ir/{hash}
 |     116    |     INVALID_PARAMETER            |     مقدار غیرمجاز   برای پارامتر    |
 |     404    |     NOT_FOUND                    |     خطا در   یافتن hash             |
 |     999    |     INTERNAL_SERVER_EXCEPTION    |     خطای داخلی   سرور               |
-
-می¬شود
+  
+  
 
 <div class="box-end">
 </div>
