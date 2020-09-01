@@ -267,7 +267,7 @@
 |سرمایه گذاری در صندوق های سرمایه گذاری| InvestingInFunds|
 |سرمایه گذاری در گواهی سپرده کالایی| InvestmentInCertificatesofdepositProduct|
 |حسابهای دریافتنی |AccountsReceivable|
-|(جاری کارگزاران(دارایی ها| CurrentBrokersAssets|
+|(جاری کارگزاران (دارایی ها| CurrentBrokersAssets|
 |حسابهای پرداختنی| AccountsPayable PaymentsFundCabinet|
 | پرداختنی به ارکان صندوق|PaymentsFundCabinet|
 |پرداختنی به سرمایه گذاران| PaymentsInvestors|
