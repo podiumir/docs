@@ -133,7 +133,7 @@
 |وجوه دریافتی بابت فروش دارایی های نگهداری شده برای فروش| FundsReceivedForTheSaleOfAssetsHeldForSale|
 |سود سهام پرداختی به سهامداران شرکت اصلی| DividendsPaidToEquityHoldersOfParent|
 |سود سهام پرداختی به سهامداران اقلیت| DividendsPaidToNoncontrollingInterests|
-|دریافت های نقدی حاصل از فروش شرکت های فرعی / وجوه دریافتی جهت فروش شرکت فرعی |CashFlowsFromLosingControlOfSubsidiariesOrOtherBusinesses ClassifiedAsInvestingActivities|
+|دریافت های نقدی حاصل از فروش شرکت&#8202;های فرعی / وجوه دریافتی جهت فروش شرکت فرعی |CashFlowsFromLosingControlOfSubsidiariesOrOtherBusinesses ClassifiedAsInvestingActivities|
 |پرداخت های نقدی برای خرید شرکت های فرعی پس از کسر وجوه نقد تحصیل شده / وجوه پرداختی جهت خرید شرکت فرعی پس از کسر وجوه نقد تحصیل شده |CashFlowsUsedInObtainingControlOfSubsidiariesOrOtherBusin essesClassifiedAsInvestingActivities|
 |وجوه دریافتی بابت فروش سایر سرمایه گذاریهای بلندمدت |OtherCashReceiptsFromSalesOfEquityOrDebtInstrumentsOfOthe rEntitiesClassifiedAsInvestingActivities|
 |وجوه پرداختی بابت تحصیل سایر سرمایه گذاری های بلند مدت |OtherCashPaymentsToAcquireEquityOrDebtInstrumentsOfOtherE ntitiesClassifiedAsInvestingActivities|
