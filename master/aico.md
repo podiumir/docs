@@ -724,10 +724,10 @@
 |وضعیت بازار |MarketState |
 |ارزش بازار| MarketValue|
 |تاریخ دریافت |RecordReceiveDate|
-|نام بازار، شماره معامله، تاریخ دریافت|MarketType,MarketName,Flow,ReceiveDate,TimeStamp|
+|نام بازار، شماره معامله، تاریخ دریافت|MarketType --> MarketName, Flow, ReceiveDate, TimeStamp|
 |آخرین مقدار هفتگی |LastRecOfWeek|
 | آخرین مقدار ماهانه |LastRecOfMonth|
-| آخرین مقدار ساالنه |LastRecO|
+| آخرین مقدار سالانه |LastRecO|
 
 
 
