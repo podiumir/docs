@@ -99,7 +99,7 @@
 |دریافتهای نقدی حاصل از سود سهام/سود سهام دریافتی|DividendReceived|
 |پرداختهای نقدی بابت سود سهام / سود سهام پرداختی|DavidendsPaid|
 |سود پرداختی بابت استقراض|InterestPaidBorrowing|
-|دریافتهای نقدی حاصل تز سود سایر سرمایه گذاریها/سود دریافتی بابت سایر سرمایه گذاریها|DividendsRecivedOtherInvesting|
+|دریافتهای نقدی حاصل از سود سایر سرمایه گذاریها/سود دریافتی بابت سایر سرمایه گذاریها|DividendsRecivedOtherInvesting|
 |جریان خالص ورود(خروج)وجه نقد ناشی از بازده سرمایه گذاریهاو سود پرداختی بابت تامین مالی|NetInvestmenReturnsPaymentOnFinancingCosts_Sum|
 |پرداختهای نقدی بابت مالیات بر درآمد/مالیات بر درآمد پرداختی|IncomeTaxesPayments|
 |وجوه دریافتی بابت فروش داراییهای ثابت مشهود/دریافتهای نقدی حاصل از فروش داراییهای ثابت مشهود|ProceedsFromSaleOfProperty|
@@ -110,12 +110,12 @@
 |وجوه پرداختی بابت خرید سرمایه گذاری بلندمدت/وجوه پرداختی بابت تحصیل سایر سرمایه گذاریهای بلندمدت|PurchaseOfNonCurrentInvestments|
 |وجوه دریافتی بابت فروش سرمایه گذاریهای کوتاه مدت/دریافتهای نقدی حاصل از فروش سرمایه گذاریهای کوتاه مدت|ProceedsFromSaleOfCurrentnvestments|
 |وجوه پرداختی بابت خرید سرمایه گذاریهای کوتاه مدت/پرداختهای نقدی برای تحصیل سرمایه گذاریهای کوتاه مدت|PurchaseOfCurrentInvestment|
-|جریان خالص ورود(خروج)وجه نقد قبل از فعالیتهای تامین مالی|NetBeforeFinancingActivities_Sum|
+|جریان خالص ورود (خروج) وجه نقد قبل از فعالیتهای تامین مالی|NetBeforeFinancingActivities_Sum|
 |دریافتهای نقدی حاصل از افزایش سرمایه/وجوه حاصل از افزایش سرمایه شرکت اصلی/وجوه دریافت حاصل از افزایش سرمایه|ProceedsFromIssuingShares|
 |وجوه دریافتی حاصل از استقراض|ProceedsFromBorrwings|
 |بازپرداخت اصل استقراض/بازپرداخت استقراض|RepaymentsOfBorrowings|
 |جریان خالص ورود(خروج)وجه نقد ناشی از فعالیتهای تامین مالی/جریان خالص ورود(خروج)نقد حاصلاز فعالیتهای تامین مالی|NetFinancingActivitities_Sum|
-|خالص افزایش(کاهش)در موجودی نقد|NetIncreaseInCash_Sum|
+|خالص افزایش (کاهش) در موجودی نقد|NetIncreaseInCash_Sum|
 |مانده موجودی نقد در ابتدای سال/موجودی نقد در ابتدای دوره/مانده وجه نقد در ابتدای دوره|CashAtBeginninigOfPerid|
 |تاثیر تغییرات نرخ ارز|ExchangeRateChangesOnCash|
 |مانده موجودی نقد در پایان سال / موجودی نقد در پایان دوره/وجه نقد در پایان دوره|CashAtEndOfPeriod_Sum|
@@ -129,13 +129,13 @@
 |وجوه دریافتی بابت فروش سهام شرکت اصلی توسط شرکت های فرعی- سهام خزانه / وجوه دریافتی بابت فروش سهام خزانه / دریافت های نقدی حاصل از فروش سهام خزانه |ProceedsFromSaleOrIssueOfTreasuryShares|
 |وجوه پرداختی بابت خرید سرمایه گذاری در املاک / پرداخت های نقدی برای تحصیل سرمایه گذاری در املاک |PurchaseOfInvestmentProperty|
 |وجوه دریافتی بابت فروش سرمایه گذاری در املاک / دریافت های نقدی حاصل از فروش سرمایه گذاری در املاک |ProceedsFromSalesOfInvestmentProperty|
-وجوه حاصل از افزایش سرمایه شرکت های فرعی - سهم اقلیت / دریافت های نقدی حاصل از افزایش سرمایه شرکت های فرعی - سهم منافع فاقد حق کنترل |ProceedsFromIssuingSharesOfSubsidiariesAttributableToNonc ontrollingInterests|
+وجوه حاصل از افزایش سرمایه شرکت های فرعی - سهم اقلیت / دریافت های نقدی حاصل از افزایش سرمایه شرکت های فرعی - سهم منافع فاقد حق کنترل |ProceedsFromIssuingSharesOfSubsidiariesAttributableToNoncontrollingInterests|
 |وجوه دریافتی بابت فروش دارایی های نگهداری شده برای فروش| FundsReceivedForTheSaleOfAssetsHeldForSale|
 |سود سهام پرداختی به سهامداران شرکت اصلی| DividendsPaidToEquityHoldersOfParent|
 |سود سهام پرداختی به سهامداران اقلیت| DividendsPaidToNoncontrollingInterests|
 |دریافت های نقدی حاصل از فروش شرکت های فرعی / وجوه دریافتی جهت فروش شرکت فرعی |CashFlowsFromLosingControlOfSubsidiariesOrOtherBusinesses ClassifiedAsInvestingActivities|
 |پرداخت های نقدی برای خرید شرکت های فرعی پس از کسر وجوه نقد تحصیل شده / وجوه پرداختی جهت خرید شرکت فرعی پس از کسر وجوه نقد تحصیل شده |CashFlowsUsedInObtainingControlOfSubsidiariesOrOtherBusin essesClassifiedAsInvestingActivities|
-|وجوه دریافتی بابت فروش سایر سرمایهگذاریهای بلندمدت |OtherCashReceiptsFromSalesOfEquityOrDebtInstrumentsOfOthe rEntitiesClassifiedAsInvestingActivities|
+|وجوه دریافتی بابت فروش سایر سرمایه گذاریهای بلندمدت |OtherCashReceiptsFromSalesOfEquityOrDebtInstrumentsOfOthe rEntitiesClassifiedAsInvestingActivities|
 |وجوه پرداختی بابت تحصیل سایر سرمایه گذاری های بلند مدت |OtherCashPaymentsToAcquireEquityOrDebtInstrumentsOfOtherE ntitiesClassifiedAsInvestingActivities|
 |دریافت های نقدی حاصل از افزایش سرمایه شرکت اصلی / وجوه حاصل از افزایش سرمایه شرکت اصلی |ProceedsFromIssuingSharesOfParent|
 |دریافت های نقدی حاصل از فروش دارایی های نگهداری شده برای فروش| CashReceiptsFromSaleOfSaleAssets|
