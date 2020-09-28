@@ -38,7 +38,8 @@
 |    scApiKey    |    API Key دریافتی برای سرویس مورد   نظر از پنل کسب و کاری     |
 
 - جهت دریافت apikey کالکشن postman زیر را دریافت کنید. ابتدا میبیاست سرویس **درخواست سرویس** را اجرا کنید وسپس پارامتر id بازگشتی در پاسخ این سرویس را در سرویس **دریافت apikey** وارد و apikey را دریافت کنید. این مقادیر در قسمت examples درخواست های postman مشخص شده اند.  
-[Get APIKey Postman Collection](https://podspace.pod.ir/nzh/drive/downloadFile?hash=JYI7NBEC9V61NU9W)
+
+[دریافت کالکشن Postman](https://podspace.pod.ir/nzh/drive/downloadFile?hash=JYI7NBEC9V61NU9W)
 * json Object ها در پارامتری به نام body  ارسال می­شوند.
 * ساختار پاسخ دریافتی پس از فراخوانی سرویس به صورت زیر است که پاسخ دریافتی از endpoint  مورد نظر در پارامتر result قرار دارد.
 
