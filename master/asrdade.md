@@ -52,17 +52,17 @@
 
 ```javascript
 {
-"hasError": false/true,
-"messageId": 0,
-"referenceNumber": "",
-"errorCode": 0,
-"count": 0,
-"ott": "",
-"result": {
-"result": "response",
-"header": {},
-"statusCode":
-}
+  "hasError": false/true,
+  "messageId": 0,
+  "referenceNumber": "",
+  "errorCode": 0,
+  "count": 0,
+  "ott": "",
+  "result": {
+    "result": "response",
+    "header": {},
+    "statusCode":
+  }
 }
 ```
 <div class="box-end">
