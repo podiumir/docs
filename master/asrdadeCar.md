@@ -66,8 +66,8 @@
 
 | پارامتر | نوع | توضیحات |
 |--------:|---------:|---------:|
-| \_token_type\_ | String | نوع توکن |
-| \_access_token\_ | String | توکن دسترسی |
+| token_type | String | نوع توکن |
+| access_token | String | توکن دسترسی |
 
 توجه : فرمت ارسال توکن در پارامتر Authorization به صورت زیر است:  
 
