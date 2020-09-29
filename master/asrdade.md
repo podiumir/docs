@@ -45,7 +45,7 @@
 
 - جهت دریافت apikey کالکشن postman زیر را دریافت کنید. ابتدا میبیاست سرویس **درخواست سرویس** را اجرا کنید وسپس پارامتر id بازگشتی در پاسخ این سرویس را در سرویس **دریافت apikey** وارد و apikey را دریافت کنید. این مقادیر در قسمت examples درخواست های postman مشخص شده اند.  
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[کالکشن postman راهنمای دریافت apikey](https://space.pod.ir/file/B9SAPKV6CHX9MUX6?dl=1)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[کالکشن postman راهنمای دریافت apikey](https://space.pod.ir/file/B9SAPKV6CHX9MUX6?dl=1)
 
 * json Object ها در پارامتری به نام body  ارسال می­شوند.
 * ساختار پاسخ دریافتی پس از فراخوانی سرویس به صورت زیر است که پاسخ دریافتی از endpoint  مورد نظر در پارامتر result قرار دارد.
