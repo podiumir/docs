@@ -45,9 +45,9 @@
 -  عکسها و موارد مورد نیاز که میبایست در فراخوانی سرویس های هوش مصنوعی استفاده شوند الزاما میبایست در [پاداسپیس](https://space.pod.ir) بارگذاری شده و سپس در فراخوانی سرویس ها مورد استفاده قرار گیرد.  
 - فرمت لینک دهی فایل ها در پاداسپیس به این صورت است:  
 
-https://podspace.pod.ir/nzh/drive/downloadFile?hash={hash}  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;https://podspace.pod.ir/nzh/drive/downloadFile?hash={hash}  
 
-که {hash} کد هش فایل بارگذاری شده در پاداسپیس میباشد.  
+که&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {hash} کد هش فایل بارگذاری شده در پاداسپیس میباشد.  
 
 * json Object ها در پارامتری به نام body  ارسال می­شوند.
 * ساختار پاسخ دریافتی پس از فراخوانی سرویس به صورت زیر است که پاسخ دریافتی از endpoint  مورد نظر در پارامتر result قرار دارد.
