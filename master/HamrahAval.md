@@ -69,25 +69,15 @@
 {
 
   "IsSuccess": "true",
-
   "ResultData": {
-
     "BillAmount":"میزان بدهی",
-
     "BillId": "شناسه قبض",
-
     "PaymentId": "شناسه پرداخت"
-
   },
-
   "Message": null,
-
   "SeqNumber": "0",
-
   "RefrenceNumber": "0",
-
   "Result": "Unknown"
-
 }
 ```
 
@@ -97,17 +87,11 @@
 
 {
   "IsSuccess": "false",
-
   "ResultData": "10",
-
   "Message": "شماره موبایل یافت نشد",
-
   "SeqNumber": "0",
-
   "RefrenceNumber": "0",
-
   "Result": "Unknown"
-
 }
 ```
 
@@ -117,19 +101,12 @@
 ```javascript 
 
 {
-
   "IsSuccess": "false",
-
   "ResultData": "30",
-
   "Message": "تسویه شده است",
-
   "SeqNumber": "0",
-
   "RefrenceNumber": "0",
-
   "Result": "Unknown"
-
 }
 
 ```
