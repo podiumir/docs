@@ -67,7 +67,6 @@
 ```javascript 
 
 {
-
   "IsSuccess": "true",
   "ResultData": {
     "BillAmount":"میزان بدهی",
