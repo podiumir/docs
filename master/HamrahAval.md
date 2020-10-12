@@ -17,7 +17,6 @@
 |    \_token\_    |    API token دریافتی از پنل کسب و کاری    |
 |    \_token_issuer\_    |    این پارامتر دارای مقدار ثابت "1" است.    |
 |    Content-Type    |    application/x-www-form-urlencoded    |
-|   Authorization    |     دریافتی از سرویس دریافت توکن    |
 
 * بدنه درخواست:
 پارامترهای زیر در بدنه تمام درخواست ها ثابت است:
