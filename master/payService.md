@@ -89,45 +89,25 @@
 ```javacript
 
 {
-
-"id": 111111,
-
-"billId": "",
-
-"paymentId": "",
-
-"price": 156000.0,
-
-"utilityCompanyName": "تلفن همراه",
-
-"subUtilityCompanyName": "کشوری091",
-
-"requestDate": 1603527222081,
-
-"referenceNumber": 111111,
-
-"status": "SERVICE_BILL_ACCEPTED",
-
-"invoiceId": 12546987,
-
-"settlementRequestId": 0,
-
-"userSrv": {
-
-"id": 1196325, // pod userid
-
-"name": "",
-
-"ssoId": "",
-
-"ssoIssuerCode": 1,
-
-"profileImage": ""
-
-},
-
-"cancelDate": 0
-
+  "id": 111111,
+  "billId": "",
+  "paymentId": "",
+  "price": 156000.0,
+  "utilityCompanyName": "تلفن همراه",
+  "subUtilityCompanyName": "کشوری091",
+  "requestDate": 1603527222081,
+  "referenceNumber": 111111,
+  "status": "SERVICE_BILL_ACCEPTED",
+  "invoiceId": 12546987,
+  "settlementRequestId": 0,
+  "userSrv": {
+    "id": 1196325, // pod userid
+    "name": "",
+    "ssoId": "",
+    "ssoIssuerCode": 1,
+    "profileImage": ""
+  },
+  "cancelDate": 0
 }
 ```
 
@@ -182,7 +162,8 @@
 
 ## صحت­‌سنجی شناسه قبض و شناسه پرداخت
 
-شماره قبض حداقل 6 رقم می‌باشد:
+شماره قبض حداقل 6 رقم می‌باشد:  
+
 |کد پرونده|کد شرکت تابعه|کد نوع خدمت|رقم کنترلی|
 |----|----|----|----|
 |حداکثر 8 رقم|3 رقم|1 رقم| 1 رقم|
