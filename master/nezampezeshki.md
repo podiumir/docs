@@ -182,27 +182,16 @@
 
 ```javascript
 {
-
-"Result": [
-
-{
-
-"Office_PostalCode": "کد پستی"
-
-},...
-
-],
-
-"Script": null,
-
-"Html": null,
-
-"IsSuccess": true,
-
-"Message": null,
-
-"Exception": null
-
+ "Result": [
+   {
+   "Office_PostalCode": "کد پستی"
+   },...
+ ],
+ "Script": null,
+ "Html": null,
+ "IsSuccess": true,
+ "Message": null,
+ "Exception": null
 }
 ```
 
@@ -220,29 +209,17 @@
 ``` javascript
 
 {
-
-"Result":[
-
-{
-
-"Office_TelCode": "کد شهر",
-
-"Office_Tel": "شماره تلفن"
-
-},...
-
-],
-
-"Script": null,
-
-"Html": null,
-
-"IsSuccess": true,
-
-"Message": null,
-
-"Exception": null
-
+ "Result":[
+  {
+  "Office_TelCode": "کد شهر",
+  "Office_Tel": "شماره تلفن"
+  },...
+ ],
+ "Script": null,
+ "Html": null,
+ "IsSuccess": true,
+ "Message": null,
+ "Exception": null
 }
 
 ```
@@ -260,35 +237,20 @@
 
 ``` javascrpit
 {
-
-"Result":[
-
-{
-
-"PM_StartDateShamsi": "تاریخ شروع اعتبار به شمسی",
-
-"PM_StartDate": "تاریخ شروع اعتبار میلادی",
-
-"PM_ExpireDateShamsi": "تاریخ اتمام اعتبار به شمسی",
-
-"PM_ExpireDate": "تاریخ اتمام اعتبار به میلادی",
-
-"PM_CityTitle" : "شهر مجاز پروانه"
-
-},...
-
-],
-
-"Script": null,
-
-"Html": null,
-
-"IsSuccess": true,
-
-"Message": null,
-
-"Exception": null
-
+ "Result":[
+  {
+  "PM_StartDateShamsi": "تاریخ شروع اعتبار به شمسی",
+  "PM_StartDate": "تاریخ شروع اعتبار میلادی",
+  "PM_ExpireDateShamsi": "تاریخ اتمام اعتبار به شمسی",
+  "PM_ExpireDate": "تاریخ اتمام اعتبار به میلادی",
+  "PM_CityTitle" : "شهر مجاز پروانه"
+  },...
+ ],
+ "Script": null,
+ "Html": null,
+ "IsSuccess": true,
+ "Message": null,
+ "Exception": null
 }
 ```
 
@@ -310,39 +272,22 @@
 
 ``` javascript 
 {
-
-"Result":{
-
-"TotalSize":تعداد کل رکوردهایی که با جستجو مطابقت دارد,
-
-"PageSize":تعداد رکورد در هر صفحه ارسالی,
-
-"PageNumber":شماره صفحه ارسالی,
-
-"PageCount":تعداد کل صفحات,
-
-"Items":[
-
-"شماره نظام اول",
-
-"شماره نظام دوم",
-
-...
-
-]
-
-} ,
-
-"Script": null,
-
-"Html": null,
-
-"IsSuccess": true,
-
-"Message": null,
-
-"Exception": null
-
+ "Result":{
+  "TotalSize":تعداد کل رکوردهایی که با جستجو مطابقت دارد,
+  "PageSize":تعداد رکورد در هر صفحه ارسالی,
+  "PageNumber":شماره صفحه ارسالی,
+  "PageCount":تعداد کل صفحات,
+  "Items":[
+   "شماره نظام اول",
+   "شماره نظام دوم",
+   ...
+  ]
+ } ,
+ "Script": null,
+ "Html": null,
+ "IsSuccess": true,
+ "Message": null,
+ "Exception": null
 }
 ```
 
@@ -365,39 +310,22 @@
 ``` javascript
 
 {
-
-"Result":{
-
-"TotalSize":تعداد کل رکوردهایی که با جستجو مطابقت دارد,
-
-"PageSize":تعداد رکورد در هر صفحه ارسالی,
-
-"PageNumber":شماره صفحه ارسالی,
-
-"PageCount":تعداد کل صفحات,
-
-"Items":[
-
-"شماره نظام اول",
-
-"شماره نظام دوم",
-
-...
-
-]
-
-},
-
-"Script": null,
-
-"Html": null,
-
-"IsSuccess": true,
-
-"Message": null,
-
-"Exception": null
-
+ "Result":{
+  "TotalSize":تعداد کل رکوردهایی که با جستجو مطابقت دارد,
+  "PageSize":تعداد رکورد در هر صفحه ارسالی,
+  "PageNumber":شماره صفحه ارسالی,
+  "PageCount":تعداد کل صفحات,
+  "Items":[
+   "شماره نظام اول",
+   "شماره نظام دوم",
+   ...
+  ]
+ },
+ "Script": null,
+ "Html": null,
+ "IsSuccess": true,
+ "Message": null,
+ "Exception": null
 }
 ```
 
@@ -414,35 +342,20 @@
 
 ``` javascript
 {
-
-"Result": {
-
-"FirstName": "نام",
-
-"LastName": "نام خانوادگی",
-
-"DateOfCreation": "تاریخ صدور (تاریخ شمسی)",
-
-"ExpiryDate": "تاریخ پایان اعتبار (تاریخ شمسی)",
-
-"CardStatusTitle": "نام وضعیت کارت"
-
-"CardStatus": "وضعیت کارت صادر شده شامل کلاسی با مقادیر (فعالی=Issued / معلق=Suspended / باطل=Revoked)"
-
-"CardStatusID": "شناسه وضعیت کارت"
-
-},
-
-"Script": null,
-
-"Html": null,
-
-"IsSuccess" : true,
-
-"Message"  : null,
-
-"Exception" : null
-
+ "Result": {
+  "FirstName": "نام",
+  "LastName": "نام خانوادگی",
+  "DateOfCreation": "تاریخ صدور (تاریخ شمسی)",
+  "ExpiryDate": "تاریخ پایان اعتبار (تاریخ شمسی)",
+  "CardStatusTitle": "نام وضعیت کارت"
+  "CardStatus": "وضعیت کارت صادر شده شامل کلاسی با مقادیر (فعالی=Issued / معلق=Suspended / باطل=Revoked)"
+  "CardStatusID": "شناسه وضعیت کارت"
+ },
+ "Script": null,
+ "Html": null,
+ "IsSuccess" : true,
+ "Message"  : null,
+ "Exception" : null
 }
 ```
 
@@ -457,34 +370,19 @@
 - پاسخ برگشتی:
 
 ``` javascript
-
 {
-
 "Result": [
-
-{
-
-"Office_ProvinceTitle": "استان",
-
-"Office_CityTitle": "شهر",
-
-"Office_Address": "آدرس",
-
-"AddressType" : "نوع آدرس"
-
-},...
-
+ {
+ "Office_ProvinceTitle": "استان",
+ "Office_CityTitle": "شهر",
+ "Office_Address": "آدرس",
+ "AddressType" : "نوع آدرس"
+ },...
 ],
-
 "Script": null,
-
 "Html": null,
-
 "IsSuccess": true,
-
 "Message": null,
-
 "Exception": null
-
 }
 ```
