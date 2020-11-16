@@ -1,6 +1,6 @@
 - [مقدمه](#menu)
 - [پیش از شروع](#menu)
-- [ دریافت کد شهرها](#menu)
+- [دریافت کد شهرها](#menu)
 - [دریافت شماره نظام پزشکی (McCode) از روی کد ملی](#menu)
 - [دریافت نام و نام خانوادگی پزشک از روی شماره نظام پزشکی](#menu)
 - [دریافت مدرک تحصیلی پزشک، شهر، تاریخ فارغ ‌التحصیلی از روی شماره نظام پزشکی](#menu)
@@ -64,7 +64,7 @@
 <div class="box-end">
 </div>
 
-##  دریافت کد شهرها
+## دریافت کد شهرها
 
 
 - شناسه سرویس : 51829
@@ -103,27 +103,16 @@
 
 ``` javascript
 {
-
-"Result": [
-
-{
-
-"McCode": ""
-
-}
-
-],
-
-"Script": null,
-
-"Html": null,
-
-"IsSuccess": true,
-
-"Message": null,
-
-"Exception": null
-
+ "Result": [
+  {
+  "McCode": ""
+  }
+  ],
+ "Script": null,
+ "Html": null,
+ "IsSuccess": true,
+ "Message": null,
+ "Exception": null
 }
 ```
 
