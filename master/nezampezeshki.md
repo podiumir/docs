@@ -148,8 +148,6 @@
 - پاسخ برگشتی:
 
 ``` javascript
-
-
 {
 "Result": {
  "FirstName": "",
@@ -176,7 +174,6 @@
 - پاسخ برگشتی:
 
 ``` javascript
-
 {
 "Result": {
  "Spec_DegreeFieldTitle": "دکترای حرفه‌ای پزشکی",
@@ -228,7 +225,6 @@
 - پاسخ برگشتی:
 
 ``` javascript
-
 {
  "Result":[
   {
@@ -329,7 +325,6 @@
 - پاسخ برگشتی:
 
 ``` javascript
-
 {
  "Result":{
   "TotalSize":تعداد کل رکوردهایی که با جستجو مطابقت دارد,
