@@ -1299,7 +1299,9 @@ HTTP/1.1 200 OK
 
 |توضیحات|نوع|پارامتر|
 |-----|----|----|
-|1: Unknown Error.2: Cannot Parse Request.3: Invalid Hotel ID.4: Timeout requested. Ask to requests for the specified time.5: Recoverable Error. Equivalent to http 503.6: You haven't defined any contracts with the given hotel.7: Unable to retrieve hotel's data.|Number|Code|
+|1: Unknown Error.
+2: Cannot Parse Request.
+3: Invalid Hotel ID.4: Timeout requested. Ask to requests for the specified time.5: Recoverable Error. Equivalent to http 503.6: You haven't defined any contracts with the given hotel.7: Unable to retrieve hotel's data.|Number|Code|
 |توضیحات خطای رخ داده. این پارامتر برای عیب‌یابی استفاده می­شود. ماکزیمم 1000 کاراکتر|String|Message|
 |تعداد ثانیه‌­های انتظار برای ارسال درخواست جدید. مرتبط با error code 4|Number|Timeout|
 
