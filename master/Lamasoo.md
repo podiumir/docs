@@ -111,12 +111,6 @@
 |شناسه­ های امکانات هتل|string|amenities|
 |ماکزیمم تعداد مهمانان مجاز در اتاق|number|capacity|
 |ماکزیمم تعداد مهمانان مجاز اضافی در اتاق|number|extera_capacity|
-|آرایه ه­ای از طبقه­ بندی و تعداد تخت­های موجود در یک اتاق|Object|bed_configurations|
-|کد تخت OpenTravel|number|code|
-|تعداد تخت­های از این نوع خاص در اتاق|number|count|
-||BedConfiguration[]|extra_bed_configurations|
-|کد تخت OpenTravel|number|code|
-|تعداد تخت­های از این نوع خاص در اتاق|number|count|
 |سیاست استعمال سیگار در هتل. یکی از مقادیر smoking یا non_smoking|string|smoking_policy|
 |آرایه­‌ای از تصاویر اتاق|Object[]|images|
 |آدرس url تصویر|string|url|
@@ -138,7 +132,6 @@
     {
       "id": 258705,
       "name": "هتل زیبا",
-      "available_for_booking": "true",
       "star": 1,
       "street": "نام خیابان",
       "city": "eb34",
@@ -160,8 +153,6 @@
           "amenities": [],
           "capacity": 2,
           "extra_capacity": 0,
-          "bed_configurations": [],
-          "extra_bed_configurations": [],
           "smoking_policy": "",
           "images": []
         },
@@ -172,8 +163,6 @@
           "amenities": [],
           "capacity": 3,
           "extra_capacity": 0,
-          "bed_configurations": [],
-          "extra_bed_configurations": [],
           "smoking_policy": "",
           "images": []
         },
@@ -184,8 +173,6 @@
           "amenities": [],
           "capacity": 4,
           "extra_capacity": 0,
-          "bed_configurations": [],
-          "extra_bed_configurations": [],
           "smoking_policy": "",
           "images": []
         },
@@ -196,8 +183,6 @@
           "amenities": [],
           "capacity": 4,
           "extra_capacity": 0,
-          "bed_configurations": [],
-          "extra_bed_configurations": [],
           "smoking_policy": "",
           "images": []
         }
@@ -556,196 +541,196 @@
 
 ```javascript
 {
-	"api_version": "0.1.1",
-	"lang": "fa_IR",
-	"hotel_id": "12345678",
-	"room_types": [
-		{
-			"id": "1659",
-			"title" :"اتاق یک تخته"
-			"capacity": 1,
-			"extra_capacity": 0,
-			"rooms_remaining_per_day": [
-				{
-					"date": "2016-05-08",
-					"count": 10
-				}
-			],
-			"rooms_remaining": 10
-		},
-		{
-			"id": "165b",
-			"title" :"اتاق یک دو تخته",
-			"capacity": 2,
-			"extra_capacity": 1,
-			"rooms_remaining_per_day": [
-				{
-					"date": "2016-05-08",
-					"count": 6
-				}
-			],
-			"rooms_remaining": 6
-		}
-	],
-	"rate_plans": [
-		{
-			"id": "98c3",
-			"title" :"معمولی",
-			"desc" :"توضیحات",
-			"extra_guest_cost_per_day": [
-				{
-					"date": "2016-05-08",
-					"price": 2200000,
-					"price_to_pay": 2200000
-				}
-			]
-			"extra_guest_cost": {
-				"price": 7000000,
-				"taxes": 700000,
-				"final_price": 7700000,
-				"price_to_pay": 6380000
-			},
-			"meal_type": "BB",
-			"transfer": "None",
-			"half_extra_price": true,
-			"cancellation_policies": [
-				{
-					"period": "480h",
-					"penalty": "0",
-					"type": "percent"
-				}, 
-				{
-					"period": "264h",
-					"penalty": "20",
-					"type": "percent"
-				}, 
-				{
-					"period": "144h",
-					"penalty": "30",
-					"type": "percent"
-				}, 
-				{
-					"period": "48h",
-					"penalty": "50",
-					"type": "percent"
-				}, 
-				{
-					"period": "24h",
-					"penalty": "70",
-					"type": "percent"
-				}
-			]
-		}
-		{
-			"id": "98ff3",
-			"title": "VIP",
-			"desc" :"توضیحات",
-			"extra_guest_cost_per_day": [
-				{
-				"date": "2016-05-08",
-				"price": 2200000,
-				"price_to_pay": 2200000
-				}
-			]
-			"extra_guest_cost": {
-				"price": 7000000,
-				"taxes": 700000,
-				"final_price": 7700000,
-				"price_to_pay": 6380000
-			},
-			"meal_type": "RO",
-			"transfer": "None",
-			"half_extra_price": false,
-			"cancellation_policies": [
-				{
-					"period": "480h",
-					"penalty": "0",
-					"type": "percent"
-				}, 
-				{
-					"period": "264h",
-					"penalty": "20",
-					"type": "percent"
-				}, 
-				{
-					"period": "144h",
-					"penalty": "30",
-					"type": "percent"
-				}, 
-				{
-					"period": "48h",
-					"penalty": "50",
-					"type": "percent"
-				}, 
-				{
-					"period": "24h",
-					"penalty": "70",
-					"type": "percent"
-				}
-			]
-		}
-	],
-	"room_rates": [
-		{
-			"room_type_id": "1659",
-			"rate_plan_id": "98c3",
-			"prices": [
-				{
-					 "date": "2016-05-08",
-					 "amount": 4000000
-				},
-				{
-					"date": "2016-05-09",
-					"amount": 3000000
-				}
-			],
-			"discounts": [
-				{
-					"text_marketing" :"تخفیف ویژه آژانس",
-					"is_percent": true,
-					"amount": 10,
-					"price": 700000,
-					"taxes": 70000,
-					"final_price": 770000
-				},
-				{
-					"is_percent": false,
-					"amount": 500000,
-					"price": 500000,
-					"taxes": 50000,
-					"final_price": 550000
-				}
-			],
-			"price": {
-				"price": 7000000,
-				"taxes": 700000,
-				"final_price": 7700000,
-				"price_to_pay": 6380000
-			}
-		},
-		{
-			"room_type_id": "165b",
-			"rate_plan_id": "98c3",
-			"prices": [
-				{
-					"date": "2016-05-08",
-					"amount": 5000000
-				},
-				{
-					"date": "2016-05-09",
-					"amount": 5000000
-				}
-			],
-			"discounts": [],
-			"price": {
-				"price": 10000000,
-				"taxes": 1000000,
-				"final_price": 11000000,
-				"price_to_pay": 8880000
-			}
-		}
-	],
-	"currency": "IRR"
+  "api_version": "0.1.1",
+  "lang": "fa_IR",
+  "hotel_id": "12345678",
+  "room_types": [
+    {
+      "id": "1659",
+      "title": "اتاق یک تخته",
+      "capacity": 1,
+      "extra_capacity": 0,
+      "rooms_remaining_per_day": [
+        {
+          "date": "2016-05-08",
+          "count": 10
+        }
+      ],
+      "rooms_remaining": 10
+    },
+    {
+      "id": "165b",
+      "title": "اتاق یک دو تخته",
+      "capacity": 2,
+      "extra_capacity": 1,
+      "rooms_remaining_per_day": [
+        {
+          "date": "2016-05-08",
+          "count": 6
+        }
+      ],
+      "rooms_remaining": 6
+    }
+  ],
+  "rate_plans": [
+    {
+      "id": "98c3",
+      "title": "معمولی",
+      "desc": "توضیحات",
+      "extra_guest_cost_per_day": [
+        {
+          "date": "2016-05-08",
+          "price": 2200000,
+          "price_to_pay": 2200000
+        }
+      ],
+      "extra_guest_cost": {
+        "price": 7000000,
+        "taxes": 700000,
+        "final_price": 7700000,
+        "price_to_pay": 6380000
+      },
+      "meal_type": "BB",
+      "transfer": "None",
+      "half_extra_price": true,
+      "cancellation_policies": [
+        {
+          "period": "480h",
+          "penalty": "0",
+          "type": "percent"
+        },
+        {
+          "period": "264h",
+          "penalty": "20",
+          "type": "percent"
+        },
+        {
+          "period": "144h",
+          "penalty": "30",
+          "type": "percent"
+        },
+        {
+          "period": "48h",
+          "penalty": "50",
+          "type": "percent"
+        },
+        {
+          "period": "24h",
+          "penalty": "70",
+          "type": "percent"
+        }
+      ]
+    },
+    {
+      "id": "98ff3",
+      "title": "VIP",
+      "desc": "توضیحات",
+      "extra_guest_cost_per_day": [
+        {
+          "date": "2016-05-08",
+          "price": 2200000,
+          "price_to_pay": 2200000
+        }
+      ],
+      "extra_guest_cost": {
+        "price": 7000000,
+        "taxes": 700000,
+        "final_price": 7700000,
+        "price_to_pay": 6380000
+      },
+      "meal_type": "RO",
+      "transfer": "None",
+      "half_extra_price": false,
+      "cancellation_policies": [
+        {
+          "period": "480h",
+          "penalty": "0",
+          "type": "percent"
+        },
+        {
+          "period": "264h",
+          "penalty": "20",
+          "type": "percent"
+        },
+        {
+          "period": "144h",
+          "penalty": "30",
+          "type": "percent"
+        },
+        {
+          "period": "48h",
+          "penalty": "50",
+          "type": "percent"
+        },
+        {
+          "period": "24h",
+          "penalty": "70",
+          "type": "percent"
+        }
+      ]
+    }
+  ],
+  "room_rates": [
+    {
+      "room_type_id": "1659",
+      "rate_plan_id": "98c3",
+      "prices": [
+        {
+          "date": "2016-05-08",
+          "amount": 4000000
+        },
+        {
+          "date": "2016-05-09",
+          "amount": 3000000
+        }
+      ],
+      "discounts": [
+        {
+          "text_marketing": "تخفیف ویژه آژانس",
+          "is_percent": true,
+          "amount": 10,
+          "price": 700000,
+          "taxes": 70000,
+          "final_price": 770000
+        },
+        {
+          "is_percent": false,
+          "amount": 500000,
+          "price": 500000,
+          "taxes": 50000,
+          "final_price": 550000
+        }
+      ],
+      "price": {
+        "price": 7000000,
+        "taxes": 700000,
+        "final_price": 7700000,
+        "price_to_pay": 6380000
+      }
+    },
+    {
+      "room_type_id": "165b",
+      "rate_plan_id": "98c3",
+      "prices": [
+        {
+          "date": "2016-05-08",
+          "amount": 5000000
+        },
+        {
+          "date": "2016-05-09",
+          "amount": 5000000
+        }
+      ],
+      "discounts": [],
+      "price": {
+        "price": 10000000,
+        "taxes": 1000000,
+        "final_price": 11000000,
+        "price_to_pay": 8880000
+      }
+    }
+  ],
+  "currency": "IRR"
 }
 ```
 
