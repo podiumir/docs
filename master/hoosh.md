@@ -268,4 +268,4 @@
 ## کالکشن postman راهنمای استفاده از سرویس ها
 نمونه درخواست ها، پاسخ های دریافتی و همچنین شناسه سرویس ها در کالکشن postman زیر موجود است.   
 
-[دریافت کالکشن Postman راهنما](https://space.pod.ir/file/FYIY7CJQ2QXNG63N?dl=1)
+[دریافت کالکشن Postman راهنما](https://space.pod.ir/file/C43SS72BZQUB9KUF?dl=1)
