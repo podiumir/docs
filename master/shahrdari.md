@@ -1015,7 +1015,7 @@ buffer = 500
 
 ###  توجه: ساختار ایجاد پلاک در فرمت 9 رقمی به صورت زیر می باشد:
 
-![تصویر پلاک خودرو](https://space.pod.ir/file/Q8O8XIC9QORBKP2V)
+![تصویر پلاک خودرو](https://space.pod.ir/file/Q8O8XIC9QORBKP2V?dl=1)
 
 
 
