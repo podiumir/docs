@@ -38,6 +38,7 @@
 |    \_token\_    |    API token دریافتی از پنل کسب و کاری    |
 |    \_token_issuer\_    |    این پارامتر دارای مقدار ثابت "1" است.    |
 |    Content-Type    |    application/x-www-form-urlencoded    |
+|   Authorization    |     دریافتی از سرویس دریافت توکن    |  
 
 * بدنه درخواست:
 پارامترهای زیر در بدنه تمام درخواست ها ثابت است:
@@ -71,6 +72,22 @@
 ```
 <div class="box-end">
 </div>
+
+## دریافت توکن  
+* شناسه سرویس: 128152  
+* پارامترهای ورودی: ندارد.  
+* پارامترهای خروجی:
+
+|توضیحات|پارامتر|
+|-----|-----|
+| نوع توکن |token_type|
+|توکن|access_token|
+|زمان انقضا (timestamp)|expiration_time |  
+
+توکن دریافتی از این سرویس را در header هر درخواست در پارامتر Authorization به صورت زیر ارسال کنید:  
+Authorization: token_type access_token
+مثال:
+Authorization: Bearer ejvhfgcbncj...
 
 ## مشاهده قبض عوارض پسماند کسبی
 
