@@ -1,5 +1,6 @@
 - [مقدمه](#menu)
 - [پیش از شروع](#menu)
+- [دریافت توکن](#menu)
 - [مشاهده قبض عوارض پسماند کسبی](#menu)
 - [مشاهده قبض عوارض کسبی](#menu)
 - [مشاهده قبض عوارض پسماند نوسازی](#menu)
@@ -85,8 +86,11 @@
 |زمان انقضا (timestamp)|expiration_time |  
 
 توکن دریافتی از این سرویس را در header هر درخواست در پارامتر Authorization به صورت زیر ارسال کنید:  
-Authorization: token_type access_token
-مثال:
+
+Authorization: token_type access_token  
+
+مثال:  
+
 Authorization: Bearer ejvhfgcbncj...
 
 ## مشاهده قبض عوارض پسماند کسبی
