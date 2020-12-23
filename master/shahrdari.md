@@ -1495,7 +1495,7 @@ photoId=10381
 #### نمونه پاسخ برگشتی:
 
 
-![عکس میوه](https://space.pod.ir/file/UW8HR3VVKE8OFXG8)
+![عکس میوه](https://space.pod.ir/file/UW8HR3VVKE8OFXG8?dl=1)
 
 
 ## نمایش قیمت اقلام میادین میوه و تره بار
