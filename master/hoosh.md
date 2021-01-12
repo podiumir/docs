@@ -250,7 +250,7 @@
 
 نمونه تصویر صحیح ارسالی:
 
-![تصویر کارت ملی](https://space.pod.ir/file/7UJJXLE5HMHB21SE?dl=1)
+![تصویر کارت ملی](https://space.pod.ir/file/YZ94YFEODR19OOOA?dl=1)
 
 
 
