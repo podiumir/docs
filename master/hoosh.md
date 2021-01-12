@@ -250,7 +250,7 @@
 
 نمونه تصویر صحیح ارسالی:
 
-![تصویر کارت ملی](https://core.pod.ir/nzh/image/?imageId=427123&width=999&height=645&hashCode=17265595593-0.27183272520716273)
+![تصویر کارت ملی](https://space.pod.ir/file/7UJJXLE5HMHB21SE?dl=1)
 
 
 
